@@ -15,6 +15,38 @@
 main {
   margin-top: 6vh;
 }
+/* --- INDEX PAGE --- */
+#topic {
+  @include row-flex;
+  margin: auto;
+
+  .topic-title {
+    margin: 0 0 0 2rem;
+  }
+
+  .articles {
+    overflow: auto;
+    white-space: nowrap;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: x;
+
+    .card-article {
+      display: inline-block;
+      scroll-snap-align: content-container;
+    }
+  }
+}
+
+/* --- HELP PAGE --- */
+#contact h5 {
+  margin-left: 3rem;
+}
+#contact-form {
+  @include row-flex;
+  justify-content: center;
+  padding: 2.5rem 2rem;
+}
 
 .invisible {
   visibility: hidden;
@@ -24,6 +56,20 @@ main {
   display: none;
 }
 
+@media (min-width: $max-s) {
+  #contact-form {
+    // display: grid;
+    // grid-template-columns: 350px 600px;
+  }
+  .col-left {
+    flex-grow: 1;
+    flex-basis: 200px;
+  }
+  .col-right {
+    flex-grow: 2;
+    flex-basis: 300px;
+  }
+}
 .border-top {
   border-top: 3px solid !important;
 }
@@ -76,5 +122,3 @@ main {
 .row.display-flex > [class*="col-"] {
   display: flex;
 }
-
-

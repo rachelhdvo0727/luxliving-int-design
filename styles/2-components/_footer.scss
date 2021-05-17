@@ -2,3 +2,8 @@ footer #footy {
   background-color: $tertiary;
   color: $white;
 }
+
+#newsletter {
+  @include row-flex;
+  align-items: center;
+}
