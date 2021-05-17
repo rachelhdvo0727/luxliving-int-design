@@ -1,0 +1,92 @@
+@media print {
+  .btn {
+    -webkit-print-color-adjust: exact !important;
+  }
+}
+
+button {
+  cursor: pointer;
+  color: $white;
+}
+
+.btn {
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: none;
+  user-select: none;
+  overflow: visible;
+  vertical-align: middle;
+  border-radius: 10px;
+  min-width: 112px;
+  margin-bottom: 1rem;
+  font-family: $paragraph;
+  height: 35px;
+  padding: 2px 8px;
+  box-shadow: $md-shadow;
+  color: $white;
+
+  &-primary {
+    background-color: $secondary;
+  }
+
+  &-secondary {
+    background-color: $secondary;
+  }
+
+  &-tertiary {
+    background-color: $tertiary;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+  }
+
+  //Disabled button styling
+  &-disabled {
+    color: rgba(0, 0, 0, 0.37);
+    cursor: default;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+  }
+
+  //Outlined button styling
+  &.outlined {
+    border-style: solid;
+    padding: 0 15px 0 15px;
+    border-width: 2px;
+    background-color: transparent;
+    border-color: $tertiary;
+    color: $tertiary;
+  }
+
+  //Button label styling
+  &.label {
+    font-family: $paragraph;
+    font-size: $font-size-button;
+    line-height: $line-height-button;
+    font-weight: 500;
+    letter-spacing: $letter-spacing-button;
+    text-decoration: none;
+    padding: 0 8px 0 8px;
+  }
+}
+
+.float {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $lg-shadow;
+
+  &:hover {
+    transform: scale(1.08);
+    transition: 0.2s;
+  }
+}

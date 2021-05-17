@@ -1,0 +1,79 @@
+/* MEDIA QUERIES */
+$max-xs: 575.98px;
+$max-s: 767.98px;
+$max-m: 991.98px;
+$max-ml: 1280px;
+$max-l: 1440px;
+
+/* COLORS */
+$primary: #c4afa0;
+$secondary: #f5b53f;
+$tertiary: #254c50;
+/* Accent Colors */
+$white: #faf5ef;
+$light-gray: #9c9c9c;
+$medium-gray: #828282;
+$black: #323232;
+
+/* SHADOWS */
+$lg-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+$md-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+$sm-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+/* FONTS */
+$headings: "Poppins", Helvetica, Arial, sans-serif !default;
+$paragraph: "Lato", Helvetica, Arial, sans-serif !default;
+$font-family-base: $paragraph !default;
+
+/* FONT SIZES */
+$font-size-base: 14px !default;
+
+$font-size-h1: 5rem;
+$font-size-h2: 2.5rem;
+$font-size-h3: 2rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.2rem;
+$font-size-h6: 1rem;
+$font-size-p: $font-size-base;
+$font-size-span: $font-size-base !default;
+$font-size-a: $font-size-base !default; // ~16px
+$font-size-blockquote: 1.2rem;
+$font-size-button: 14px !default;
+$font-size-label: 14px !default;
+$font-size-input: 14px !default;
+$font-size-placeholder: 12px !default;
+$font-size-helper-line: 12px !default;
+
+/* LETTER SPACING */
+$letter-spacing-h1: -1.5px !default;
+$letter-spacing-h2: -0.5px !default;
+$letter-spacing-h3: 0px !default;
+$letter-spacing-h4: 0.25px !default;
+$letter-spacing-h5: 0px !default;
+$letter-spacing-h6: 0.15px !default;
+$letter-spacing-p: 0.5px !default;
+$letter-spacing-span: 0.5px !default;
+$letter-spacing-a: 0.5px !default;
+$letter-spacing-blockquote: 0.15px !default;
+$letter-spacing-monospace: 0px !default;
+$letter-spacing-button: 0.25px !default;
+$letter-spacing-label: 0.25px !default;
+$letter-spacing-input: 0.25px !default;
+$letter-spacing-helper-line: 0.25px !default;
+
+/* LINE HEIGHT */
+$line-height-base: 1.6 !default;
+
+$line-height-h1: 1.1;
+$line-height-h2: 1.2;
+$line-height-h3: 1.3;
+$line-height-h4: 1.4;
+$line-height-h5: 1.5;
+$line-height-h6: 1.5;
+$line-height-p: 1.6;
+$line-height-a: 1.6;
+$line-height-button: 1.6;
+$line-height-label: 1.6;
+$line-height-span: 1.6;
+$line-height-blockquote: 1.5;
+$line-height-code: 1.6;

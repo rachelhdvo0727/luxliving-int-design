@@ -1,0 +1,47 @@
+@media print {
+  .link {
+    -webkit-print-color-adjust: exact !important;
+  }
+}
+
+a {
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link {
+  color: $white;
+
+  &-navi {
+    &:hover,
+    &:active {
+      color: $tertiary;
+    }
+  }
+
+  &-hyper {
+    color: $black;
+  }
+
+  &-flat {
+    padding: 0 1.5vw;
+
+    &:link {
+      background-color: transparent;
+    }
+    &:active {
+      background-color: $tertiary;
+    }
+  }
+}
+
+.active {
+  background-color: $tertiary;
+}
+
+.see-all {
+  &::after {
+    content: " →";
+  }
+}

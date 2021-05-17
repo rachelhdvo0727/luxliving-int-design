@@ -1,0 +1,80 @@
+/* Libraries */
+@import url("plugins/icofont.min.css"); /* icofont icon font */
+@import url("plugins/fontawesome-all.min.css"); /* fontawesome icon font */
+
+/* Internal */
+@import "./0-base/index";
+@import "./1-mixins/mixins";
+@import "./2-components/components";
+
+/*====================================
+    02 -  Styles
+=====================================*/
+/* General Styles
+================================*/
+main {
+  margin-top: 6vh;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.border-top {
+  border-top: 3px solid !important;
+}
+.border-bottom {
+  border-bottom: 3px solid !important;
+}
+
+.seperator {
+  border: none;
+  padding: 5rem;
+}
+
+.logo {
+  max-width: 110px;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pull-right {
+  text-align: right;
+}
+.pull-left {
+  text-align: left;
+}
+
+.p-hdr-left {
+  padding: 0 0 0 20px;
+}
+.p-hdr-right {
+  padding: 0 20px 0 0;
+}
+
+.m-hdr-right {
+  margin: -2px 0 0 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*="col-"] {
+  display: flex;
+}
+
+

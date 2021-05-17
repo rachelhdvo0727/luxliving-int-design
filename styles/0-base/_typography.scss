@@ -1,0 +1,208 @@
+/* DEFAULTS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings;
+  color: $black;
+}
+
+html,
+body,
+p,
+span,
+code,
+button,
+input,
+ul,
+li,
+a {
+  font-family: $paragraph;
+}
+
+/* --- CTA --- */
+button {
+  font-size: $font-size-button;
+  font-weight: 400;
+}
+
+a {
+  font-size: $font-size-a;
+  font-weight: 400;
+}
+
+/* --- FORM components --- */
+input {
+  font-size: $font-size-input;
+
+  &::placeholder {
+    font-size: $font-size-placeholder;
+  }
+}
+
+label {
+  font-size: $font-size-label;
+}
+
+/* --- Contents --- */
+h1,
+.display-1 {
+  font-size: $font-size-h1;
+  // letter-spacing: $letter-spacing-h1;
+  font-weight: 600;
+  line-height: $line-height-h1;
+  color: $black;
+}
+
+h2,
+.display-2 {
+  font-size: $font-size-h2;
+  // letter-spacing: $letter-spacing-h2;
+  font-weight: 600;
+  line-height: $line-height-h2;
+  color: $black;
+}
+
+h3,
+.display-3 {
+  font-style: italic;
+  font-size: $font-size-h3;
+  // letter-spacing: $letter-spacing-h3;
+  font-weight: 400;
+  line-height: $line-height-h3;
+  color: $black;
+}
+
+h4,
+.display-4 {
+  font-size: $font-size-h4;
+  // letter-spacing: $letter-spacing-h4;
+  font-weight: 500;
+  line-height: $line-height-h4;
+  color: $black;
+}
+
+h5,
+.display-5 {
+  font-size: $font-size-h5;
+  // letter-spacing: $letter-spacing-h5;
+  font-weight: 500;
+  line-height: $line-height-h5;
+  color: $black;
+}
+
+h6,
+.display-6 {
+  font-size: $font-size-h6;
+  // letter-spacing: $letter-spacing-h6;
+  font-weight: 500;
+  line-height: $line-height-h6;
+  color: $black;
+}
+
+ul,
+li {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  line-height: $line-height-p;
+  //letter-spacing: $letter-spacing-p;
+  padding: 0 0 1.5em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+span {
+  font-size: $font-size-span;
+  letter-spacing: $letter-spacing-p;
+  font-weight: 500;
+  line-height: $line-height-span;
+}
+
+small {
+  font-size: $font-size-helper-line;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: $font-size-blockquote;
+  letter-spacing: $letter-spacing-blockquote;
+  font-weight: 500;
+}
+
+@media (max-width: $max-m) {
+  h1,
+  .display-1 {
+    font-size: calc(#{$font-size-h1} - 24px);
+  }
+
+  h2,
+  .display-2 {
+    font-size: calc(#{$font-size-h2} - 8px);
+  }
+
+  h3,
+  .display-3 {
+    font-size: calc(#{$font-size-h3} - 8px);
+  }
+
+  h4,
+  .display-4 {
+    font-size: calc(#{$font-size-h4} - 8px);
+  }
+}
+@media (max-width: $max-ml) {
+  h1,
+  .display-1 {
+    font-size: 2.6rem;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+@media (max-width: $max-s) {
+  h1,
+  .display-1 {
+    font-size: calc(#{$font-size-h1} - 32px);
+  }
+
+  h2,
+  .display-2 {
+    font-size: calc(#{$font-size-h2} - 16px);
+  }
+
+  h3,
+  .display-3 {
+    font-size: calc(#{$font-size-h3} - 16px);
+  }
+
+  h4,
+  .display-4 {
+    font-size: calc(#{$font-size-h4} - 8px);
+  }
+}
+
+@media (max-width: $max-xs) {
+  h1,
+  .display-1 {
+    font-size: calc(#{$font-size-h1} - 38px);
+  }
+
+  h2,
+  .display-2 {
+    font-size: calc(#{$font-size-h2} - 24px);
+  }
+
+  h3,
+  .display-3 {
+    font-size: calc(#{$font-size-h3} - 16px);
+  }
+
+  h4,
+  .display-4 {
+    font-size: calc(#{$font-size-h4} - 8px);
+  }
+}
