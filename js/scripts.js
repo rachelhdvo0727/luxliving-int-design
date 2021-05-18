@@ -6,34 +6,10 @@ const linkToFooter = "./components/footer.html";
 
 function init() {
   console.log("init");
-  getHeader();
-  getFooter();
-}
-
-// Get default components
-async function getHeader() {
-  const headerMenu = await fetch(linkToHeader);
-  const including = await headerMenu.text();
-  document.querySelector("header").innerHTML = including;
-
-  let headerFromOtherPages = "../../components/header.html";
-  const header = await fetch(headerFromOtherPages);
-  const inc = await header.text();
-  document.querySelector("header").innerHTML = inc;
 
   toggleBurgerMenu();
   clickCategories();
   clickCategory();
-}
-async function getFooter() {
-  const footerInfo = await fetch(linkToFooter);
-  const including = await footerInfo.text();
-  document.querySelector("footer").innerHTML = including;
-
-  let footerFromOtherPages = "../../components/footer.html";
-  const footer = await fetch(footerFromOtherPages);
-  const inc = await footer.text();
-  document.querySelector("footer").innerHTML = inc;
 }
 
 function toggleBurgerMenu() {

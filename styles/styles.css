@@ -633,7 +633,7 @@ nav {
   justify-content: space-between;
 }
 
-footer #footy {
+footer#footy {
   background-color: #254c50;
   color: #faf5ef;
 }
