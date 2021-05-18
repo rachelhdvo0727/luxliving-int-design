@@ -1,9 +1,62 @@
 footer#footy {
   background-color: $tertiary;
   color: $white;
+  padding: 1rem 1rem 0 1rem;
+
+  h6 {
+    color: $white;
+    line-height: 2.5;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+
+  .footy-rightcol,
+  .footy-leftcol {
+    @include row-flex;
+    justify-content: space-between;
+  }
 }
 
-#newsletter {
+.footy-containers {
+  margin: 1rem;
+  line-height: $line-height-p;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+}
+
+#newsletter-form {
   @include row-flex;
   align-items: center;
+}
+
+@media (min-width: $max-s) {
+  footer#footy {
+    display: grid;
+    grid-template-areas: "contact-info help-info" "newsletter newsletter" " copyright copyright";
+    gap: 2.5rem;
+
+    .newsletter {
+      grid-area: newsletter;
+      place-self: flex-end;
+    }
+
+    .footy-leftcol {
+      grid-area: contact-info;
+    }
+
+    .footy-rightcol {
+      grid-area: help-info;
+    }
+
+    .footy-end {
+      place-self: center;
+      grid-column: 1 / 3;
+    }
+  }
 }
