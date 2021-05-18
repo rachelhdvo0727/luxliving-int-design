@@ -35,8 +35,16 @@ button {
 
 /* COLORS */
 
-
-/* Accent Colors */
+:root {
+    --primaryColor: #c4afa0;
+    --secondaryColor: #f5b53f;
+    --tertiaryColor: #254c50;
+    /* Accent Colors */
+    --white: #faf5ef;
+    --light-gray: #9c9c9c;
+    --medium-gray: #828282;
+    --black: #323232;
+}
 
 
 /* SHADOWS */
@@ -692,6 +700,14 @@ nav {
     padding: 0!important;
     margin-left: 7vh!important;
     margin-right: 0;
+}
+
+span.calendar-m {
+    color: var(--tertiaryColor);
+}
+
+.calendar-d {
+    color: var(--secondaryColor);
 }
 
 
