@@ -1,3 +1,5 @@
+// PAYMENT JS SKAL FJERNES OG ERSTATTES MED BOOTSTRAP
+
 $(document).ready(function() {
 
     var current_fs, next_fs, previous_fs; //fieldsets
