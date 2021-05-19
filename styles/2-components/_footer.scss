@@ -48,10 +48,12 @@ footer#footy {
 
     .footy-leftcol {
       grid-area: contact-info;
+      justify-content: space-around;
     }
 
     .footy-rightcol {
       grid-area: help-info;
+      justify-content: space-around;
     }
 
     .footy-end {
