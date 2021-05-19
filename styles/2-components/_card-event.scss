@@ -1,0 +1,28 @@
+.card-event {
+  padding: 2rem;
+  // margin: 2rem auto;
+
+  .event-content {
+    width: 250px;
+    height: 100%;
+    @include column-flex;
+    justify-content: space-evenly;
+    white-space: pre-line;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+
+    .card-title {
+      margin-top: 1rem;
+      font-weight: 600;
+
+      &:hover {
+        color: $primary;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      white-space: initial;
+    }
+  }
+}
