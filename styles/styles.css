@@ -738,6 +738,10 @@ footer#footy .footy-leftcol {
     place-self: center;
     grid-column: 1/3;
   }
+
+  .footy-containers {
+    margin: unset;
+  }
 }
 .banner {
   padding: 5rem 3rem;
