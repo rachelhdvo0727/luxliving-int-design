@@ -497,7 +497,7 @@ nav {
 #menu-toggle input {
   display: block;
   width: 56px;
-  height: 52px;
+  height: 50px;
   position: absolute;
   right: 0;
   background-color: #254c50;
@@ -612,6 +612,7 @@ nav {
   color: #faf5ef;
   margin: auto 0.8rem auto;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 .navigation-logo a:hover {
   text-decoration: none;
@@ -662,7 +663,7 @@ nav {
 #header {
   position: fixed;
   cursor: default;
-  line-height: 52px;
+  line-height: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -701,14 +702,18 @@ footer#footy ul li {
 }
 footer#footy .footy-rightcol,
 footer#footy .footy-leftcol {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   justify-content: space-between;
 }
 
 .footy-containers {
   margin: 1rem;
   line-height: 1.6;
+}
+.footy-containers address {
+  font-style: normal;
 }
 
 .copyright-text {
@@ -724,13 +729,18 @@ footer#footy .footy-leftcol {
 }
 
 .some {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
   justify-content: space-evenly;
   align-items: center;
+  grid-template-columns: auto 80%;
+  gap: 0.5rem;
 }
 .some a {
   color: #faf5ef;
+}
+
+#newsletter-form .email-sub {
+  margin: 0 0.8rem 0 0;
 }
 
 @media (min-width: 767.98px) {
@@ -738,6 +748,7 @@ footer#footy .footy-leftcol {
     display: grid;
     grid-template-areas: "contact-info help-info" "newsletter newsletter" " copyright copyright";
     gap: 2rem;
+    justify-content: space-around;
   }
   footer#footy .newsletter {
     grid-area: newsletter;
@@ -745,11 +756,11 @@ footer#footy .footy-leftcol {
   }
   footer#footy .footy-leftcol {
     grid-area: contact-info;
-    justify-content: space-around;
+    gap: 5rem;
   }
   footer#footy .footy-rightcol {
     grid-area: help-info;
-    justify-content: space-around;
+    gap: 5rem;
   }
   footer#footy .footy-end {
     place-self: center;
@@ -768,10 +779,10 @@ footer#footy .footy-leftcol {
 }
 
 .card-article {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 0;
 }
 .card-article .article-content {
-  width: 320px;
+  width: 250px;
   height: 100%;
   display: flex;
   flex-flow: column wrap;
@@ -786,20 +797,31 @@ footer#footy .footy-leftcol {
   color: #c4afa0;
   cursor: pointer;
 }
+.card-article .img-responsive {
+  display: block;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
 .card-article p {
   white-space: initial;
 }
 
+@media (min-width: 767.98px) {
+  .card-article {
+    padding: 2rem;
+  }
+}
 .card-event {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 0;
 }
 .card-event .event-content {
-  width: 250px;
-  height: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
   white-space: pre-line;
+  width: 200px;
+  height: 100%;
 }
 .card-event .event-content .card-title {
   margin-top: 1rem;
@@ -809,10 +831,21 @@ footer#footy .footy-leftcol {
   color: #c4afa0;
   cursor: pointer;
 }
+.card-event .event-content .img-responsive {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
 .card-event .event-content p {
   white-space: initial;
 }
 
+@media (min-width: 767.98px) {
+  .card-event {
+    padding: 2rem;
+  }
+}
 /*====================================
     02 -  Styles
 =====================================*/
@@ -827,7 +860,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   margin: 2.5rem auto;
-  padding: 1rem 2rem 0 2rem;
+  padding: 0 2rem 0 2rem;
 }
 #topic .top-wrapper {
   display: grid;
@@ -838,7 +871,6 @@ main {
   gap: 5rem;
 }
 #topic .topic-title {
-  margin: 0 0 0 2rem;
   text-transform: uppercase;
   font-weight: 650;
 }
@@ -885,6 +917,13 @@ main {
 }
 
 @media (min-width: 767.98px) {
+  #topic {
+    padding-top: 1rem;
+  }
+  #topic .topic-title {
+    margin: 0 0 0 2rem;
+  }
+
   .col-left {
     flex-grow: 1;
     flex-basis: 200px;
@@ -906,13 +945,6 @@ main {
 
 .logo {
   max-width: 110px;
-}
-
-.img-responsive {
-  display: block;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
 }
 
 .pull-right {

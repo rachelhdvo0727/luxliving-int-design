@@ -19,7 +19,7 @@ nav {
 #menu-toggle input {
   display: block;
   width: 56px;
-  height: 52px;
+  height: 50px;
   position: absolute;
   right: 0;
   background-color: $tertiary;
@@ -145,6 +145,7 @@ nav {
   color: $white;
   margin: auto 0.8rem auto;
   letter-spacing: 1px;
+  font-size: 18px;
 
   &:hover {
     text-decoration: none;

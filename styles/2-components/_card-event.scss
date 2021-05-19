@@ -1,15 +1,14 @@
 .card-event {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 0;
   // margin: 2rem auto;
 
   .event-content {
-    width: 250px;
-    height: 100%;
     @include column-flex;
     justify-content: space-evenly;
     white-space: pre-line;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
+
+    width: 200px;
+    height: 100%;
 
     .card-title {
       margin-top: 1rem;
@@ -21,8 +20,21 @@
       }
     }
 
+    .img-responsive {
+      display: block;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+    }
+
     p {
       white-space: initial;
     }
+  }
+}
+
+@media (min-width: $max-s) {
+  .card-event {
+    padding: 2rem;
   }
 }
