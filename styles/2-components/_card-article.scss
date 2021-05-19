@@ -1,4 +1,25 @@
 .card-article {
   padding: 2rem;
-  margin: 2rem auto;
+  // margin: 2rem auto;
+
+  .article-content {
+    width: 320px;
+    height: 100%;
+    @include column-flex;
+    justify-content: space-evenly;
+    white-space: pre-wrap;
+  }
+  .card-title {
+    margin-top: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    white-space: initial;
+  }
 }

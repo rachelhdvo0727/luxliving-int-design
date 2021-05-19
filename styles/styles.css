@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 ul {
   list-style: none;
   padding-inline-start: 0;
@@ -79,7 +84,7 @@ label {
 /* --- Contents --- */
 h1,
 .display-1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 600;
   line-height: 1.1;
   color: #323232;
@@ -87,8 +92,8 @@ h1,
 
 h2,
 .display-2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 650;
   line-height: 1.2;
   color: #323232;
 }
@@ -96,7 +101,7 @@ h2,
 h3,
 .display-3 {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.3;
   color: #323232;
@@ -159,17 +164,17 @@ blockquote {
 @media (max-width: 991.98px) {
   h1,
 .display-1 {
-    font-size: calc(5rem - 24px);
+    font-size: calc(4.5rem - 24px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2.5rem - 8px);
+    font-size: calc(2rem - 8px);
   }
 
   h3,
 .display-3 {
-    font-size: calc(2rem - 8px);
+    font-size: calc(1.8rem - 8px);
   }
 
   h4,
@@ -190,17 +195,17 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(5rem - 32px);
+    font-size: calc(4.5rem - 32px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2.5rem - 16px);
+    font-size: calc(2rem - 16px);
   }
 
   h3,
 .display-3 {
-    font-size: calc(2rem - 16px);
+    font-size: calc(1.8rem - 16px);
   }
 
   h4,
@@ -211,17 +216,17 @@ blockquote {
 @media (max-width: 575.98px) {
   h1,
 .display-1 {
-    font-size: calc(5rem - 38px);
+    font-size: calc(4.5rem - 37px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2.5rem - 24px);
+    font-size: calc(2rem - 10px);
   }
 
   h3,
 .display-3 {
-    font-size: calc(2rem - 16px);
+    font-size: calc(1.8rem - 16px);
   }
 
   h4,
@@ -638,6 +643,7 @@ nav {
 
   .dropdown {
     height: -moz-fit-content;
+    height: fit-content;
     width: max-content;
     transition: unset;
   }
@@ -683,7 +689,8 @@ nav {
 footer#footy {
   background-color: #254c50;
   color: #faf5ef;
-  padding: 1rem 1rem 0 1rem;
+  padding: 3.5rem 1rem 0 1rem;
+  margin-top: 20vh;
 }
 footer#footy h6 {
   color: #faf5ef;
@@ -716,11 +723,21 @@ footer#footy .footy-leftcol {
   align-items: center;
 }
 
+.some {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.some a {
+  color: #faf5ef;
+}
+
 @media (min-width: 767.98px) {
   footer#footy {
     display: grid;
     grid-template-areas: "contact-info help-info" "newsletter newsletter" " copyright copyright";
-    gap: 2.5rem;
+    gap: 2rem;
   }
   footer#footy .newsletter {
     grid-area: newsletter;
@@ -744,12 +761,56 @@ footer#footy .footy-leftcol {
   }
 }
 .banner {
-  padding: 5rem 3rem;
+  padding: 10vh 2rem;
+  margin-bottom: 3.5rem;
+  background: url("/images/andrew-barrowman-5CYjHn5Cc0g-unsplash.jpg") no-repeat right top;
+  background-size: cover;
 }
 
 .card-article {
   padding: 2rem;
-  margin: 2rem auto;
+}
+.card-article .article-content {
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  white-space: pre-wrap;
+}
+.card-article .card-title {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.card-article .card-title:hover {
+  color: #c4afa0;
+  cursor: pointer;
+}
+.card-article p {
+  white-space: initial;
+}
+
+.card-event {
+  padding: 2rem;
+}
+.card-event .event-content {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  white-space: pre-line;
+}
+.card-event .event-content .card-title {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.card-event .event-content .card-title:hover {
+  color: #c4afa0;
+  cursor: pointer;
+}
+.card-event .event-content p {
+  white-space: initial;
 }
 
 /*====================================
@@ -765,21 +826,42 @@ main {
 #topic {
   display: flex;
   flex-flow: row wrap;
-  margin: auto;
+  margin: 2.5rem auto;
+  padding: 1rem 2rem 0 2rem;
+}
+#topic .top-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  place-items: baseline;
+  justify-content: space-between;
+  gap: 5rem;
 }
 #topic .topic-title {
   margin: 0 0 0 2rem;
+  text-transform: uppercase;
+  font-weight: 650;
 }
-#topic .articles {
+#topic .topic-title .see-all {
+  text-transform: none;
+}
+#topic .articles,
+#topic .events {
   overflow: auto;
   white-space: nowrap;
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(300px);
   scroll-snap-type: x;
 }
-#topic .articles .card-article {
+#topic .articles .card-article,
+#topic .articles .card-event,
+#topic .events .card-article,
+#topic .events .card-event {
   display: inline-block;
   scroll-snap-align: content-container;
+}
+#topic .events {
+  min-width: 100vw;
 }
 
 /* --- HELP PAGE --- */
@@ -815,10 +897,6 @@ main {
 }
 .border-top {
   border-top: 3px solid !important;
-}
-
-.border-bottom {
-  border-bottom: 3px solid !important;
 }
 
 .seperator {

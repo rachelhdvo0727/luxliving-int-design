@@ -60,7 +60,7 @@ h2,
 .display-2 {
   font-size: $font-size-h2;
   // letter-spacing: $letter-spacing-h2;
-  font-weight: 600;
+  font-weight: 650;
   line-height: $line-height-h2;
   color: $black;
 }
@@ -188,12 +188,12 @@ blockquote {
 @media (max-width: $max-xs) {
   h1,
   .display-1 {
-    font-size: calc(#{$font-size-h1} - 38px);
+    font-size: calc(#{$font-size-h1} - 37px);
   }
 
   h2,
   .display-2 {
-    font-size: calc(#{$font-size-h2} - 24px);
+    font-size: calc(#{$font-size-h2} - 10px);
   }
 
   h3,

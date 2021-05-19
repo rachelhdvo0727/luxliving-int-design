@@ -1,7 +1,8 @@
 footer#footy {
   background-color: $tertiary;
   color: $white;
-  padding: 1rem 1rem 0 1rem;
+  padding: 3.5rem 1rem 0 1rem;
+  margin-top: 20vh;
 
   h6 {
     color: $white;
@@ -35,11 +36,21 @@ footer#footy {
   align-items: center;
 }
 
+.some {
+  @include row-flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    color: $white;
+  }
+}
+
 @media (min-width: $max-s) {
   footer#footy {
     display: grid;
     grid-template-areas: "contact-info help-info" "newsletter newsletter" " copyright copyright";
-    gap: 2.5rem;
+    gap: 2rem;
 
     .newsletter {
       grid-area: newsletter;
