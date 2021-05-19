@@ -28,7 +28,7 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="../../styles/styles.css" />
     <!-- Custom fonts -->
-    <link rel="stylesheet" href="styles/plugins/icofont.css" />
+    <link rel="stylesheet" href="../../styles/plugins/icofont.css" />
 
     <title>LuxLiving</title>
 
@@ -38,7 +38,7 @@
     <header id="header">
       <nav id="navigation" class="">
         <div class="navigation-logo">
-          <a class="logo" href="/index.html"> LuxLiving </a>
+          <a class="logo" href="index.html"> LuxLiving </a>
         </div>
         <div class="search-bar">
           <input
@@ -50,194 +50,226 @@
           <img class="search-icon" src="/assets/search.svg" />
         </div>
 
-        <button id="burgermenu" class="btn-tertiary bars">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </button>
-
-        <div class="desktop-nav">
-          <a id="categories" class="link link-flat">Categories</a>
-          <a class="link link-flat" href="../help.html">Help</a>
-          <a id="sign-in" class="link link-flat" href="../sign-in.html"
+        <div id="menu-toggle">
+          <a class="link link-flat desktop-links">Categories</a>
+          <a class="link link-flat desktop-links" href="../help.html">Help</a>
+          <a class="link link-flat desktop-links" href="../sign-in.html"
             >Sign in</a
           >
-          <!-- <a class="link link-flat" href="/pages/admin/drafts.html">Drafts</a>
-      <a class="link link-flat" href="/pages/customer/events.html"
-        >customer events</a
-      > -->
-        </div>
 
-        <div class="dropdown hide">
-          <ul class="category-list">
-            <li class="category">
-              Residence
-              <ul class="subcat hide">
-                <li><a class="link link-navi" href="#">Apartment</a></li>
-                <li><a class="link link-navi" href="#">House</a></li>
-                <li><a class="link link-navi" href="#">Summer house</a></li>
-                <li><a class="link link-navi" href="#">Country house</a></li>
-                <li><a class="link link-navi" href="#">Barn</a></li>
-                <li><a class="link link-navi" href="#">Castle</a></li>
-              </ul>
-            </li>
-            <li class="category">
-              Rooms
-              <ul class="subcat hide">
-                <li><a class="link link-navi" href="#">Livingroom</a></li>
-                <li><a class="link link-navi" href="#">Bathroom</a></li>
-                <li><a class="link link-navi" href="#">Bedroom</a></li>
-                <li><a class="link link-navi" href="#">Corridor</a></li>
-                <li><a class="link link-navi" href="#">Office/</a></li>
-                <li><a class="link link-navi" href="#">Kid's room</a></li>
-              </ul>
-            </li>
-            <li class="category">
-              Outdoor
-              <ul class="subcat hide">
-                <li><a class="link link-navi" href="#">Balcony</a></li>
-                <li><a class="link link-navi" href="#">Terrasse</a></li>
-              </ul>
-            </li>
-            <li class="category">
-              Design & Architecture
-              <ul class="subcat hide">
-                <li><a class="link link-navi" href="#">Architecture</a></li>
-                <li><a class="link link-navi" href="#">Design</a></li>
-                <li><a class="link link-navi" href="#">Culture</a></li>
-                <li><a class="link link-navi" href="#">Design Awards</a></li>
-              </ul>
-            </li>
-            <li class="category">
-              Magazine
-              <ul class="subcat hide">
-                <li>
-                  <a class="link link-navi" href="#">Printed magazines</a>
-                </li>
-                <li>
-                  <a class="link link-navi" href="./subscriptions.html"
-                    >Subscriptions</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="category">
-              <a class="link help link-navi" href="../help.html">Help</a>
-            </li>
-          </ul>
+          <input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <div class="dropdown">
+            <ul class="category-list">
+              <li class="category">
+                Residence
+                <ul class="subcat">
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Apartment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self">House</a>
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Summer house</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Country house</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self">Barn</a>
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self">Castle</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="category">
+                Rooms
+                <ul class="subcat hide">
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Livingroom</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Bathroom</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Bedroom</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Corridor</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Office/</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Kid's room</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="category">
+                Outdoor
+                <ul class="subcat hide">
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Balcony</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Terrasse</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="category">
+                Design & Architecture
+                <ul class="subcat hide">
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Architecture</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self">Design</a>
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Culture</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Design Awards</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="category">
+                Magazine
+                <ul class="subcat hide">
+                  <li>
+                    <a class="link link-navi" href="#">Printed magazines</a>
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="subscriptions.html"
+                      >Subscriptions</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="category">
+                <a class="link help link-navi" href="./pages/help.html">Help</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main></main>
     <footer id="footy">
-      <div class="newsletter">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>Newsletter</h3>
-              <p>Lorem ipsum</p>
-            </div>
-            <div class="col-md-12">
-              <div class="newsletter-field">
-                <form
-                  role="form"
-                  action="#"
-                  method="post"
-                  target="_blank"
-                  id="newsletter"
-                >
-                  <div class="input-container">
-                    <input
-                      type="email"
-                      class="input"
-                      name="email"
-                      placeholder="Email adresse"
-                    />
-                    <label for="email" class="input-label">Email address</label>
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-secondary"
-                    name="commit"
-                    id="subscribe"
-                  >
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
+      <div class="footy-leftcol contact-info">
+        <div class="footy-containers">
+          <h6>Address</h6>
+          <ul class="">
+            <li>LuxLiving A/S</li>
+            <li>Saltværksvej 8, 1th.</li>
+            <li>2000 Copenhagen</li>
+            <li>Denmark</li>
+          </ul>
+        </div>
+
+        <div class="footy-containers">
+          <h6>Contact</h6>
+          <ul>
+            <li>+45 12 34 56 78</li>
+            <li class="">hello@luxliving.com</li>
+          </ul>
         </div>
       </div>
 
-      <div class="container mt-auto py-5">
-        <div class="row">
-          <div class="col-12 col-md">
-            <p>LuxLiving</p>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Address</h5>
-            <ul class="list-unstyled text-small">
-              <li class="text-muted">
-                <p>Saltværksvej 8</p>
-              </li>
-              <li class="text-muted">
-                <p>2000 Copenhagen</p>
-              </li>
-              <li class="text-muted">
-                <p>Denmark</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Contact</h5>
-            <ul class="list-unstyled text-small">
-              <li class="text-muted">
-                <p>+45 12 34 56 78</p>
-              </li>
-              <li class="text-muted">
-                <p>hello@luxliving.com</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Customer service</h5>
-            <ul class="list-unstyled text-small">
-              <li class="text-muted">
-                <a href="../help.html">Help</a>
-              </li>
-              <li class="text-muted">
-                <a href="../help.html">FAQ</a>
-              </li>
-              <li class="text-muted">
-                <a href="./subscriptions.html">Subscriptions</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Social Media</h5>
-            <ul class="list-unstyled text-small socials">
-              <li>
-                <i class="icofont-facebook"></i
-                ><a class="text-muted" href="#" target="_blank">Facebook</a>
-              </li>
-              <li>
-                <i class="icofont-instagram"></i
-                ><a class="text-muted" href="#" target="_blank">Instagram</a>
-              </li>
-            </ul>
-          </div>
+      <div class="footy-rightcol help-info">
+        <div class="footy-containers">
+          <h6>Customer service</h6>
+          <ul>
+            <li>
+              <a href="help.html">Help</a>
+            </li>
+            <li>
+              <a href="help.html">FAQ</a>
+            </li>
+            <li>
+              <a href="subscriptions.html" target="_self">Subscriptions</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="footy-containers">
+          <h6>Social Media</h6>
+          <ul>
+            <li class="some facebook">
+              <i class="icofont-facebook"></i
+              ><a href="#" target="_self">Facebook</a>
+            </li>
+            <li class="some insta">
+              <i class="icofont-instagram"></i
+              ><a href="#" target="_self">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footy-containers newsletter">
+        <h6>Newsletter</h6>
+        <p>Leave your email here to subscribe to our newsletters.</p>
+        <form
+          role="form"
+          action="#"
+          method="post"
+          target="_self"
+          id="newsletter-form"
+        >
+          <div class="input-container">
+            <input
+              type="email"
+              class="input"
+              name="email"
+              placeholder="Email adresse"
+            />
+            <label for="email" class="input-label">Email address</label>
+          </div>
+          <button type="submit" class="btn btn-secondary" id="subscribe">
+            Subscribe
+          </button>
+        </form>
       </div>
 
       <!-- copyright start -->
-      <div class="copyright">
-        <p>&copy; 2021.</p>
+      <div class="footy-end copyright">
+        <p class="copyright-text">&copy; LuxLiving A/S 2021</p>
       </div>
       <!-- copyright end -->
     </footer>
-
-    <!-- JS scripts start -->
-    <script src="../../js/scripts.js"></script>
   </body>
 </html>
