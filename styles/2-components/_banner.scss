@@ -5,4 +5,14 @@
   background: url("/images/andrew-barrowman-5CYjHn5Cc0g-unsplash.jpg") no-repeat
     right top;
   background-size: cover;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: $max-s) {
+  .banner {
+    padding-left: 4rem;
+  }
 }

@@ -18,16 +18,27 @@ main {
 
 /* --- INDEX PAGE --- */
 #topic {
-  @include row-flex;
+  display: grid;
+  grid-template-rows: 20% 80%;
   margin: 2.5rem auto;
   padding: 0 2rem 0 2rem;
 
-  .top-wrapper {
-    @include grid-2-cols;
+  .top-wrapper,
+  .top-wrapper-events {
+    display: grid;
     place-items: baseline;
-    justify-content: space-between;
     gap: 5rem;
   }
+
+  .top-wrapper {
+    grid-template-columns: auto 16%;
+  }
+
+  .top-wrapper-events {
+    display: grid;
+    grid-template-columns: auto 30%;
+  }
+
   .topic-title {
     text-transform: uppercase;
     font-weight: 650;
@@ -50,11 +61,6 @@ main {
       display: inline-block;
       scroll-snap-align: content-container;
     }
-  }
-
-  // fixed width when there are less than 4 event cards
-  .events {
-    min-width: 100vw;
   }
 }
 
@@ -84,6 +90,7 @@ main {
       margin: 0 0 0 2rem;
     }
   }
+
   .col-left {
     flex-grow: 1;
     flex-basis: 200px;
