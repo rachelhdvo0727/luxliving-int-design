@@ -933,6 +933,14 @@ main {
   #topic .topic-title {
     margin: 0 0 0 2rem;
   }
+  #topic .top-wrapper-events {
+    grid-template-columns: auto 16%;
+  }
+  #topic .articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
 
   .col-left {
     flex-grow: 1;

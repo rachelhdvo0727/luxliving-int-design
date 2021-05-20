@@ -89,6 +89,14 @@ main {
     .topic-title {
       margin: 0 0 0 2rem;
     }
+
+    .top-wrapper-events {
+      grid-template-columns: auto 16%;
+    }
+
+    .articles {
+      @include grid-4-cols;
+    }
   }
 
   .col-left {
