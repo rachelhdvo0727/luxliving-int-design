@@ -12,19 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap"
       rel="stylesheet"
     />
-    <!-- Bootstrap core CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
-      crossorigin="anonymous"
-    /> -->
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Custom styles -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <!-- Custom fonts -->
@@ -190,13 +180,155 @@
     <main>
       <!-- banner start -->
       <div class="banner">
-        <div class="">
-          <h1 class="display-1">Help</h1>
-        </div>
+        <h1 class="display-1">Help</h1>
       </div>
       <!-- banner end -->
+      <section id="topic" class="content-container help-tabs-section">
+        <div class="help-tabs">
+          <input type="radio" name="tabs" id="tab-1" class="tab" checked />
+          <input type="radio" name="tabs" id="tab-2" class="tab" />
+          <input type="radio" name="tabs" id="tab-3" class="tab" />
 
-      <section id="contact">
+          <ul class="tabs">
+            <li class="tab">
+              <label for="tab-1" class="tab-label display-6">Magazine</label>
+            </li>
+            <li class="tab">
+              <label for="tab-2" class="tab-label display-6"
+                >Subscription</label
+              >
+            </li>
+            <li class="tab">
+              <label for="tab-3" class="tab-label display-6">Privacy</label>
+            </li>
+          </ul>
+          <!-- TODO: change lorum ipsum text to real text -->
+          <div class="tab-content">Lorem ipsum 1</div>
+          <div class="tab-content">Lorem ipsum 2</div>
+          <div class="tab-content">Lorem ipsum 3</div>
+        </div>
+      </section>
+
+      <section id="topic" class="content-container help-faq-section">
+        <div class="top-wrapper">
+          <h2 class="topic-title display-2">FAQ</h2>
+        </div>
+        <div class="faq-box">
+          <ul>
+            <li>
+              <details>
+                <summary class="ques">
+                  <span class="ques-number">1.</span>How do I change my current
+                  subscription?
+                </summary>
+                <div class="answer">
+                  <p>
+                    You can go to your Account Settings and change it. The new
+                    subscription will be in affect the following month.
+                  </p>
+                  <p>
+                    Simply click on your profil picture at the top right corner
+                    of website and then:
+                    <br />
+                    <span>
+                      Account Settings → click on "Subscription" section → click
+                      on "Change subscription"
+                    </span>
+                  </p>
+                  <p>
+                    If you change it after the 15th of the month, the new
+                    subscription will not be applied the following month but the
+                    month after that.
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="ques">
+                  <span class="ques-number">2.</span>How do I put my
+                  subscription on pause?
+                </summary>
+                <div class="answer">
+                  <p>
+                    You can go to your Account Settings and change it. The
+                    change will take affect the following month.
+                  </p>
+                  <p>
+                    Simply click on your profil picture at the top right corner
+                    of website and then:
+                    <br />
+                    <span>
+                      Account Settings → click on "Subscription" section → click
+                      on "Set on pause"
+                    </span>
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="ques">
+                  <span class="ques-number">3.</span>How do I send my writings
+                  to the magazine?
+                </summary>
+                <div class="answer">
+                  <p>
+                    As a reader, you can also send us your writings on interior
+                    design and other design topics. <br />
+                    You can send us your writings to the following email:
+                    <i>writer@luxliving.com</i>
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="ques">
+                  <span class="ques-number">4.</span>How do I change frequency
+                  of receiving newsletters?
+                </summary>
+                <div class="answer">
+                  <p>
+                    You can change how often LuxLiving communicate with you by
+                    customizing your communication preferences in Account
+                    Settings
+                  </p>
+                  <p>
+                    Simply click on your profil picture at the top right corner
+                    of website and then:
+                    <br />
+                    <span>
+                      Account Settings → click on "Communication" section
+                    </span>
+                  </p>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="ques">
+                  <span class="ques-number">5.</span> Can I delete my account?
+                </summary>
+                <div class="answer">
+                  <p>Yes, you can, even though we are sad to see you go.</p>
+                  <p>
+                    After 14 days, your account will be totally deleted from our
+                    database. You will receive a confirmation email from us.
+                  </p>
+                  <p>
+                    The "Delete" button can be found by going through these
+                    following steps:
+                    <br />
+                    <span> Account Settings → click on "Account" section </span>
+                  </p>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="topic" class="content-container help-contact-section">
         <h5 class="display-5">Can’t find the answer? Contact us here</h5>
         <form id="contact-form">
           <fieldset class="col col-left">

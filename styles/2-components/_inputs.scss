@@ -132,6 +132,7 @@ nav .search-bar input[type="search"] {
 
 @media (min-width: $max-s) {
   .input-container {
-    max-width: 44vw;
+    // max-width: 44vw;
+    width: unset;
   }
 }

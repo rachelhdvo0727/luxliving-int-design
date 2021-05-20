@@ -1,0 +1,73 @@
+/* Internal */
+@import "../0-base/index";
+@import "../1-mixins/mixins";
+@import "../2-components/components";
+
+@import "../plugins/icofont.min.css"; /* icofont icon font */
+@import "../plugins/fontawesome-all.min.css"; /* fontawesome icon font */
+
+/* --- INDEX PAGE --- */
+#topic {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  margin: 2.5rem auto;
+  padding: 0 2rem 0 2rem;
+
+  .top-wrapper,
+  .top-wrapper-events {
+    display: grid;
+    place-items: baseline;
+    gap: 5rem;
+  }
+
+  .top-wrapper {
+    grid-template-columns: auto 16%;
+  }
+
+  .top-wrapper-events {
+    display: grid;
+    grid-template-columns: auto 30%;
+  }
+
+  .topic-title {
+    text-transform: uppercase;
+    font-weight: 650;
+
+    .see-all {
+      text-transform: none;
+    }
+  }
+
+  .articles,
+  .events {
+    overflow: auto;
+    white-space: nowrap;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: x;
+
+    .card-article,
+    .card-event {
+      display: inline-block;
+      scroll-snap-align: content-container;
+    }
+  }
+}
+
+@media (min-width: $max-s) {
+  #topic {
+    padding-top: 1rem;
+
+    .topic-title {
+      margin: 0 0 0 2rem;
+    }
+
+    .top-wrapper-events {
+      grid-template-columns: auto 16%;
+    }
+
+    .articles {
+      @include grid-4-cols;
+    }
+  }
+}

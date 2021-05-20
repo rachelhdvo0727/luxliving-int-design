@@ -2,10 +2,18 @@
 @import "plugins/icofont.min.css"; /* icofont icon font */
 @import "plugins/fontawesome-all.min.css"; /* fontawesome icon font */
 
+/* Bootstrap partials */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/nav";
+
 /* Internal */
 @import "./0-base/index";
 @import "./1-mixins/mixins";
 @import "./2-components/components";
+@import "./3-pages/pages.scss";
 
 /*====================================
     02 -  Styles
@@ -16,97 +24,11 @@ main {
   margin-top: 6vh;
 }
 
-/* --- INDEX PAGE --- */
-#topic {
-  display: grid;
-  grid-template-rows: 20% 80%;
-  margin: 2.5rem auto;
-  padding: 0 2rem 0 2rem;
-
-  .top-wrapper,
-  .top-wrapper-events {
-    display: grid;
-    place-items: baseline;
-    gap: 5rem;
-  }
-
-  .top-wrapper {
-    grid-template-columns: auto 16%;
-  }
-
-  .top-wrapper-events {
-    display: grid;
-    grid-template-columns: auto 30%;
-  }
-
-  .topic-title {
-    text-transform: uppercase;
-    font-weight: 650;
-
-    .see-all {
-      text-transform: none;
-    }
-  }
-
-  .articles,
-  .events {
-    overflow: auto;
-    white-space: nowrap;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(300px);
-    scroll-snap-type: x;
-
-    .card-article,
-    .card-event {
-      display: inline-block;
-      scroll-snap-align: content-container;
-    }
-  }
-}
-
-/* --- HELP PAGE --- */
-#contact h5 {
-  margin-left: 3rem;
-}
-#contact-form {
-  @include row-flex;
-  justify-content: center;
-  padding: 2.5rem 2rem;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.hide {
-  display: none;
-}
-
-@media (min-width: $max-s) {
-  #topic {
-    padding-top: 1rem;
-
-    .topic-title {
-      margin: 0 0 0 2rem;
-    }
-
-    .top-wrapper-events {
-      grid-template-columns: auto 16%;
-    }
-
-    .articles {
-      @include grid-4-cols;
-    }
-  }
-
-  .col-left {
-    flex-grow: 1;
-    flex-basis: 200px;
-  }
-  .col-right {
-    flex-grow: 2;
-    flex-basis: 300px;
-  }
+@media (min-width: $max-l) {
+  // #topic {
+  //   padding-left: 5rem;
+  //   padding-right: 5rem;
+  // }
 }
 
 .border-top {

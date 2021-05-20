@@ -1,0 +1,22 @@
+{
+  "name": "luxliving-int-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachelhdvo0727/luxliving-int-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachelhdvo0727/luxliving-int-design/issues"
+  },
+  "homepage": "https://github.com/rachelhdvo0727/luxliving-int-design#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  }
+}
