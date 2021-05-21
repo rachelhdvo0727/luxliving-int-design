@@ -4,21 +4,20 @@ main#sign-in-page {
   #sign-in {
     margin: auto;
 
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 4rem;
+    @include column-flex;
+    justify-content: space-evenly;
+    height: 100vh;
   }
 }
 
 .signin-top {
   @include grid-2-rows;
-  margin: 3rem;
+  margin: 1rem 0 0 3rem;
 
   h1.signin-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
-
 #signin-form {
   padding: 0 2rem;
   @include column-flex;
@@ -65,7 +64,22 @@ main#sign-in-page {
 }
 
 @media (min-width: $max-l) {
-  main#sign-in-page #sign-in {
-    width: 600px;
+  main#sign-in-page {
+    #sign-in {
+      width: 600px;
+      //   height: 80vh;
+      margin-top: 5vh;
+      max-height: 70vh;
+    }
+  }
+
+  .signin-top .back {
+    position: absolute;
+    left: 20rem;
+    top: 15.3vh;
+  }
+
+  .newuser-container {
+    padding-top: 4rem;
   }
 }
