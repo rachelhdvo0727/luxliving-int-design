@@ -13,7 +13,11 @@ a {
 .link {
   color: $white;
   transition: color 0.3s ease;
-  
+
+  &:visited {
+    color: $white;
+  }
+
   &-navi {
     &:hover,
     &:active {
@@ -44,5 +48,19 @@ a {
 .see-all {
   &::after {
     content: " →";
+  }
+}
+
+.back {
+  color: $black;
+
+  &::before {
+    content: "←  ";
+  }
+
+  &:hover,
+  &:active {
+    color: $tertiary;
+    font-weight: bolder;
   }
 }

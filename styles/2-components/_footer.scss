@@ -37,7 +37,11 @@ footer#footy {
 
 #newsletter-form {
   @include row-flex;
-  align-items: center;
+  align-items: flex-start;
+
+  .input-container {
+    margin-left: 0;
+  }
 }
 
 .some {
@@ -54,6 +58,7 @@ footer#footy {
 #newsletter-form .email-sub {
   margin: 0 0.8rem 0 0;
 }
+
 @media (min-width: $max-s) {
   footer#footy {
     display: grid;

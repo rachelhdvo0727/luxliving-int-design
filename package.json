@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/rachelhdvo0727/luxliving-int-design#readme",
   "dependencies": {
-    "bootstrap": "^5.0.1"
+    "animate.css": "^4.1.1"
   }
 }
