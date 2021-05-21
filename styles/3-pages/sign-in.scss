@@ -1,0 +1,85 @@
+main#sign-in-page {
+  display: flex;
+
+  #sign-in {
+    margin: auto;
+
+    @include column-flex;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+}
+
+.signin-top {
+  @include grid-2-rows;
+  margin: 1rem 0 0 3rem;
+
+  h1.signin-title {
+    font-size: 2.5rem;
+  }
+}
+#signin-form {
+  padding: 0 2rem;
+  @include column-flex;
+  justify-content: space-between;
+
+  p:first-child {
+    margin-left: 0.8rem;
+  }
+}
+
+.form-CTA {
+  @include row-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button[type="submit"] {
+    align-self: flex-end;
+    margin-right: 0.8rem;
+  }
+  .link-forgot {
+    color: $black;
+    text-decoration: underline;
+    margin: 0 0.8rem;
+
+    &:hover,
+    &:active {
+      color: $tertiary;
+    }
+  }
+}
+
+.newuser-container {
+  text-align: center;
+
+  .btn .sign-up {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: $max-s) {
+  .signin-top {
+    grid-template-rows: auto 60%;
+  }
+}
+
+@media (min-width: $max-l) {
+  main#sign-in-page {
+    #sign-in {
+      width: 600px;
+      //   height: 80vh;
+      margin-top: 5vh;
+      max-height: 70vh;
+    }
+  }
+
+  .signin-top .back {
+    position: absolute;
+    left: 20rem;
+    top: 15.3vh;
+  }
+
+  .newuser-container {
+    padding-top: 4rem;
+  }
+}

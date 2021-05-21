@@ -187,7 +187,51 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main id="sign-in-page">
+      <section id="sign-in">
+        <div class="signin-top">
+          <a href="../index.html" class="back">Back</a>
+          <h1 class="display-1 signin-title">SIGN IN</h1>
+        </div>
+
+        <form role="form" action="#" method="post" id="signin-form">
+          <p>Welcome back to LuxLiving</p>
+          <div class="input-container">
+            <input
+              type="email"
+              class="input"
+              name="email"
+              pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+              placeholder="Enter your email address"
+              required
+            />
+            <label for="email" class="input-label">Email address</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              class="input"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <label for="email" class="input-label">Password</label>
+          </div>
+          <div class="form-CTA">
+            <a href="#" class="link-forgot">I forgot my password</a>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+
+        <div class="newuser-container">
+          <h5>Don't have an account yet?</h5>
+          <p>You can sign up and create an account.</p>
+          <a class="btn btn-secondary sign-up" href="sign-up.html">
+            Create an account
+          </a>
+        </div>
+      </section>
+    </main>
     <footer id="footy">
       <div class="footy-leftcol contact-info">
         <div class="footy-containers">
@@ -216,13 +260,13 @@
           <h6>Customer service</h6>
           <ul>
             <li>
-              <a href="help.html">Help</a>
+              <a class="link" href="help.html">Help</a>
             </li>
             <li>
-              <a href="help.html">FAQ</a>
+              <a class="link" href="help.html">FAQ</a>
             </li>
             <li>
-              <a href="public-subscriptions.html">Subscriptions</a>
+              <a class="link" href="public-subscriptions.html">Subscriptions</a>
             </li>
           </ul>
         </div>
@@ -255,11 +299,12 @@
           <div class="input-container">
             <input
               type="email"
-              class="input"
+              class=""
               name="email"
-              placeholder="Email adresse"
+              placeholder="Email address"
+              style="box-shadow: unset"
             />
-            <label for="email" class="input-label">Email address</label>
+            <!-- <label for="email" class="input-label">Email address</label> -->
           </div>
           <button type="submit" class="btn btn-secondary" id="subscribe">
             Subscribe
