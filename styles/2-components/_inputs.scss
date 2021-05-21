@@ -24,7 +24,8 @@ textarea {
   // }
 }
 // for Chrome, when input is not focused
-input.input::placeholder {
+input.input::placeholder,
+textarea::placeholder {
   color: transparent;
 }
 
@@ -76,6 +77,9 @@ textarea:focus + label {
   transform: translateY(-6.6em) scale(0.9);
   color: $tertiary;
   width: max-content;
+  background-color: white;
+  padding: 1px 5px;
+  font-weight: 550;
 }
 
 textarea {
