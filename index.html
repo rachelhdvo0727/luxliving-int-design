@@ -438,7 +438,13 @@
           id="newsletter-form"
         >
           <div class="input-container email-sub">
-            <input type="email" class="input" name="email" />
+            <input
+              type="email"
+              class="input"
+              name="email"
+              onfocus="this.placeholder = 'Enter your email'"
+              onblur="this.placeholder = ''"
+            />
             <label for="email" class="input-label">Email address</label>
           </div>
           <button type="submit" class="btn btn-secondary" id="subscribe">

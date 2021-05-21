@@ -10,16 +10,22 @@ textarea {
   line-height: 1;
   outline: 0;
   appearance: none;
+  box-shadow: $md-shadow;
 
   &:focus {
     outline: none;
   }
 
   &::placeholder,
+  &:-moz-placeholder,
   &::-webkit-input-placeholder,
-  &:-moz-placeholder {
+  &:-ms-input-placeholder {
     color: transparent;
   }
+}
+// for Chrome, when input is not focused
+input::placeholder {
+  color: transparent;
 }
 
 .input-container {
@@ -36,7 +42,8 @@ textarea {
     box-shadow: $md-shadow;
   }
 
-  &:focus {
+  &:focus,
+  &:not(:focus) {
     box-shadow: $md-shadow;
   }
 }
@@ -48,7 +55,7 @@ label,
 
   opacity: 1;
   color: $light-gray;
-  transform: translateY(-1.8em);
+  transform: translateY(-2em);
   transform-origin: 0 0;
   transition: all 0.3s;
 }
