@@ -10,16 +10,22 @@ textarea {
   line-height: 1;
   outline: 0;
   appearance: none;
+  box-shadow: $md-shadow;
 
   &:focus {
     outline: none;
   }
 
-  &::placeholder,
-  &::-webkit-input-placeholder,
-  &:-moz-placeholder {
-    color: transparent;
-  }
+  // ::placeholder,
+  // :-moz-placeholder,
+  // ::-webkit-input-placeholder,
+  // :-ms-input-placeholder {
+  //   color: transparent;
+  // }
+}
+// for Chrome, when input is not focused
+input::placeholder {
+  color: transparent;
 }
 
 .input-container {
@@ -37,7 +43,7 @@ textarea {
   }
 
   &:focus {
-    box-shadow: $md-shadow;
+    box-shadow: 0px 3px 10px rgba(37, 76, 80, 0.4);
   }
 }
 
@@ -49,7 +55,7 @@ label,
   opacity: 1;
   color: $light-gray;
   transform: translateY(-1.8em);
-  transform-origin: 0 0;
+  transform-origin: 0% 0%;
   transition: all 0.3s;
 }
 
@@ -58,7 +64,10 @@ label,
 }
 
 .input:focus + label.input-label {
-  transform: translateY(-2.8em) scale(0.9);
+  transform: translateY(-2.9em) scale(1);
+  background-color: white;
+  padding: 1px 5px;
+  font-weight: 550;
   color: $tertiary;
   width: max-content;
 }
@@ -90,7 +99,7 @@ nav .search-bar input[type="search"] {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-   box-shadow: unset;
+  box-shadow: unset;
 
   &:hover {
     background-color: $white;
