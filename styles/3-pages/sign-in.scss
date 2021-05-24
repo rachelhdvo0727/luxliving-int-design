@@ -4,14 +4,14 @@ main#sign-in-page {
   #sign-in {
     margin: auto;
 
-    @include column-flex;
+    @include flex(column wrap);
     justify-content: space-evenly;
     height: 100vh;
   }
 }
 
 .signin-top {
-  @include grid-2-rows;
+  @include grid-rows(repeat(2, 1fr), 1rem);
   margin: 1rem 0 0 3rem;
 
   h1.signin-title {
@@ -20,7 +20,8 @@ main#sign-in-page {
 }
 #signin-form {
   padding: 0 2rem;
-  @include column-flex;
+
+  @include flex(column wrap);
   justify-content: space-between;
 
   p:first-child {
@@ -29,7 +30,7 @@ main#sign-in-page {
 }
 
 .form-CTA {
-  @include row-flex;
+  @include flex(row wrap);
   justify-content: space-between;
   align-items: center;
 

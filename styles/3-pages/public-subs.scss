@@ -1,0 +1,158 @@
+.sub-page-title {
+  padding-top: 9vh;
+  margin-left: 2rem;
+}
+
+#public-subs .banner {
+  background: url("/images/pexels-subscriptions-cottonbro-4046164.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+section.all-subscriptions,
+.settings,
+.settings > button.btn {
+  @include flex(row wrap);
+}
+
+section.all-subscriptions {
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.sub {
+  box-shadow: $lg-shadow;
+  border-radius: 10px;
+  background-color: #fff;
+
+  padding: 2rem;
+  margin: 1rem auto;
+
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+  @include grid-rows(50px auto 80px, 1.5rem);
+
+  ul li {
+    list-style: disc;
+    line-height: $line-height-p;
+    margin: 0 0 0 1rem;
+    color: $black;
+
+    &::marker {
+      content: "✓";
+    }
+    span {
+      margin-left: 0.8rem;
+    }
+  }
+
+  .price-action {
+    place-self: center;
+    
+    p {
+      color: $tertiary;
+      font-weight: 550;
+    }
+    a.btn {
+      width: -moz-fit-content;
+      width: -webkit-fit-content;
+      width: fit-content;
+    }
+  }
+
+  &:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    z-index: 20;
+    // background-color: $primary;
+    // color: $white;
+
+    h2,
+    ul li {
+      color: $tertiary;
+    }
+
+    ul li span {
+      font-weight: 550;
+    }
+  }
+}
+
+.other-subs {
+  @include flex(row wrap);
+  justify-content: space-around;
+
+  a.btn {
+    min-width: -moz-fit-content;
+  }
+
+  .card-event {
+    padding: 1rem 0 1rem 1.3rem;
+
+    .other-sub-img {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .price-action {
+    @include grid-cols(auto 30%, 0rem);
+    padding: 1rem 1rem 0 0;
+  }
+}
+
+.settings {
+  justify-content: flex-end;
+
+  button.btn {
+    min-width: 67px;
+    justify-content: space-evenly;
+  }
+
+  .sort {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: $max-s) {
+  section.all-subscriptions {
+    @include grid-cols(repeat(3, 1fr), 1rem);
+  }
+
+  .other-subs {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $max-m) {
+  //   .sub-page-title {
+  //     padding-top: auto;
+  //   }
+  section.all-subscriptions {
+    // padding: 2rem 5rem;
+  }
+  .other-subs {
+    justify-content: center;
+    padding-left: 2rem;
+    .card-event {
+      padding: 1rem;
+    }
+  }
+  .settings {
+    padding: 0 2rem 0 0;
+  }
+}
+
+@media (min-width: $max-ml) {
+  .sub-page-title {
+    margin-left: 5rem;
+  }
+  section.all-subscriptions {
+    margin-bottom: 5rem;
+    .sub {
+      width: 400px;
+    }
+  }
+  .settings {
+    padding: 0;
+  }
+}

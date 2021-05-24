@@ -15,7 +15,7 @@ footer#footy {
 
   .footy-rightcol,
   .footy-leftcol {
-    @include grid-2-cols;
+    @include grid-cols(repeat(2, 1fr), 1rem);
     justify-content: space-between;
   }
 }
@@ -36,7 +36,7 @@ footer#footy {
 }
 
 #newsletter-form {
-  @include row-flex;
+  @include flex(row wrap);
   align-items: flex-start;
 
   .input-container {

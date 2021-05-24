@@ -120,12 +120,22 @@ nav {
 .desktop-links:hover {
   background-color: $tertiary;
 }
+.test:active .dropdown {
+  display: block;
+}
 
 /* Slide menu dropdown from the top */
 #menu-toggle input:checked ~ .dropdown,
-.desktop-links:first-child:hover ~ .dropdown {
+label.categories-btn:first-child:checked ~ .dropdown {
   top: 6.5vh;
   transform: none;
+}
+
+/* Categories button */
+label.categories-btn {
+  margin: 0;
+  transform: none;
+  cursor: pointer;
 }
 
 .dropdown:target {
@@ -160,11 +170,10 @@ nav {
 @media (min-width: $max-s) {
   nav {
     grid-template-columns: auto auto 300px;
-    // grid-template-columns: auto auto 0 300px;
   }
 
   #menu-toggle {
-    @include row-flex;
+    @include flex(row wrap);
     justify-content: space-evenly;
   }
 
@@ -176,6 +185,7 @@ nav {
   #menu-toggle input {
     display: none;
   }
+
   .dropdown {
     height: -moz-fit-content;
     height: fit-content;
@@ -183,7 +193,7 @@ nav {
     transition: unset;
 
     ul.category-list {
-      @include grid-5-cols;
+      @include grid-cols(repeat(5, 1fr), 1rem);
 
       li.category:last-child {
         display: none;

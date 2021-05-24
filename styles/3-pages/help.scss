@@ -130,7 +130,7 @@
 }
 
 #contact-form {
-  @include row-flex;
+  @include flex(row wrap);
   justify-content: center;
   padding: 2.5rem 2rem;
 }

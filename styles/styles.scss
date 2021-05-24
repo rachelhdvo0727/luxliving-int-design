@@ -43,33 +43,3 @@ main {
 .logo {
   max-width: 110px;
 }
-
-.pull-right {
-  text-align: right;
-}
-.pull-left {
-  text-align: left;
-}
-
-.p-hdr-left {
-  padding: 0 0 0 20px;
-}
-.p-hdr-right {
-  padding: 0 20px 0 0;
-}
-
-.m-hdr-right {
-  margin: -2px 0 0 0;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.display-flex > [class*="col-"] {
-  display: flex;
-}

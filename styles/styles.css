@@ -89,7 +89,7 @@ label {
 /* --- Contents --- */
 h1,
 .display-1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 1.1;
   color: #323232;
@@ -169,7 +169,7 @@ blockquote {
 @media (max-width: 991.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 24px);
+    font-size: calc(4rem - 24px);
   }
 
   h2,
@@ -200,7 +200,7 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 32px);
+    font-size: calc(4rem - 32px);
   }
 
   h2,
@@ -221,7 +221,7 @@ blockquote {
 @media (max-width: 575.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 37px);
+    font-size: calc(4rem - 37px);
   }
 
   h2,
@@ -614,11 +614,22 @@ nav {
   background-color: #254c50;
 }
 
+.test:active .dropdown {
+  display: block;
+}
+
 /* Slide menu dropdown from the top */
 #menu-toggle input:checked ~ .dropdown,
-.desktop-links:first-child:hover ~ .dropdown {
+label.categories-btn:first-child:checked ~ .dropdown {
   top: 6.5vh;
   transform: none;
+}
+
+/* Categories button */
+label.categories-btn {
+  margin: 0;
+  transform: none;
+  cursor: pointer;
 }
 
 .dropdown:target {
@@ -822,6 +833,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
+  transition: transform 0.2s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -830,10 +842,7 @@ footer#footy .footy-leftcol {
 .card-article .card-title {
   margin-top: 1rem;
   font-weight: 600;
-}
-.card-article .card-title:hover {
-  color: #c4afa0;
-  cursor: pointer;
+  color: #323232;
 }
 .card-article .img-responsive {
   display: block;
@@ -843,6 +852,18 @@ footer#footy .footy-leftcol {
 }
 .card-article p {
   white-space: initial;
+  color: #323232;
+}
+.card-article:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.card-article:hover h2 {
+  color: #254c50;
 }
 
 @media (min-width: 767.98px) {
@@ -860,14 +881,12 @@ footer#footy .footy-leftcol {
   white-space: pre-line;
   width: 200px;
   height: 100%;
+  transition: transform 0.2s ease-in-out;
 }
 .card-event .event-content .card-title {
   margin-top: 1rem;
   font-weight: 600;
-}
-.card-event .event-content .card-title:hover {
-  color: #c4afa0;
-  cursor: pointer;
+  color: #323232;
 }
 .card-event .event-content .img-responsive {
   display: block;
@@ -877,6 +896,19 @@ footer#footy .footy-leftcol {
 }
 .card-event .event-content p {
   white-space: initial;
+  color: #323232;
+}
+.card-event .event-content:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.card-event .event-content:hover h2,
+.card-event .event-content:hover h4 {
+  color: #254c50;
 }
 
 @media (min-width: 767.98px) {
@@ -964,7 +996,7 @@ label {
 /* --- Contents --- */
 h1,
 .display-1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 1.1;
   color: #323232;
@@ -1044,7 +1076,7 @@ blockquote {
 @media (max-width: 991.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 24px);
+    font-size: calc(4rem - 24px);
   }
 
   h2,
@@ -1075,7 +1107,7 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 32px);
+    font-size: calc(4rem - 32px);
   }
 
   h2,
@@ -1096,7 +1128,7 @@ blockquote {
 @media (max-width: 575.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 37px);
+    font-size: calc(4rem - 37px);
   }
 
   h2,
@@ -1489,11 +1521,22 @@ nav {
   background-color: #254c50;
 }
 
+.test:active .dropdown {
+  display: block;
+}
+
 /* Slide menu dropdown from the top */
 #menu-toggle input:checked ~ .dropdown,
-.desktop-links:first-child:hover ~ .dropdown {
+label.categories-btn:first-child:checked ~ .dropdown {
   top: 6.5vh;
   transform: none;
+}
+
+/* Categories button */
+label.categories-btn {
+  margin: 0;
+  transform: none;
+  cursor: pointer;
 }
 
 .dropdown:target {
@@ -1697,6 +1740,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
+  transition: transform 0.2s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -1705,10 +1749,7 @@ footer#footy .footy-leftcol {
 .card-article .card-title {
   margin-top: 1rem;
   font-weight: 600;
-}
-.card-article .card-title:hover {
-  color: #c4afa0;
-  cursor: pointer;
+  color: #323232;
 }
 .card-article .img-responsive {
   display: block;
@@ -1718,6 +1759,18 @@ footer#footy .footy-leftcol {
 }
 .card-article p {
   white-space: initial;
+  color: #323232;
+}
+.card-article:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.card-article:hover h2 {
+  color: #254c50;
 }
 
 @media (min-width: 767.98px) {
@@ -1735,14 +1788,12 @@ footer#footy .footy-leftcol {
   white-space: pre-line;
   width: 200px;
   height: 100%;
+  transition: transform 0.2s ease-in-out;
 }
 .card-event .event-content .card-title {
   margin-top: 1rem;
   font-weight: 600;
-}
-.card-event .event-content .card-title:hover {
-  color: #c4afa0;
-  cursor: pointer;
+  color: #323232;
 }
 .card-event .event-content .img-responsive {
   display: block;
@@ -1752,6 +1803,19 @@ footer#footy .footy-leftcol {
 }
 .card-event .event-content p {
   white-space: initial;
+  color: #323232;
+}
+.card-event .event-content:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.card-event .event-content:hover h2,
+.card-event .event-content:hover h4 {
+  color: #254c50;
 }
 
 @media (min-width: 767.98px) {
@@ -1765,21 +1829,23 @@ footer#footy .footy-leftcol {
 #topic {
   display: grid;
   grid-template-rows: 20% 80%;
+  gap: 1rem;
   margin: 2.5rem auto;
   padding: 0 2rem 0 2rem;
 }
-#topic .top-wrapper,
-#topic .top-wrapper-events {
-  display: grid;
-  place-items: baseline;
-  gap: 5rem;
-}
 #topic .top-wrapper {
+  display: grid;
   grid-template-columns: auto 16%;
+  gap: 5rem;
 }
 #topic .top-wrapper-events {
   display: grid;
   grid-template-columns: auto 30%;
+  gap: 5rem;
+}
+#topic .top-wrapper,
+#topic .top-wrapper-events {
+  place-items: baseline;
 }
 #topic .topic-title {
   text-transform: uppercase;
@@ -1815,6 +1881,18 @@ footer#footy .footy-leftcol {
     grid-template-columns: auto 16%;
   }
   #topic .articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  #topic .articles {
+    overflow: hidden;
+    white-space: wrap;
+    scroll-snap-type: unset;
+    scroll-snap-points-y: unset;
+    scroll-snap-type: unset;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -1900,7 +1978,7 @@ label {
 /* --- Contents --- */
 h1,
 .display-1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 1.1;
   color: #323232;
@@ -1980,7 +2058,7 @@ blockquote {
 @media (max-width: 991.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 24px);
+    font-size: calc(4rem - 24px);
   }
 
   h2,
@@ -2011,7 +2089,7 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 32px);
+    font-size: calc(4rem - 32px);
   }
 
   h2,
@@ -2032,7 +2110,7 @@ blockquote {
 @media (max-width: 575.98px) {
   h1,
 .display-1 {
-    font-size: calc(4.5rem - 37px);
+    font-size: calc(4rem - 37px);
   }
 
   h2,
@@ -2425,11 +2503,22 @@ nav {
   background-color: #254c50;
 }
 
+.test:active .dropdown {
+  display: block;
+}
+
 /* Slide menu dropdown from the top */
 #menu-toggle input:checked ~ .dropdown,
-.desktop-links:first-child:hover ~ .dropdown {
+label.categories-btn:first-child:checked ~ .dropdown {
   top: 6.5vh;
   transform: none;
+}
+
+/* Categories button */
+label.categories-btn {
+  margin: 0;
+  transform: none;
+  cursor: pointer;
 }
 
 .dropdown:target {
@@ -2633,6 +2722,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
+  transition: transform 0.2s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -2641,10 +2731,7 @@ footer#footy .footy-leftcol {
 .card-article .card-title {
   margin-top: 1rem;
   font-weight: 600;
-}
-.card-article .card-title:hover {
-  color: #c4afa0;
-  cursor: pointer;
+  color: #323232;
 }
 .card-article .img-responsive {
   display: block;
@@ -2654,6 +2741,18 @@ footer#footy .footy-leftcol {
 }
 .card-article p {
   white-space: initial;
+  color: #323232;
+}
+.card-article:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.card-article:hover h2 {
+  color: #254c50;
 }
 
 @media (min-width: 767.98px) {
@@ -2671,14 +2770,12 @@ footer#footy .footy-leftcol {
   white-space: pre-line;
   width: 200px;
   height: 100%;
+  transition: transform 0.2s ease-in-out;
 }
 .card-event .event-content .card-title {
   margin-top: 1rem;
   font-weight: 600;
-}
-.card-event .event-content .card-title:hover {
-  color: #c4afa0;
-  cursor: pointer;
+  color: #323232;
 }
 .card-event .event-content .img-responsive {
   display: block;
@@ -2688,6 +2785,19 @@ footer#footy .footy-leftcol {
 }
 .card-event .event-content p {
   white-space: initial;
+  color: #323232;
+}
+.card-event .event-content:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.card-event .event-content:hover h2,
+.card-event .event-content:hover h4 {
+  color: #254c50;
 }
 
 @media (min-width: 767.98px) {
@@ -2940,6 +3050,152 @@ main#sign-in-page #sign-in {
     padding-top: 4rem;
   }
 }
+.sub-page-title {
+  padding-top: 9vh;
+  margin-left: 2rem;
+}
+
+#public-subs .banner {
+  background: url("/images/pexels-subscriptions-cottonbro-4046164.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+section.all-subscriptions,
+.settings,
+.settings > button.btn {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section.all-subscriptions {
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.sub {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem auto;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+  display: grid;
+  grid-template-rows: 50px auto 80px;
+  gap: 1.5rem;
+}
+.sub ul li {
+  list-style: disc;
+  line-height: 1.6;
+  margin: 0 0 0 1rem;
+  color: #323232;
+}
+.sub ul li::marker {
+  content: "✓";
+}
+.sub ul li span {
+  margin-left: 0.8rem;
+}
+.sub .price-action {
+  place-self: center;
+}
+.sub .price-action p {
+  color: #254c50;
+  font-weight: 550;
+}
+.sub .price-action a.btn {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.sub:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  z-index: 20;
+}
+.sub:hover h2,
+.sub:hover ul li {
+  color: #254c50;
+}
+.sub:hover ul li span {
+  font-weight: 550;
+}
+
+.other-subs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.other-subs a.btn {
+  min-width: -moz-fit-content;
+}
+.other-subs .card-event {
+  padding: 1rem 0 1rem 1.3rem;
+}
+.other-subs .card-event .other-sub-img {
+  margin: 0 0 1rem 0;
+}
+.other-subs .price-action {
+  display: grid;
+  grid-template-columns: auto 30%;
+  gap: 0rem;
+  padding: 1rem 1rem 0 0;
+}
+
+.settings {
+  justify-content: flex-end;
+}
+.settings button.btn {
+  min-width: 67px;
+  justify-content: space-evenly;
+}
+.settings .sort {
+  margin-right: 1rem;
+}
+
+@media (min-width: 767.98px) {
+  section.all-subscriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .other-subs {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 991.98px) {
+  .other-subs {
+    justify-content: center;
+    padding-left: 2rem;
+  }
+  .other-subs .card-event {
+    padding: 1rem;
+  }
+
+  .settings {
+    padding: 0 2rem 0 0;
+  }
+}
+@media (min-width: 1280px) {
+  .sub-page-title {
+    margin-left: 5rem;
+  }
+
+  section.all-subscriptions {
+    margin-bottom: 5rem;
+  }
+  section.all-subscriptions .sub {
+    width: 400px;
+  }
+
+  .settings {
+    padding: 0;
+  }
+}
 /*====================================
     02 -  Styles
 =====================================*/
@@ -2960,39 +3216,6 @@ main {
 
 .logo {
   max-width: 110px;
-}
-
-.pull-right {
-  text-align: right;
-}
-
-.pull-left {
-  text-align: left;
-}
-
-.p-hdr-left {
-  padding: 0 0 0 20px;
-}
-
-.p-hdr-right {
-  padding: 0 20px 0 0;
-}
-
-.m-hdr-right {
-  margin: -2px 0 0 0;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.row.display-flex > [class*=col-] {
-  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

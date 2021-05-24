@@ -8,25 +8,20 @@
 
 /* --- INDEX PAGE --- */
 #topic {
-  display: grid;
-  grid-template-rows: 20% 80%;
+  @include grid-rows(20% 80%, 1rem);
   margin: 2.5rem auto;
   padding: 0 2rem 0 2rem;
 
+  .top-wrapper {
+    @include grid-cols(auto 16%, 5rem);
+  }
+
+  .top-wrapper-events {
+    @include grid-cols(auto 30%, 5rem);
+  }
   .top-wrapper,
   .top-wrapper-events {
-    display: grid;
     place-items: baseline;
-    gap: 5rem;
-  }
-
-  .top-wrapper {
-    grid-template-columns: auto 16%;
-  }
-
-  .top-wrapper-events {
-    display: grid;
-    grid-template-columns: auto 30%;
   }
 
   .topic-title {
@@ -67,7 +62,21 @@
     }
 
     .articles {
-      @include grid-4-cols;
+      @include grid-cols(repeat(4, 1fr), 1rem);
+    }
+  }
+}
+
+@media (min-width: $max-ml) {
+  #topic {
+    .articles {
+      overflow: hidden;
+      white-space: wrap;
+      scroll-snap-type: unset;
+      scroll-snap-points-y: unset;
+      scroll-snap-type: unset;
+
+      @include grid-cols(repeat(4, 1fr), 1rem);
     }
   }
 }
