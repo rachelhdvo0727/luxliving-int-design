@@ -12,31 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap"
       rel="stylesheet"
     />
-    <!-- Bootstrap core CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
-      crossorigin="anonymous"
-    /> -->
     <!-- Custom styles -->
     <link rel="stylesheet" href="../../styles/styles.css" />
     <!-- Custom fonts -->
-    <link rel="stylesheet" href="../../styles/plugins/icofont.css" />
+    <link rel="stylesheet" href="../styles/plugins/icofont.css" />
 
     <title>LuxLiving</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
+
+  <!-- body start -->
+
   <body>
     <header id="header">
-      <nav id="navigation" class="">
+      <nav id="navigation" class="customer-nav">
         <div class="navigation-logo">
           <a class="logo" href="../../index.html"> LuxLiving </a>
         </div>
@@ -51,16 +41,48 @@
         </div>
 
         <div id="menu-toggle">
-          <input id="dropcheck" class="" type="checkbox" />
+          <input id="dropcheck" type="checkbox" />
           <label
             for="dropcheck"
             class="link link-flat desktop-links categories-btn"
             >Categories</label
           >
           <a class="link link-flat desktop-links" href="../help.html">Help</a>
-          <a class="link link-flat desktop-links" href="../sign-in.html"
-            >Sign in</a
-          >
+          <div id="account-dropdown">
+            <input id="profile-click" type="checkbox" />
+            <label
+              for="profile-click"
+              class="link link-flat desktop-links profile"
+              >Christina
+              <img
+                src="../../images/christina-profile-icon.png"
+                alt="christina-customer-reader"
+            /></label>
+
+            <ul class="acc-dropdown-list">
+              <li>
+                <a class="link link-navi" target="_self" href="./overview.html"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a class="link link-navi" href="#" target="_self"
+                  >Saved articles</a
+                >
+              </li>
+              <li>
+                <a class="link link-navi" href="#" target="_self">Favorites</a>
+              </li>
+              <li>
+                <a class="link link-navi" href="#" target="_self">History</a>
+              </li>
+              <li>
+                <a class="link link-navi" href="./account-settings.html"
+                  >Account settings</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
           <span></span>
@@ -69,6 +91,46 @@
 
           <div class="dropdown">
             <ul class="category-list">
+              <li class="category">
+                <div class="profile">
+                  <img
+                    class="img-responsive"
+                    src="../../images/christina-profile-icon.png"
+                    alt="christina-customer-reader"
+                  />
+                  Christina Brandt
+                </div>
+                <ul class="subcat">
+                  <li>
+                    <a
+                      class="link link-navi"
+                      target="_self"
+                      href="./overview.html"
+                      >Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Saved articles</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >Favorites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="#" target="_self"
+                      >History</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link link-navi" href="./account-settings.html"
+                      >Account settings</a
+                    >
+                  </li>
+                </ul>
+              </li>
               <li class="category">
                 Residence
                 <ul class="subcat">
@@ -122,9 +184,7 @@
                     >
                   </li>
                   <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Office/</a
-                    >
+                    <a class="link link-navi" href="#" target="_self">Office</a>
                   </li>
                   <li>
                     <a class="link link-navi" href="#" target="_self"
@@ -178,21 +238,150 @@
                     <a class="link link-navi" href="#">Printed magazines</a>
                   </li>
                   <li>
-                    <a class="link link-navi" href="subscriptions.html"
+                    <a class="link link-navi" href="./subscriptions.html"
                       >Subscriptions</a
                     >
                   </li>
                 </ul>
               </li>
               <li class="category">
-                <a class="link help link-navi" href="./pages/help.html">Help</a>
+                <a class="link help link-navi" href="../sign-in.html"
+                  >Sign out</a
+                >
+              </li>
+              <li class="category">
+                <a class="link help link-navi" href="../help.html">Help</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+
+    <!-- main start -->
+    <main id="public-subs">
+      <div class="banner">
+        <h1 class="display-1">Subscriptions</h1>
+      </div>
+      <section class="content-container all-subscriptions">
+        <div class="sub sub-1">
+          <h2>Basic</h2>
+          <ul>
+            <li><span>3 issues a year sent to your home</span></li>
+            <li><span>Free access to online issues on our app</span></li>
+            <li><span>No commitments. You can unsubscribe anytime.</span></li>
+          </ul>
+          <div class="price-action">
+            <p>100,- DKK/ month</p>
+            <a class="btn btn-secondary" href="./payment.html">Buy</a>
+          </div>
+        </div>
+
+        <div class="sub sub-2">
+          <h2>Economic</h2>
+          <ul>
+            <li><span>3 issues a year sent to your home</span></li>
+            <li><span>Special issues sent to your home</span></li>
+            <li><span>Discounts on featured companies</span></li>
+            <li><span>Free access to online issues on our app</span></li>
+            <li><span>No commitments. You can unsubscribe anytime.</span></li>
+          </ul>
+          <div class="price-action">
+            <p>129,- DKK/ month</p>
+            <a class="btn btn-secondary" href="./payment.html">Buy</a>
+          </div>
+        </div>
+
+        <div class="sub sub-3">
+          <h2>Premium</h2>
+          <ul>
+            <li><span>All issues sent to your home</span></li>
+            <li><span>Special issues sent to your home</span></li>
+            <li><span>Discounts on featured companies</span></li>
+            <li>
+              <span
+                >Invitations to our yearly gala and other special events</span
+              >
+            </li>
+            <li><span>Free access to online issues on our app</span></li>
+            <li><span>No commitments. You can unsubscribe anytime.</span></li>
+          </ul>
+          <div class="price-action">
+            <p>220,- DKK/ month</p>
+            <a class="btn btn-secondary" href="./payment.html">Buy</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="topic" class="content-container">
+        <div class="settings">
+          <button class="btn btn-tertiary sort">
+            <i class="icofont-sort"></i> Sort
+          </button>
+        </div>
+        <div class="other-subs">
+          <!-- Reuse events' classes -->
+          <div class="card-event">
+            <div class="event-content">
+              <img
+                src="../../images/pexels-magazine-cottonbro-4056470.jpg"
+                class="img-responsive other-sub-img"
+                alt="subscription-1"
+              />
+              <h4 class="card-title">ILVA for LuxLiving</h4>
+              <div class="price-action">
+                <p>230,- DKK</p>
+                <a class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-event">
+            <div class="event-content">
+              <img
+                src="../../images/pexels-magazine-jess-harper-sunday-2857583.jpg"
+                class="img-responsive other-sub-img"
+                alt="subscription-2"
+              />
+              <h4 class="card-title">All 12 LuxLiving issues</h4>
+              <div class="price-action">
+                <p>200,- DKK</p>
+                <a class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-event">
+            <div class="event-content">
+              <img
+                src="../../images/pexels-magazine-sinitta-leunen-5661240.jpg"
+                class="img-responsive other-sub-img"
+                alt="subscription-3"
+              />
+              <h4 class="card-title">2 LuxLiving issues</h4>
+              <div class="price-action">
+                <p>99,- DKK</p>
+                <a class="btn btn-primary" href="./payment.html">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-event">
+            <div class="event-content">
+              <img
+                src="../../images/pexels-magazine-valeriia-miller-3392937.jpg"
+                class="img-responsive other-sub-img"
+                alt="subscription-4"
+              />
+              <h4 class="card-title">3 LuxLiving issues</h4>
+              <div class="price-action">
+                <p>120,- DKK</p>
+                <a class="btn btn-primary" href="./payment.html">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+
     <footer id="footy">
       <div class="footy-leftcol contact-info">
         <div class="footy-containers">
@@ -221,13 +410,13 @@
           <h6>Customer service</h6>
           <ul>
             <li>
-              <a href="help.html">Help</a>
+              <a href="./pages/help.html">Help</a>
             </li>
             <li>
-              <a href="help.html">FAQ</a>
+              <a href="./pages/help.html">FAQ</a>
             </li>
             <li>
-              <a href="subscriptions.html" target="_self">Subscriptions</a>
+              <a href="./subscriptions.html">Subscriptions</a>
             </li>
           </ul>
         </div>
@@ -257,13 +446,8 @@
           target="_self"
           id="newsletter-form"
         >
-          <div class="input-container">
-            <input
-              type="email"
-              class="input"
-              name="email"
-              placeholder="Email address"
-            />
+          <div class="input-container email-sub">
+            <input type="email" class="input" name="email" />
             <label for="email" class="input-label">Email address</label>
           </div>
           <button type="submit" class="btn btn-secondary" id="subscribe">
@@ -279,4 +463,5 @@
       <!-- copyright end -->
     </footer>
   </body>
+  <!-- body end -->
 </html>

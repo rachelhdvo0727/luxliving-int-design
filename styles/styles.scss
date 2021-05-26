@@ -21,18 +21,13 @@
 /* General Styles
 ================================*/
 main {
-  margin-top: 6vh;
+  margin-top: 3.5vh;
 }
 
 @media (min-width: $max-l) {
-  // #topic {
-  //   padding-left: 5rem;
-  //   padding-right: 5rem;
-  // }
-}
-
-.border-top {
-  border-top: 3px solid !important;
+  main {
+    margin-top: 6vh;
+  }
 }
 
 .seperator {

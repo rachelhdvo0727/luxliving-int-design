@@ -24,6 +24,8 @@ button {
   margin-bottom: 1rem;
   font-family: $paragraph;
   height: 35px;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 2px 8px;
   box-shadow: $md-shadow;
   color: $white;

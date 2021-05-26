@@ -72,7 +72,8 @@ nav {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-.dropdown {
+.dropdown,
+.acc-dropdown-list {
   position: absolute;
   margin: 0px 0 0 -50px;
   width: 100.22vw;
@@ -120,9 +121,6 @@ nav {
 .desktop-links:hover {
   background-color: $tertiary;
 }
-.test:active .dropdown {
-  display: block;
-}
 
 /* Slide menu dropdown from the top */
 #menu-toggle input:checked ~ .dropdown,
@@ -132,6 +130,14 @@ label.categories-btn:first-child:checked ~ .dropdown {
 }
 
 /* Categories button */
+input#dropcheck,
+input#profile-click,
+.desktop-links .profile {
+  display: none !important;
+  width: unset;
+  height: unset;
+  background: transparent;
+}
 label.categories-btn {
   margin: 0;
   transform: none;
@@ -167,9 +173,26 @@ label.categories-btn {
   display: none;
 }
 
+// Customer signed in
+.category-list .profile {
+  @include grid-cols(auto 150px, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem 0;
+
+  img {
+    width: 50px;
+  }
+}
+
 @media (min-width: $max-s) {
   nav {
     grid-template-columns: auto auto 300px;
+  }
+
+  // Customer signed in
+  nav.customer-nav {
+    grid-template-columns: auto auto 350px;
   }
 
   #menu-toggle {
@@ -182,11 +205,46 @@ label.categories-btn {
   }
 
   #menu-toggle span,
-  #menu-toggle input {
+  #menu-toggle input,
+  .category-list .category:first-child {
     display: none;
   }
 
-  .dropdown {
+  input#dropcheck,
+  input#profile-click,
+  .desktop-links .profile {
+    display: block !important;
+  }
+
+  // Desktop dropdown
+  #account-dropdown .profile {
+    @include grid-cols(auto 50px, 0rem);
+    margin: 0;
+    transform: none;
+
+    img {
+      width: 30px;
+      place-self: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // Clicking account button
+  #profile-click:checked ~ ul.acc-dropdown-list {
+    transform: none;
+    display: block;
+    width: 200px;
+  }
+
+  .acc-dropdown-list {
+    display: none;
+  }
+
+  .dropdown,
+  .acc-dropdown-list {
     height: -moz-fit-content;
     height: fit-content;
     width: max-content;
