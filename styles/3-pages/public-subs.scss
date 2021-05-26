@@ -9,8 +9,8 @@
   background-size: cover;
 }
 section.all-subscriptions,
-.settings,
-.settings > button.btn {
+#settings,
+#settings > label[for="sort"] {
   @include flex(row wrap);
 }
 
@@ -47,7 +47,7 @@ section.all-subscriptions {
 
   .price-action {
     place-self: center;
-    
+
     p {
       color: $tertiary;
       font-weight: 550;
@@ -100,17 +100,52 @@ section.all-subscriptions {
   }
 }
 
-.settings {
+#settings {
   justify-content: flex-end;
 
-  button.btn {
-    min-width: 67px;
+  .btn {
+    min-width: 80px;
     justify-content: space-evenly;
   }
 
-  .sort {
+  .btn .sort {
     margin-right: 1rem;
   }
+  .sort-list {
+    display: none;
+    position: absolute;
+    line-height: $line-height-a;
+    background: $tertiary;
+    width: -moz-fit-content;
+    padding: 1rem;
+    margin: 2rem 2.5rem;
+    color: $white;
+
+    transform-origin: 0% 0%;
+    transform: translate(0%, -123%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    li:hover {
+      cursor: pointer;
+    }
+  }
+
+  label[for="sort"] {
+    margin: 0;
+    transform: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: $white;
+    top: 9px;
+    right: 65px;
+    @include grid-cols(auto auto, 0.5rem);
+  }
+}
+
+input#sort:checked ~ .sort-list {
+  display: block;
+  transform: none;
 }
 
 @media (min-width: $max-s) {
@@ -124,12 +159,6 @@ section.all-subscriptions {
 }
 
 @media (min-width: $max-m) {
-  //   .sub-page-title {
-  //     padding-top: auto;
-  //   }
-  section.all-subscriptions {
-    // padding: 2rem 5rem;
-  }
   .other-subs {
     justify-content: center;
     padding-left: 2rem;
@@ -137,7 +166,7 @@ section.all-subscriptions {
       padding: 1rem;
     }
   }
-  .settings {
+  #settings {
     padding: 0 2rem 0 0;
   }
 }
@@ -152,7 +181,7 @@ section.all-subscriptions {
       width: 400px;
     }
   }
-  .settings {
+  #settings {
     padding: 0;
   }
 }

@@ -1,0 +1,35 @@
+main#customer-overview {
+  h1 {
+    margin: 5rem auto auto 2rem;
+    text-transform: uppercase;
+  }
+}
+
+.event-stt {
+  font-weight: 550;
+  text-align: right;
+  padding-right: 1.5rem;
+  //   position: relative;
+  //   right: -106px;
+  //   top: -23px;
+}
+
+.future {
+  color: $secondary;
+}
+
+.past {
+  color: $medium-gray;
+}
+
+.past-event {
+  opacity: 0.3;
+}
+
+@media (min-width: $max-s) {
+  main#customer-overview {
+    h1 {
+      margin-left: 3.8rem;
+    }
+  }
+}

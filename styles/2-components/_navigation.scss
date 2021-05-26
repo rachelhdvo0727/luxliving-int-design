@@ -192,12 +192,13 @@ label.categories-btn {
 
   // Customer signed in
   nav.customer-nav {
-    grid-template-columns: auto auto 350px;
+    grid-template-columns: auto auto 370px;
   }
 
   #menu-toggle {
     @include flex(row wrap);
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .desktop-links {

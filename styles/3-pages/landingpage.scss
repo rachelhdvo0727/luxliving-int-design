@@ -49,6 +49,11 @@
   }
 }
 
+.articles::-webkit-scrollbar {
+  visibility: hidden;
+  display: none;
+}
+
 @media (min-width: $max-s) {
   #topic {
     padding-top: 1rem;
@@ -77,6 +82,7 @@
       scroll-snap-type: unset;
 
       @include grid-cols(repeat(4, 1fr), 1rem);
+      align-items: baseline;
     }
   }
 }
