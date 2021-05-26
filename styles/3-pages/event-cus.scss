@@ -118,6 +118,16 @@
 
 @media (min-width: $max-m) {
   main#customer-event {
-    margin-top: 6.5vh;
+    margin-top: 5.5vh;
+
+    .breadcrumb {
+      margin-left: 7.5rem;
+    }
+  }
+}
+
+@media (min-width: $max-ml) {
+  main#customer-event {
+    margin-top: 10vh;
   }
 }

@@ -3991,7 +3991,15 @@ main#customer-overview h1 {
 }
 @media (min-width: 991.98px) {
   main#customer-event {
-    margin-top: 6.5vh;
+    margin-top: 5.5vh;
+  }
+  main#customer-event .breadcrumb {
+    margin-left: 7.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  main#customer-event {
+    margin-top: 10vh;
   }
 }
 /*====================================
