@@ -1,0 +1,40 @@
+main#customer-fav {
+  @include flex(column wrap);
+}
+
+section#all-fav {
+  margin: auto;
+}
+
+#all-fav-container {
+  @include flex(column wrap);
+  justify-content: space-around;
+  align-content: center;
+
+  .card-article {
+    padding: 0;
+    margin: 2rem auto;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+    svg:hover {
+      fill: $light-gray;
+    }
+  }
+}
+
+@media (min-width: $max-s) {
+  #all-fav-container {
+    @include grid-cols(repeat(2, 1fr), 3.5rem);
+  }
+}
+
+@media (min-width: $max-ml) {
+  #all-fav-container {
+    @include grid-cols(repeat(3, 1fr), 3.5rem);
+    place-items: first baseline;
+    max-width: 1000px;
+  }
+}

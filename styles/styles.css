@@ -3646,7 +3646,8 @@ ul.breadcrumb li a:hover {
 }
 
 main#article,
-main#customer-event {
+main#customer-event,
+main#customer-fav {
   margin-top: 8vh;
 }
 
@@ -4000,6 +4001,49 @@ main#customer-overview h1 {
 @media (min-width: 1280px) {
   main#customer-event {
     margin-top: 10vh;
+  }
+}
+main#customer-fav {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+section#all-fav {
+  margin: auto;
+}
+
+#all-fav-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+#all-fav-container .card-article {
+  padding: 0;
+  margin: 2rem auto;
+}
+#all-fav-container .card-article svg {
+  width: 25px;
+  height: 25px;
+}
+#all-fav-container .card-article svg:hover {
+  fill: #9c9c9c;
+}
+
+@media (min-width: 767.98px) {
+  #all-fav-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  #all-fav-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+    place-items: first baseline;
+    max-width: 1000px;
   }
 }
 /*====================================
