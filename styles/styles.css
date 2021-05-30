@@ -4118,11 +4118,6 @@ body#acc-settings-body {
   background-color: #faf5ef;
 }
 
-main#customer-accsettings {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 0rem;
-}
 main#customer-accsettings h1 {
   margin: 5rem auto auto 1.5rem;
 }
@@ -4313,7 +4308,6 @@ ul.settings-tabs li::marker {
 @media (min-width: 991.98px) {
   main#customer-accsettings {
     gap: 2rem;
-    place-items: center;
   }
   main#customer-accsettings h1 {
     margin: 4rem auto auto 3rem;

@@ -3,8 +3,6 @@ body#acc-settings-body {
 }
 
 main#customer-accsettings {
-  @include grid-rows(auto auto, 0rem);
-
   h1 {
     margin: 5rem auto auto 1.5rem;
   }
@@ -12,7 +10,6 @@ main#customer-accsettings {
 
 section#acc-settings {
   margin: 5rem auto;
-  // @include flex(column wrap);
 
   [type="radio"] {
     display: none;
@@ -251,7 +248,7 @@ ul.settings-tabs {
 @media (min-width: $max-m) {
   main#customer-accsettings {
     gap: 2rem;
-    place-items: center;
+    // place-items: center;
     h1 {
       margin: 4rem auto auto 3rem;
     }
