@@ -14,6 +14,9 @@ $white: #faf5ef;
 $light-gray: #9c9c9c;
 $medium-gray: #828282;
 $black: #323232;
+/* Brands*/
+$facebook: #4267b2;
+$pinterest: #e60023;
 
 /* SHADOWS */
 $lg-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
@@ -28,7 +31,7 @@ $font-family-base: $paragraph !default;
 /* FONT SIZES */
 $font-size-base: 14px !default;
 
-$font-size-h1: 4rem;
+$font-size-h1: 3rem;
 $font-size-h2: 2rem;
 $font-size-h3: 1.8rem;
 $font-size-h4: 1.5rem;
@@ -77,3 +80,5 @@ $line-height-label: 1.6;
 $line-height-span: 1.6;
 $line-height-blockquote: 1.5;
 $line-height-code: 1.6;
+
+$acc-tab-width: calc(260px + 60px);

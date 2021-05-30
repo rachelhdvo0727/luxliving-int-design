@@ -78,6 +78,17 @@ section.all-subscriptions {
   }
 }
 
+#public-subs .other-subs-sec {
+  margin-top: 6rem;
+  .top-wrapper {
+    @include grid-cols(auto auto, 1rem);
+    // grid-template-columns: auto auto !important;
+    // gap: 1rem;
+    justify-content: space-between;
+    place-items: inherit;
+  }
+}
+
 .other-subs {
   @include flex(row wrap);
   justify-content: space-around;
@@ -96,7 +107,8 @@ section.all-subscriptions {
 
   .price-action {
     @include grid-cols(auto 30%, 0rem);
-    padding: 1rem 1rem 0 0;
+    // padding: 1rem 1rem 0 0;
+    padding: 1rem 0;
   }
 }
 
@@ -118,8 +130,10 @@ section.all-subscriptions {
     background: $tertiary;
     width: -moz-fit-content;
     padding: 1rem;
-    margin: 2rem 2.5rem;
+    // margin: 2rem 2.5rem;
+    margin: 2rem 0rem;
     color: $white;
+    width: max-content;
 
     transform-origin: 0% 0%;
     transform: translate(0%, -123%);
@@ -135,10 +149,12 @@ section.all-subscriptions {
     transform: none;
     user-select: none;
     cursor: pointer;
-    position: relative;
     color: $white;
-    top: 9px;
-    right: 65px;
+    position: relative;
+    top: -42px;
+    right: 17px;
+    // top: 9px;
+    // right: 65px;
     @include grid-cols(auto auto, 0.5rem);
   }
 }
@@ -146,28 +162,42 @@ section.all-subscriptions {
 input#sort:checked ~ .sort-list {
   display: block;
   transform: none;
+  z-index: 9;
 }
 
+// iphone 6/7/8 plus
+@media (min-width: 413.98px) {
+  #settings {
+    label[for="sort"] {
+      top: 9px;
+    }
+    .btn {
+      position: relative;
+      right: -46px;
+    }
+  }
+}
 @media (min-width: $max-s) {
   section.all-subscriptions {
     @include grid-cols(repeat(3, 1fr), 1rem);
   }
 
   .other-subs {
-    justify-content: flex-start;
+    justify-content: space-between;
+
+    .card-event {
+      padding: 1rem 0 1rem 0rem;
+    }
   }
 }
 
 @media (min-width: $max-m) {
   .other-subs {
-    justify-content: center;
+    // justify-content: center;
     padding-left: 2rem;
     .card-event {
       padding: 1rem;
     }
-  }
-  #settings {
-    padding: 0 2rem 0 0;
   }
 }
 
@@ -183,5 +213,11 @@ input#sort:checked ~ .sort-list {
   }
   #settings {
     padding: 0;
+  }
+}
+
+@media (min-width: $max-l) {
+  #public-subs .other-subs-sec {
+    margin: 6rem 2rem 0;
   }
 }

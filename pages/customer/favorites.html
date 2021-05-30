@@ -58,7 +58,7 @@
 
             <ul class="acc-dropdown-list">
               <li>
-                <a class="link link-navi" target="_self" href="#">Overview</a>
+                <a class="link link-navi" href="./overview.html">Overview</a>
               </li>
               <li>
                 <a class="link link-navi" href="#" target="_self"
@@ -253,54 +253,168 @@
     </header>
 
     <main id="customer-fav">
+      <h1>FAVORITES</h1>
       <section id="all-fav">
-        <h1>FAVORITES</h1>
-        <div id="all-fav-container">
-          <div class="card-article">
+        <div id="settings" class="pos">
+          <input
+            type="checkbox"
+            name="sort"
+            id="sort"
+            class="btn btn-tertiary"
+          />
+          <label for="sort"><i class="icofont-sort"></i>Sort</label>
+
+          <ul class="sort-list">
+            <li>Newest first</li>
+            <li>Oldest first</li>
+            <li>&#8595; Ascending</li>
+            <li>&#8593; Descending</li>
+          </ul>
+        </div>
+        <div id="all-fav-container" class="articles">
+          <article class="card-article">
             <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-maria-orlova-4969924-winter.jpg"
-              />
-              <h4 class="card-title">Winter trends</h4>
-              <p>Explore the new trends the coming winter after the pandemic</p>
-              <span>16.01.2021</span>
+              <div class="article-content">
+                <div class="image-fav">
+                  <img
+                  class="img-responsive border-bottom cfa-orange__border"
+                  src="../../images/pexels-atbo-245208.jpg"
+                  />
+                  <a href="#" class="fav-link"
+                  ><img
+                    src="../../assets/favorite.svg"
+                    class="fav-heart"
+                    alt="favorite icon"
+                  /></a>
+                </div>
+              <h4 class="card-title">
+                Do you like to hang out in the living room?
+              </h4>
+              <p>A fun read on why we like to have a living room.</p>
+              <span>23.04.2021</span>
             </div>
           </div>
-          <div class="card-article">
+          </article>
+          <article class="card-article">
             <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-meruyert-gonullu-6243727-exhibition.jpg"
-              />
-              <h4 class="card-title">Rugs and other things</h4>
-              <p>Design patterns on your home materials.</p>
-              <span>16.01.2021</span>
+              <div class="image-fav">
+                <img
+                  class="img-responsive border-bottom cfa-orange__border"
+                  src="../../images/pexels-mister-mister-2442904.jpg"
+                />
+                <a href="#" class="fav-link"
+                  ><img
+                    src="../../assets/favorite.svg"
+                    class="fav-heart"
+                    alt="favorite icon"
+                /></a>
+              </div>
+              <h4 class="card-title">Cozy fall designs</h4>
+              <p>
+                It's not fall yet, but here are some ideas to make your home
+                more cozy
+              </p>
+              <span>20.04.2021</span>
             </div>
-          </div>
-          <div class="card-article">
+          </article>
+          <article class="card-article">
             <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-charlotte-may-5824491.jpg"
-              />
+              <div class="image-fav">
+                <img
+                  class="img-responsive"
+                  src="../../images/pexels-charlotte-may-5824491.jpg"
+                />
+                <a href="#" class="fav-link"
+                  ><img
+                    src="../../assets/favorite.svg"
+                    class="fav-heart"
+                    alt="favorite icon"
+                /></a>
+              </div>
               <h4 class="card-title">Home design</h4>
               <p>How would you design your home from scratch?</p>
               <span>16.04.2021</span>
             </div>
-          </div>
-          <div class="card-article">
+          </article>      
+          <article class="card-article">
             <div class="article-content">
-              <img
+              <div class="image-fav">
+                <img
                 class="img-responsive border-bottom cfa-orange__border"
-                src="../../images/pexels-mister-mister-2442904.jpg"
-              />
-              <h4 class="card-title">Cozy fall designs</h4>
+                src="../../images/pexels-daria-shevtsova-1029803.jpg"
+                />
+                <a href="#" class="fav-link"
+                  ><img
+                    src="../../assets/favorite.svg"
+                    class="fav-heart"
+                    alt="favorite icon"
+                /></a>
+              </div>
+              <h4 class="card-title">New kitchen design trends</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <span>20.04.2021</span>
+              <span>12.04.2021</span>
             </div>
-          </div>
-        </div>
+          </article>
+          <article class="card-article">
+            <div class="article-content">
+              <div class="image-fav">
+               <img
+                class="img-responsive border-bottom cfa-orange__border"
+                src="../../images/pexels-jason-boyd-3209045.jpg"
+              />
+                <a href="#" class="fav-link"
+                  ><img
+                    src="../../assets/favorite.svg"
+                    class="fav-heart"
+                    alt="favorite icon"
+                /></a>
+              </div>
+              <h4 class="card-title">Top 10 California homes</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <span>11.04.2021</span>
+            </div>
+          </article>
+          <article class="card-article">
+            <div class="article-content">
+              <div class="image-fav">
+                <img
+                  class="img-responsive border-bottom cfa-orange__border"
+                  src="../../images/avery-klein-JaXs8Tk5Iww-unsplash.jpg"
+                />
+                <a href="#" class="fav-link"
+                  ><img
+                    src="../../assets/favorite.svg"
+                    class="fav-heart"
+                    alt="favorite icon"
+                /></a>
+              </div>
+              <h4 class="card-title">Reading corners</h4>
+              <p>
+                Reading is becoming popular gain. Do you have a peaceful place
+                for this activity?
+              </p>
+              <span>25.03.2021</span>
+            </div>
+          </article>
+          <article class="card-article">
+            <div class="article-content">
+              <div class="image-fav">
+                <img
+                  class="img-responsive"
+                  src="../../images/pexels-meruyert-gonullu-6243727-exhibition.jpg"
+                />
+                <a href="#" class="fav-link"
+                  ><img
+                    src="../../assets/favorite.svg"
+                    class="fav-heart"
+                    alt="favorite icon"
+                /></a>
+              </div>
+              <h4 class="card-title">Rugs and other things</h4>
+              <p>Design patterns on your home materials.</p>
+              <span>16.01.2021</span>
+            </div>
+          </article>
       </section>
     </main>
 

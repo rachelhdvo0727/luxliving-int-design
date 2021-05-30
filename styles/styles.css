@@ -34,6 +34,7 @@ button {
 /* MEDIA QUERIES */
 /* COLORS */
 /* Accent Colors */
+/* Brands*/
 /* SHADOWS */
 /* FONTS */
 /* FONT SIZES */
@@ -89,7 +90,7 @@ label {
 /* --- Contents --- */
 h1,
 .display-1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.1;
   color: #323232;
@@ -169,7 +170,7 @@ blockquote {
 @media (max-width: 991.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 24px);
+    font-size: calc(3rem - 24px);
   }
 
   h2,
@@ -200,7 +201,7 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 32px);
+    font-size: calc(3rem - 32px);
   }
 
   h2,
@@ -221,22 +222,22 @@ blockquote {
 @media (max-width: 575.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 37px);
+    font-size: calc(3rem - 20px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2rem - 10px);
+    font-size: calc(2rem - 8px);
   }
 
   h3,
 .display-3 {
-    font-size: calc(1.8rem - 16px);
+    font-size: calc(1.8rem - 10px);
   }
 
   h4,
 .display-4 {
-    font-size: calc(1.5rem - 8px);
+    font-size: calc(1.5rem - 7px);
   }
 }
 @media print {
@@ -724,7 +725,7 @@ input#profile-click,
   }
   #account-dropdown .profile img {
     width: 30px;
-    place-self: center;
+    place-self: center end;
   }
   #account-dropdown .profile:hover {
     cursor: pointer;
@@ -734,6 +735,7 @@ input#profile-click,
     transform: none;
     display: block;
     width: 200px;
+    padding: 0.5rem 2rem 1rem;
   }
 
   .acc-dropdown-list {
@@ -897,7 +899,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -1007,6 +1009,7 @@ button {
 /* MEDIA QUERIES */
 /* COLORS */
 /* Accent Colors */
+/* Brands*/
 /* SHADOWS */
 /* FONTS */
 /* FONT SIZES */
@@ -1062,7 +1065,7 @@ label {
 /* --- Contents --- */
 h1,
 .display-1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.1;
   color: #323232;
@@ -1142,7 +1145,7 @@ blockquote {
 @media (max-width: 991.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 24px);
+    font-size: calc(3rem - 24px);
   }
 
   h2,
@@ -1173,7 +1176,7 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 32px);
+    font-size: calc(3rem - 32px);
   }
 
   h2,
@@ -1194,22 +1197,22 @@ blockquote {
 @media (max-width: 575.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 37px);
+    font-size: calc(3rem - 20px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2rem - 10px);
+    font-size: calc(2rem - 8px);
   }
 
   h3,
 .display-3 {
-    font-size: calc(1.8rem - 16px);
+    font-size: calc(1.8rem - 10px);
   }
 
   h4,
 .display-4 {
-    font-size: calc(1.5rem - 8px);
+    font-size: calc(1.5rem - 7px);
   }
 }
 @media print {
@@ -1697,7 +1700,7 @@ input#profile-click,
   }
   #account-dropdown .profile img {
     width: 30px;
-    place-self: center;
+    place-self: center end;
   }
   #account-dropdown .profile:hover {
     cursor: pointer;
@@ -1707,6 +1710,7 @@ input#profile-click,
     transform: none;
     display: block;
     width: 200px;
+    padding: 0.5rem 2rem 1rem;
   }
 
   .acc-dropdown-list {
@@ -1870,7 +1874,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -2061,6 +2065,7 @@ button {
 /* MEDIA QUERIES */
 /* COLORS */
 /* Accent Colors */
+/* Brands*/
 /* SHADOWS */
 /* FONTS */
 /* FONT SIZES */
@@ -2116,7 +2121,7 @@ label {
 /* --- Contents --- */
 h1,
 .display-1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.1;
   color: #323232;
@@ -2196,7 +2201,7 @@ blockquote {
 @media (max-width: 991.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 24px);
+    font-size: calc(3rem - 24px);
   }
 
   h2,
@@ -2227,7 +2232,7 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 32px);
+    font-size: calc(3rem - 32px);
   }
 
   h2,
@@ -2248,22 +2253,22 @@ blockquote {
 @media (max-width: 575.98px) {
   h1,
 .display-1 {
-    font-size: calc(4rem - 37px);
+    font-size: calc(3rem - 20px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2rem - 10px);
+    font-size: calc(2rem - 8px);
   }
 
   h3,
 .display-3 {
-    font-size: calc(1.8rem - 16px);
+    font-size: calc(1.8rem - 10px);
   }
 
   h4,
 .display-4 {
-    font-size: calc(1.5rem - 8px);
+    font-size: calc(1.5rem - 7px);
   }
 }
 @media print {
@@ -2751,7 +2756,7 @@ input#profile-click,
   }
   #account-dropdown .profile img {
     width: 30px;
-    place-self: center;
+    place-self: center end;
   }
   #account-dropdown .profile:hover {
     cursor: pointer;
@@ -2761,6 +2766,7 @@ input#profile-click,
     transform: none;
     display: block;
     width: 200px;
+    padding: 0.5rem 2rem 1rem;
   }
 
   .acc-dropdown-list {
@@ -2924,7 +2930,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -3051,6 +3057,10 @@ footer#footy .footy-leftcol {
   transition: all 0.3s;
 }
 
+.tab-content {
+  display: none;
+}
+
 .tab:hover .tab-label {
   border-top: 5px solid #254c50;
   border-left: 1px solid #254c50;
@@ -3058,13 +3068,9 @@ footer#footy .footy-leftcol {
   color: #254c50;
 }
 
-.tab-content {
-  display: none;
-}
-
-.help-tabs [type=radio]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) .tab-label,
-.help-tabs [type=radio]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) .tab-label,
-.help-tabs [type=radio]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) .tab-label {
+.help-tabs [type=radio]:nth-of-type(1):checked ~ ul.tabs .tab:nth-of-type(1) .tab-label,
+.help-tabs [type=radio]:nth-of-type(2):checked ~ ul.tabs .tab:nth-of-type(2) .tab-label,
+.help-tabs [type=radio]:nth-of-type(3):checked ~ ul.tabs .tab:nth-of-type(3) .tab-label {
   border: 1px solid #254c50;
   border-top: 5px #254c50 solid;
   border-bottom-color: transparent;
@@ -3328,6 +3334,17 @@ section.all-subscriptions {
   font-weight: 550;
 }
 
+#public-subs .other-subs-sec {
+  margin-top: 6rem;
+}
+#public-subs .other-subs-sec .top-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  justify-content: space-between;
+  place-items: inherit;
+}
+
 .other-subs {
   display: flex;
   flex-flow: row wrap;
@@ -3346,7 +3363,7 @@ section.all-subscriptions {
   display: grid;
   grid-template-columns: auto 30%;
   gap: 0rem;
-  padding: 1rem 1rem 0 0;
+  padding: 1rem 0;
 }
 
 #settings {
@@ -3366,8 +3383,9 @@ section.all-subscriptions {
   background: #254c50;
   width: -moz-fit-content;
   padding: 1rem;
-  margin: 2rem 2.5rem;
+  margin: 2rem 0rem;
   color: #faf5ef;
+  width: max-content;
   transform-origin: 0% 0%;
   transform: translate(0%, -123%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -3380,10 +3398,10 @@ section.all-subscriptions {
   transform: none;
   user-select: none;
   cursor: pointer;
-  position: relative;
   color: #faf5ef;
-  top: 9px;
-  right: 65px;
+  position: relative;
+  top: -42px;
+  right: 17px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 0.5rem;
@@ -3392,8 +3410,18 @@ section.all-subscriptions {
 input#sort:checked ~ .sort-list {
   display: block;
   transform: none;
+  z-index: 9;
 }
 
+@media (min-width: 413.98px) {
+  #settings label[for=sort] {
+    top: 9px;
+  }
+  #settings .btn {
+    position: relative;
+    right: -46px;
+  }
+}
 @media (min-width: 767.98px) {
   section.all-subscriptions {
     display: grid;
@@ -3402,20 +3430,18 @@ input#sort:checked ~ .sort-list {
   }
 
   .other-subs {
-    justify-content: flex-start;
+    justify-content: space-between;
+  }
+  .other-subs .card-event {
+    padding: 1rem 0 1rem 0rem;
   }
 }
 @media (min-width: 991.98px) {
   .other-subs {
-    justify-content: center;
     padding-left: 2rem;
   }
   .other-subs .card-event {
     padding: 1rem;
-  }
-
-  #settings {
-    padding: 0 2rem 0 0;
   }
 }
 @media (min-width: 1280px) {
@@ -3432,6 +3458,11 @@ input#sort:checked ~ .sort-list {
 
   #settings {
     padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  #public-subs .other-subs-sec {
+    margin: 6rem 2rem 0;
   }
 }
 #customer-payment .banner {
@@ -3646,8 +3677,7 @@ ul.breadcrumb li a:hover {
 }
 
 main#article,
-main#customer-event,
-main#customer-fav {
+main#customer-event {
   margin-top: 8vh;
 }
 
@@ -3869,7 +3899,7 @@ main#customer-overview h1 {
 
 @media (min-width: 767.98px) {
   main#customer-overview h1 {
-    margin-left: 3.8rem;
+    margin: 7rem auto 5rem 3.8rem;
   }
 }
 #event-article {
@@ -4007,43 +4037,421 @@ main#customer-fav {
   display: flex;
   flex-flow: column wrap;
 }
+main#customer-fav h1 {
+  margin: 5rem auto auto 2rem;
+}
 
 section#all-fav {
-  margin: auto;
+  margin: 2.5rem auto;
+}
+section#all-fav #settings input {
+  position: relative;
+  right: -47px;
+}
+section#all-fav #settings label[for=sort] {
+  top: 9px;
 }
 
 #all-fav-container {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
-  align-content: center;
 }
 #all-fav-container .card-article {
+  margin: 1.5rem 0;
   padding: 0;
-  margin: 2rem auto;
 }
-#all-fav-container .card-article svg {
-  width: 25px;
-  height: 25px;
+
+.image-fav {
+  white-space: normal;
+  display: flex;
 }
-#all-fav-container .card-article svg:hover {
-  fill: #9c9c9c;
+
+a.fav-link {
+  position: relative;
+  right: 39px;
+  top: 6px;
+  border-radius: 50%;
+  background-color: #faf5ef;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2px 1px 0 1px;
+}
+a.fav-link .fav-heart {
+  margin: auto;
 }
 
 @media (min-width: 767.98px) {
+  main#customer-fav h1 {
+    margin: 3.5rem auto auto 3.8rem;
+  }
+
+  section#all-fav {
+    padding-top: 1rem;
+    margin: 2.5rem 4rem;
+  }
+
   #all-fav-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+    place-items: flex-start;
+  }
+}
+@media (min-width: 991.98px) {
+  #all-fav-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3.5rem;
   }
 }
 @media (min-width: 1280px) {
   #all-fav-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3.5rem;
     place-items: first baseline;
-    max-width: 1000px;
+  }
+}
+body#acc-settings-body {
+  background-color: #faf5ef;
+}
+
+main#customer-accsettings {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0rem;
+}
+main#customer-accsettings h1 {
+  margin: 5rem auto auto 1.5rem;
+}
+
+section#acc-settings {
+  margin: 5rem auto;
+}
+section#acc-settings [type=radio] {
+  display: none;
+}
+
+ul.settings-tabs li::marker {
+  display: none;
+}
+
+.setting-tab > label.setting-label {
+  display: block;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 5px 0 0;
+  padding: 12px 25px;
+  margin: 0 1rem;
+  color: #323232;
+  letter-spacing: 1px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+}
+
+.settingtab-content {
+  display: none;
+  margin: auto 1rem;
+  padding: 2rem;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -30px;
+  min-height: 30vh;
+}
+.settingtab-content h2 {
+  font-size: 1.5rem;
+}
+
+.setting-tab:hover .tab-label {
+  color: #faf5ef;
+  background-color: #254c50;
+}
+
+#acc-settings [type=radio]:nth-of-type(1):checked ~ ul.settings-tabs .setting-tab:nth-of-type(1) .setting-label,
+#acc-settings [type=radio]:nth-of-type(2):checked ~ ul.settings-tabs .setting-tab:nth-of-type(2) .setting-label,
+#acc-settings [type=radio]:nth-of-type(3):checked ~ ul.settings-tabs .setting-tab:nth-of-type(3) .setting-label,
+#acc-settings [type=radio]:nth-of-type(4):checked ~ ul.settings-tabs .setting-tab:nth-of-type(4) .setting-label,
+#acc-settings [type=radio]:nth-of-type(5):checked ~ .settings-tabs .setting-tab:nth-of-type(5) .setting-label {
+  color: #faf5ef;
+  background-color: #254c50;
+}
+
+#acc-settings [type=radio]:nth-of-type(1):checked ~ .settingtab-content:nth-of-type(1),
+#acc-settings [type=radio]:nth-of-type(2):checked ~ .settingtab-content:nth-of-type(2),
+#acc-settings [type=radio]:nth-of-type(3):checked ~ .settingtab-content:nth-of-type(3),
+#acc-settings [type=radio]:nth-of-type(4):checked ~ .settingtab-content:nth-of-type(4),
+#acc-settings [type=radio]:nth-of-type(5):checked ~ .settingtab-content:nth-of-type(5) {
+  display: block;
+}
+
+.profile-container div {
+  padding: 1rem 0 0 0;
+}
+.profile-container .personal-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.profile-container .personal-info div {
+  margin-bottom: 1rem;
+}
+.profile-container .personal-info .edit-profile-img {
+  margin: -1.5rem 0 2rem 0;
+}
+.profile-container .personal-info .edit-profile-img img:first-child {
+  width: 80px;
+}
+.profile-container .personal-info .edit-profile-img img:last-child {
+  position: relative;
+  left: -25px;
+  width: 24px;
+}
+.profile-container .personal-info .profile-col {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+.profile-container .personal-info .profile-col label {
+  color: #323232;
+  font-weight: 600;
+}
+.profile-container .personal-info .profile-col input {
+  box-shadow: none;
+  color: #828282;
+  padding: 0;
+}
+.profile-container .personal-info .profile-col input[type=number] {
+  width: min-content;
+}
+.profile-container .linked-acc {
+  display: flex;
+  flex-flow: column wrap;
+}
+.profile-container .linked-acc .btns-wrapper {
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.profile-container .linked-acc .btns-wrapper button {
+  margin-right: 1rem;
+  color: #323232;
+  background-color: #fcfcfc;
+}
+.profile-container .linked-acc .btns-wrapper button img {
+  width: 25px;
+  height: 100%;
+}
+.profile-container .content-wrapper {
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.profile-container .content-wrapper .delete-btn {
+  width: 24%;
+}
+
+.current-sub {
+  background-color: #fff;
+  padding: 2rem 0;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-rows: 20% auto auto;
+  gap: 1rem;
+}
+.current-sub ul li {
+  list-style: disc;
+  line-height: 1.6;
+  margin: 0 0 0 1rem;
+  color: #323232;
+}
+.current-sub ul li::marker {
+  content: "✓  ";
+}
+.current-sub .price-action {
+  place-self: end;
+}
+.current-sub .price-action p {
+  color: #254c50;
+  font-weight: 550;
+}
+.current-sub .price-action .sub-btns {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+}
+.current-sub .price-action .sub-btns a.btn {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+.noti-tab div,
+.privacy-tab div,
+.terms-tab div {
+  display: flex;
+}
+.noti-tab div p,
+.privacy-tab div p,
+.terms-tab div p {
+  margin: 5rem auto;
+}
+
+@media (min-width: 767.98px) {
+  main#customer-accsettings h1 {
+    margin-left: 2.5rem;
+  }
+}
+@media (min-width: 991.98px) {
+  main#customer-accsettings {
+    gap: 2rem;
+    place-items: center;
+  }
+  main#customer-accsettings h1 {
+    margin: 4rem auto auto 3rem;
+  }
+
+  section#acc-settings {
+    margin: 5rem 3rem;
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 3.8rem;
+  }
+
+  .setting-tab > label.setting-label {
+    width: 14rem;
+    height: 50px;
+    border-radius: 5px;
+    margin: 1rem 0;
+  }
+
+  #acc-settings [type=radio]:nth-of-type(1):checked ~ ul.settings-tabs .setting-tab:nth-of-type(1) .setting-label,
+#acc-settings [type=radio]:nth-of-type(2):checked ~ ul.settings-tabs .setting-tab:nth-of-type(2) .setting-label,
+#acc-settings [type=radio]:nth-of-type(3):checked ~ ul.settings-tabs .setting-tab:nth-of-type(3) .setting-label,
+#acc-settings [type=radio]:nth-of-type(4):checked ~ ul.settings-tabs .setting-tab:nth-of-type(4) .setting-label,
+#acc-settings [type=radio]:nth-of-type(5):checked ~ .settings-tabs .setting-tab:nth-of-type(5) .setting-label {
+    width: 250px;
+  }
+
+  .settingtab-content {
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    margin: -1rem 1rem;
+    position: unset;
+  }
+
+  .profile-container div {
+    padding: 1rem 0 0 0;
+  }
+  .profile-container .personal-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-top: 3rem;
+  }
+  .profile-container .personal-info .edit-profile-img {
+    margin: -1.5rem 0 0 0rem;
+  }
+  .profile-container .personal-info .edit-profile-img img:last-child {
+    left: -22px;
+  }
+  .profile-container .personal-info .profile-col {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .profile-container .personal-info .profile-col label {
+    color: #323232;
+    font-weight: 600;
+  }
+  .profile-container .personal-info .profile-col input {
+    box-shadow: none;
+    color: #828282;
+    padding: 0;
+  }
+  .profile-container .personal-info .profile-col input[type=number] {
+    width: min-content;
+  }
+  .profile-container .linked-acc {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .profile-container .linked-acc .btns-wrapper {
+    display: inline-flex;
+  }
+  .profile-container .linked-acc .btns-wrapper button {
+    margin-right: 1rem;
+    color: #323232;
+    background-color: #fcfcfc;
+  }
+  .profile-container .linked-acc .btns-wrapper button img {
+    width: 25px;
+    height: 100%;
+  }
+  .profile-container .content-wrapper {
+    display: grid;
+    grid-template-columns: auto 23%;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  .profile-container .content-wrapper .delete-btn {
+    width: 70%;
+  }
+
+  .current-sub {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-rows: 20% auto auto;
+    gap: 1rem;
+  }
+  .current-sub .price-action {
+    place-self: end;
+  }
+  .current-sub .price-action p {
+    color: #254c50;
+    font-weight: 550;
+    text-align: end;
+    padding-right: 5px;
+  }
+  .current-sub .price-action .sub-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .current-sub .price-action .sub-btns a.btn {
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+  }
+}
+@media (min-width: 1280px) {
+  main#customer-accsettings h1 {
+    margin-left: 3.8rem;
+  }
+
+  section#acc-settings {
+    margin: 5rem auto;
+    gap: 3rem;
+    max-width: 1200px;
+  }
+
+  #acc-settings [type=radio]:nth-of-type(1):checked ~ ul.settings-tabs .setting-tab:nth-of-type(1) .setting-label,
+#acc-settings [type=radio]:nth-of-type(2):checked ~ ul.settings-tabs .setting-tab:nth-of-type(2) .setting-label,
+#acc-settings [type=radio]:nth-of-type(3):checked ~ ul.settings-tabs .setting-tab:nth-of-type(3) .setting-label,
+#acc-settings [type=radio]:nth-of-type(4):checked ~ ul.settings-tabs .setting-tab:nth-of-type(4) .setting-label,
+#acc-settings [type=radio]:nth-of-type(5):checked ~ .settings-tabs .setting-tab:nth-of-type(5) .setting-label {
+    width: 280px;
   }
 }
 /*====================================

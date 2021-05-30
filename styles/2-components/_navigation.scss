@@ -225,7 +225,7 @@ label.categories-btn {
 
     img {
       width: 30px;
-      place-self: center;
+      place-self: center end;
     }
 
     &:hover {
@@ -238,6 +238,7 @@ label.categories-btn {
     transform: none;
     display: block;
     width: 200px;
+    padding: 0.5rem 2rem 1rem;
   }
 
   .acc-dropdown-list {
