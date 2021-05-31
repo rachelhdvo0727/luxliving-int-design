@@ -1,18 +1,18 @@
 .banner {
-  // padding: 5rem 3rem;
-  padding: 10vh 2rem;
-  margin-bottom: 3.5rem;
-  background: url("/images/andrew-barrowman-5CYjHn5Cc0g-unsplash.jpg") no-repeat
-    right top;
-  background-size: cover;
+	// padding: 5rem 3rem;
+	padding: 10vh 2rem;
+	margin-bottom: 3.5rem;
+	background: url("../../images/andrew-barrowman-5CYjHn5Cc0g-unsplash.jpg")
+		no-repeat right top;
+	background-size: cover;
 
-  h1 {
-    margin-bottom: 2rem;
-  }
+	h1 {
+		margin-bottom: 2rem;
+	}
 }
 
 @media (min-width: $max-s) {
-  .banner {
-    padding-left: 4rem;
-  }
+	.banner {
+		padding-left: 4rem;
+	}
 }
