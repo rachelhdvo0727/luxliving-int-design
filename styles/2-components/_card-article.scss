@@ -40,6 +40,11 @@
       color: $tertiary;
     }
   }
+
+  .date {
+    font-style: italic;
+    font-weight: 300;
+  }
 }
 
 @media (min-width: $max-s) {

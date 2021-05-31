@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="686.509" height="19.516" viewBox="0 0 686.509 19.516">
+  <g id="Group_192" data-name="Group 192" transform="translate(-195 -880)">
+    <g id="Group_184" data-name="Group 184" transform="translate(71.967 -1.999)">
+      <path id="Icon_awesome-highlighter" data-name="Icon awesome-highlighter" d="M0,17.813,3.708,19l1.316-1.316L2.536,15.2ZM4.625,8.906a1.358,1.358,0,0,0-.4,1.414l.484,1.59L2.818,13.8,6.39,17.371l1.888-1.888,1.586.485a1.358,1.358,0,0,0,1.416-.4L12.6,14.023,6.165,7.59,4.625,8.906ZM19.592,2.942,17.247.6A2.037,2.037,0,0,0,14.459.509L7.072,6.817l6.3,6.3L19.68,5.73a2.037,2.037,0,0,0-.087-2.788Z" transform="translate(287.213 882)"/>
+      <g id="Icon_material-format-color-text" data-name="Icon material-format-color-text" transform="translate(258.533 881.999)">
+        <path id="Path_8" data-name="Path 8" d="M0,30H21.153v3.526H0Z" transform="translate(0 -15.016)" fill="rgba(0,0,0,0.36)"/>
+        <path id="Path_9" data-name="Path 9" d="M13.1,4.5,8.25,16.839h1.983L11.22,14.2h5.509l.987,2.644H19.7L14.86,4.5Zm-1.216,7.932,2.1-5.579,2.1,5.579Z" transform="translate(-3.402 -4.5)"/>
+      </g>
+    </g>
+    <g id="Group_186" data-name="Group 186" transform="translate(37.88 -1.519)">
+      <path id="Icon_material-format-align-center" data-name="Icon material-format-align-center" d="M8.613,16.84V18.9H18.9V16.84ZM4.5,23.01H23.01V20.953H4.5Zm0-8.227H23.01V12.727H4.5Zm4.113-6.17V10.67H18.9V8.613ZM4.5,4.5V6.557H23.01V4.5Z" transform="translate(362.843 878.019)"/>
+      <path id="Icon_material-format-align-justify" data-name="Icon material-format-align-justify" d="M4.5,23.009H23.009V20.952H4.5Zm0-4.113H23.009V16.839H4.5Zm0-4.113H23.009V12.726H4.5Zm0-4.113H23.009V8.613H4.5Zm0-6.17V6.557H23.009V4.5Z" transform="translate(393.222 878.02)"/>
+      <path id="Icon_material-format-align-left" data-name="Icon material-format-align-left" d="M16.84,16.84H4.5V18.9H16.84Zm0-8.227H4.5V10.67H16.84ZM4.5,14.783H23.01V12.727H4.5Zm0,8.227H23.01V20.953H4.5ZM4.5,4.5V6.557H23.01V4.5Z" transform="translate(423.6 878.019)"/>
+      <path id="Icon_material-format-align-right" data-name="Icon material-format-align-right" d="M4.5,23.01H23.01V20.953H4.5ZM10.67,18.9H23.01V16.84H10.67ZM4.5,14.783H23.01V12.727H4.5Zm6.17-4.113H23.01V8.613H10.67ZM4.5,4.5V6.557H23.01V4.5Z" transform="translate(453.979 878.019)"/>
+    </g>
+    <path id="Icon_material-format-clear" data-name="Icon material-format-clear" d="M4.467,7.5,3,8.967l8.051,8.051L8.2,23.672h3.465l1.814-4.228,6.538,6.538,1.467-1.467L4.79,7.812Zm3.154,0v.208l3.258,3.258H13.65l-.832,1.941,2.426,2.426,1.86-4.366h6.688V7.5Z" transform="translate(815.688 873.5)"/>
+    <g id="Group_188" data-name="Group 188" transform="translate(-77.271 -0.485)">
+      <g id="Group_187" data-name="Group 187" transform="translate(617.993 880.485)">
+        <path id="Icon_material-format-indent-decrease" data-name="Icon material-format-indent-decrease" d="M12.957,19.3H23.529V17.186H12.957ZM4.5,14.015l4.229,4.229V9.786Zm0,9.515H23.529V21.415H4.5ZM4.5,4.5V6.614H23.529V4.5Zm8.457,6.343H23.529V8.729H12.957Zm0,4.229H23.529V12.957H12.957Z" transform="translate(-4.5 -4.5)"/>
+        <path id="Icon_material-format-indent-increase" data-name="Icon material-format-indent-increase" d="M4.5,23.529H23.529V21.415H4.5Zm0-13.743v8.457l4.229-4.229ZM12.957,19.3H23.529V17.186H12.957ZM4.5,4.5V6.614H23.529V4.5Zm8.457,6.343H23.529V8.729H12.957Zm0,4.229H23.529V12.957H12.957Z" transform="translate(26.942 -4.5)"/>
+      </g>
+    </g>
+    <g id="Group_189" data-name="Group 189" transform="translate(111.339 -0.999)">
+      <path id="Icon_material-format-line-spacing" data-name="Icon material-format-line-spacing" d="M7,8.943H9.636L5.943,5.25,2.25,8.943H4.888V19.495H2.25l3.693,3.693,3.693-3.693H7Zm4.221-2.11v2.11H23.881V6.833Zm0,14.772H23.881v-2.11H11.219Zm0-6.331H23.881v-2.11H11.219Z" transform="translate(503.459 877.327)"/>
+      <path id="Icon_material-format-list-bulleted" data-name="Icon material-format-list-bulleted" d="M5.544,13.925a1.794,1.794,0,1,0,1.794,1.794A1.791,1.791,0,0,0,5.544,13.925Zm0-7.175A1.794,1.794,0,1,0,7.338,8.544,1.791,1.791,0,0,0,5.544,6.75Zm0,14.35a1.794,1.794,0,1,0,1.794,1.794A1.8,1.8,0,0,0,5.544,21.1Zm3.588,2.99H25.873V21.7H9.131Zm0-7.175H25.873V14.523H9.131Zm0-9.567V9.74H25.873V7.348Z" transform="translate(538.736 875.827)"/>
+      <path id="Icon_material-format-list-numbered" data-name="Icon material-format-list-numbered" d="M3,21.044H5.314v.579H4.157V22.78H5.314v.579H3v1.157H6.472V19.887H3ZM4.157,10.629H5.314V6H3V7.157H4.157ZM3,14.1H5.083L3,16.531v1.042H6.472V16.415H4.389l2.083-2.43V12.943H3ZM8.786,7.157V9.472h16.2V7.157Zm0,16.2h16.2V21.044H8.786Zm0-6.943h16.2V14.1H8.786Z" transform="translate(576.756 875.999)"/>
+    </g>
+    <path id="Icon_material-format-shapes" data-name="Icon material-format-shapes" d="M19.509,6.411V1.5H14.6V3.137H6.411V1.5H1.5V6.411H3.137V14.6H1.5v4.911H6.411V17.872H14.6v1.637h4.911V14.6H17.872V6.411ZM3.137,3.137H4.774V4.774H3.137ZM4.774,17.872H3.137V16.234H4.774ZM14.6,16.234H6.411V14.6H4.774V6.411H6.411V4.774H14.6V6.411h1.637V14.6H14.6Zm3.274,1.637H16.234V16.234h1.637Zm-1.637-13.1V3.137h1.637V4.774Zm-4.314,7.367H9.064l-.6,1.637H7.14L9.923,6.411h1.146l2.791,7.367H12.526ZM9.432,11.11h2.136L10.5,7.975Z" transform="translate(773.325 879.5)"/>
+    <path id="Icon_material-format-paint" data-name="Icon material-format-paint" d="M19.321,4.9V3.951A.954.954,0,0,0,18.369,3H6.951A.954.954,0,0,0,6,3.951V7.757a.954.954,0,0,0,.951.951H18.369a.954.954,0,0,0,.951-.951V6.806h.951v3.806H10.757V21.078a.954.954,0,0,0,.951.951h1.9a.954.954,0,0,0,.951-.951V12.515h7.612V4.9Z" transform="translate(859.334 877)"/>
+    <path id="Icon_material-format-textdirection-r-to-l" data-name="Icon material-format-textdirection-r-to-l" d="M11.708,10.611v4.757h1.9V4.9h1.9V15.368h1.9V4.9h1.9V3H11.708a3.806,3.806,0,0,0,0,7.611Zm-1.9,6.66V14.417L6,18.223l3.806,3.806V19.174H21.223v-1.9Z" transform="translate(727.749 877)"/>
+    <g id="Group_190" data-name="Group 190" transform="translate(-4 -2)">
+      <path id="Icon_metro-bold" data-name="Icon metro-bold" d="M19.168,12.673a5.363,5.363,0,0,0-4.106-8.817H8.355V22.637H16.4a5.365,5.365,0,0,0,2.764-9.964ZM12.379,6.539h2.127a2.457,2.457,0,0,1,2.127,2.683A2.457,2.457,0,0,1,14.507,11.9H12.379Zm3.333,13.415H12.379V14.588h3.333a2.488,2.488,0,0,1,2.222,2.683,2.488,2.488,0,0,1-2.222,2.683Z" transform="translate(190.646 878.145)"/>
+      <path id="Icon_metro-italic" data-name="Icon metro-italic" d="M22.737,3.856V5.215H20.019l-6.8,16.31h2.718v1.359H6.427V21.526H9.145l6.8-16.31H13.223V3.856Z" transform="translate(219.599 878.144)"/>
+      <path id="Icon_metro-underline" data-name="Icon metro-underline" d="M19.087,3.856H21.77v8.72c0,3.334-3,6.037-6.707,6.037s-6.707-2.7-6.707-6.037V3.856h2.683v8.72a3.062,3.062,0,0,0,1.076,2.274,4.566,4.566,0,0,0,5.9,0,3.062,3.062,0,0,0,1.076-2.274ZM8.355,19.954H21.77v2.683H8.355Z" transform="translate(247.748 878.144)"/>
+      <path id="Icon_material-format-size" data-name="Icon material-format-size" d="M12.112,6V9.806h6.343V25.029h3.806V9.806H28.6V6ZM4.5,16.149H8.306v8.88h3.806v-8.88h3.806V12.343H4.5Z" transform="translate(280.043 876)"/>
+    </g>
+  </g>
+</svg>

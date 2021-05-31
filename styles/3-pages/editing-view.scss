@@ -1,0 +1,137 @@
+#editing-view {
+	#titles {
+		@include grid-cols(auto 70%, 1rem);
+		margin: 10rem auto auto 3.8rem;
+		align-items: baseline;
+	}
+	h1 {
+		text-transform: uppercase;
+	}
+	.back-btn {
+		position: absolute;
+		top: 15vh;
+		left: 62px;
+	}
+}
+
+article#new-article-content {
+	padding: 3rem 4rem;
+
+	.main-toolbar {
+		width: 40px;
+		position: absolute;
+		left: 81vw;
+		top: 270px;
+		@include grid-cols(auto auto, 1rem);
+	}
+
+	#top,
+	#bottom {
+		@include flex(row wrap);
+		justify-content: space-around;
+	}
+	#middle {
+		@include flex(column wrap);
+		align-content: center;
+		justify-content: space-around;
+	}
+	#top,
+	#bottom,
+	#middle {
+		margin: 2rem auto;
+	}
+
+	.empty-title {
+		padding: 1rem 2rem;
+		opacity: 0.4;
+		cursor: pointer;
+		width: 500px;
+		border-radius: 5px;
+
+		h4 {
+			color: $medium-gray;
+		}
+
+		.underline {
+			stroke-width: 2;
+			stroke: $light-gray;
+		}
+		&:hover {
+			background-color: $white;
+			opacity: 1;
+		}
+	}
+
+	.empty-box,
+	.empty-img,
+	.empty-box-body {
+		border-radius: 5px;
+		border: 2px dashed $light-gray;
+		opacity: 0.4;
+		margin: 1rem;
+		cursor: pointer;
+		&:hover {
+			background-color: $white;
+			opacity: 1;
+		}
+	}
+
+	.empty-box,
+	.empty-box-body {
+		.toolbar {
+			display: flex;
+			border: 2px $tertiary solid;
+			border-radius: 5px;
+			padding: 0.7rem;
+			margin: auto -0.3rem;
+			background-color: #fff;
+			position: relative;
+			opacity: 0;
+			img {
+				width: 570px;
+			}
+		}
+
+		&:hover {
+			background-color: $white;
+			opacity: 1;
+		}
+		&:hover .toolbar {
+			opacity: 1;
+		}
+	}
+	.empty-box .toolbar {
+		bottom: -185px;
+	}
+	.empty-box-body .toolbar {
+		bottom: -5px;
+	}
+}
+
+.empty-box-body {
+	height: 120px;
+	width: 600px;
+}
+.empty-box,
+.empty-img {
+	height: 300px;
+	width: 600px;
+}
+
+.empty-img {
+	.cross {
+		stroke: $light-gray;
+		stroke-width: 2;
+		stroke-dasharray: 5px;
+	}
+}
+
+.img-label,
+.text-label {
+	font-family: $paragraph;
+	font-weight: 600;
+	font-size: 1.5rem;
+	fill: $medium-gray; // <text>
+	color: $medium-gray; // <p>
+	padding: 1rem;
+}

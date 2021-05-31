@@ -1,209 +1,214 @@
 #customer-payment {
-  .banner {
-    background: url("../../images/free-stock-search-payment.jpg") no-repeat
-      center center;
-    background-size: cover;
-    h1 {
-      color: $white;
-    }
-  }
+	.banner {
+		background: url("../../images/free-stock-search-payment.jpg") no-repeat
+			center center;
+		background-size: cover;
+		h1 {
+			color: $white;
+		}
+	}
 
-  a.back-btn {
-    margin: 0 0 0 2rem;
-  }
+	a.back-btn {
+		margin: 0 0 0 2rem;
+	}
+}
+
+a.back-btn {
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .payment-section {
-  display: flex;
-  padding: 5rem 1rem;
+	display: flex;
+	padding: 5rem 1rem;
 }
 
 .payment-wrapper {
-  margin: auto;
-  background-color: #fff;
-  box-shadow: $lg-shadow;
-  padding: 1.4rem 0;
-  border-radius: 10px;
-  max-width: 600px;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: $lg-shadow;
+	padding: 1.4rem 0;
+	border-radius: 10px;
+	max-width: 600px;
 }
 .payment-steps {
-  //   margin: 2rem;
+	//   margin: 2rem;
 
-  [type="radio"] {
-    /* hiding the inputs */
-    display: none;
-  }
+	[type="radio"] {
+		/* hiding the inputs */
+		display: none;
+	}
 }
 
 .steps {
-  @include flex(column wrap);
-  justify-content: flex-start;
-  list-style: none;
-  padding: 1vh 0;
+	@include flex(column wrap);
+	justify-content: flex-start;
+	list-style: none;
+	padding: 1vh 0;
 }
 
 .step > label.step-label {
-  display: block;
-  margin: 0px;
-  padding: 12px 15px;
-  background: #fff;
-  color: $black;
-  font-family: $headings;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s;
-  border-radius: 10px 10px 0 0;
+	display: block;
+	margin: 0px;
+	padding: 12px 15px;
+	background: #fff;
+	color: $black;
+	font-family: $headings;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.3s;
+	border-radius: 10px 10px 0 0;
 }
 
 .step:hover .step-label {
-  color: $black;
-  background-color: $white;
+	color: $black;
+	background-color: $white;
 }
 
 .step-content {
-  display: none;
+	display: none;
 }
 
 .payment-steps
-  [type="radio"]:nth-of-type(1):checked
-  ~ .steps
-  .step:nth-of-type(1)
-  .step-label,
+	[type="radio"]:nth-of-type(1):checked
+	~ .steps
+	.step:nth-of-type(1)
+	.step-label,
 .payment-steps
-  [type="radio"]:nth-of-type(2):checked
-  ~ .steps
-  .step:nth-of-type(2)
-  .step-label,
+	[type="radio"]:nth-of-type(2):checked
+	~ .steps
+	.step:nth-of-type(2)
+	.step-label,
 .payment-steps
-  [type="radio"]:nth-of-type(3):checked
-  ~ .steps
-  .step:nth-of-type(3)
-  .step-label {
-  background-color: $tertiary;
-  color: $white;
+	[type="radio"]:nth-of-type(3):checked
+	~ .steps
+	.step:nth-of-type(3)
+	.step-label {
+	background-color: $tertiary;
+	color: $white;
 }
 
 .payment-steps
-  [type="radio"]:nth-of-type(1):checked
-  ~ .step-content:nth-of-type(1),
+	[type="radio"]:nth-of-type(1):checked
+	~ .step-content:nth-of-type(1),
 .payment-steps
-  [type="radio"]:nth-of-type(2):checked
-  ~ .step-content:nth-of-type(2),
+	[type="radio"]:nth-of-type(2):checked
+	~ .step-content:nth-of-type(2),
 .payment-steps
-  [type="radio"]:nth-of-type(3):checked
-  ~ .step-content:nth-of-type(3) {
-  display: block;
+	[type="radio"]:nth-of-type(3):checked
+	~ .step-content:nth-of-type(3) {
+	display: block;
 }
 
 #payment-form {
-  @include flex(column wrap);
-  align-items: center;
+	@include flex(column wrap);
+	align-items: center;
 
-  .input-container {
-    width: 73vw;
-  }
+	.input-container {
+		width: 73vw;
+	}
 
-  fieldset#step-controls {
-    @include grid-cols(repeat(2, 1fr), 0rem);
-    place-items: center;
-    margin: 1rem 1rem 0 1rem;
+	fieldset#step-controls {
+		@include grid-cols(repeat(2, 1fr), 0rem);
+		place-items: center;
+		margin: 1rem 1rem 0 1rem;
 
-    button:first-child {
-      place-self: start;
-    }
-    button:last-child {
-      place-self: end;
-    }
-  }
+		button:first-child {
+			place-self: start;
+		}
+		button:last-child {
+			place-self: end;
+		}
+	}
 }
 
 fieldset#confirm {
-  @include grid-rows(repeat(3, 1fr), 0);
-  width: 224px;
+	@include grid-rows(repeat(3, 1fr), 0);
+	width: 224px;
 }
 
 .cred-aid {
-  margin-left: 1.3rem;
-  a {
-    text-decoration: underline;
-    font-weight: 550;
-    color: $tertiary;
-  }
+	margin-left: 1.3rem;
+	a {
+		text-decoration: underline;
+		font-weight: 550;
+		color: $tertiary;
+	}
 }
 
 @media (min-width: $max-s) {
-    
-  #payment-form fieldset#step-controls {
-    margin: 1rem -1rem 0 0rem;
-  }
-  .steps {
-    @include flex(row wrap);
-    align-items: stretch;
-    .step {
-      width: 200px;
+	#payment-form fieldset#step-controls {
+		margin: 1rem -1rem 0 0rem;
+	}
+	.steps {
+		@include flex(row wrap);
+		align-items: stretch;
+		.step {
+			width: 200px;
 
-      label.step-label {
-        height: 75px;
-      }
-    }
+			label.step-label {
+				height: 75px;
+			}
+		}
 
-    label[for="step-1"] {
-      border-top-right-radius: 0;
-    }
-    label[for="step-2"] {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
-    label[for="step-3"] {
-      border-top-left-radius: 0;
-    }
-  }
+		label[for="step-1"] {
+			border-top-right-radius: 0;
+		}
+		label[for="step-2"] {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+		label[for="step-3"] {
+			border-top-left-radius: 0;
+		}
+	}
 
-  .step > label.step-label {
-    padding: 0.8rem 0.5rem 0.8rem 2rem;
-    display: flex;
-    align-content: center;
-    align-items: first baseline;
-  }
+	.step > label.step-label {
+		padding: 0.8rem 0.5rem 0.8rem 2rem;
+		display: flex;
+		align-content: center;
+		align-items: first baseline;
+	}
 
-  .payment-wrapper {
-    padding: 0.8rem 0;
-  }
+	.payment-wrapper {
+		padding: 0.8rem 0;
+	}
 
-  #payment-form {
-    align-items: unset;
-    padding: 0 3rem;
+	#payment-form {
+		align-items: unset;
+		padding: 0 3rem;
 
-    .input-container {
-      max-width: 475px;
-    }
+		.input-container {
+			max-width: 475px;
+		}
 
-    fieldset#names,
-    fieldset#address-1,
-    fieldset#address-2,
-    fieldset#step-controls,
-    fieldset#card-info {
-      @include grid-cols(repeat(2, 1fr), 0rem);
-    }
-    fieldset#names,
-    fieldset#address-1,
-    fieldset#address-2,
-    fieldset#card-info {
-      place-items: start;
-      .input-container {
-        max-width: 224px;
-      }
-    }
+		fieldset#names,
+		fieldset#address-1,
+		fieldset#address-2,
+		fieldset#step-controls,
+		fieldset#card-info {
+			@include grid-cols(repeat(2, 1fr), 0rem);
+		}
+		fieldset#names,
+		fieldset#address-1,
+		fieldset#address-2,
+		fieldset#card-info {
+			place-items: start;
+			.input-container {
+				max-width: 224px;
+			}
+		}
 
-    fieldset#step-controls {
-      padding: 0 2rem 0rem 1rem;
-    }
-  }
+		fieldset#step-controls {
+			padding: 0 2rem 0rem 1rem;
+		}
+	}
 }
 
 @media (min-width: $max-m) {
-  .steps {
-    padding: 2vh 0;
-  }
+	.steps {
+		padding: 2vh 0;
+	}
 }

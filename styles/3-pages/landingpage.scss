@@ -1,12 +1,5 @@
-/* Internal */
-@import "../0-base/index";
-@import "../1-mixins/mixins";
-@import "../2-components/components";
-
-@import "../plugins/icofont.min.css"; /* icofont icon font */
-@import "../plugins/fontawesome-all.min.css"; /* fontawesome icon font */
-
 /* --- INDEX PAGE --- */
+
 #topic {
   @include grid-rows(20% 80%, 1rem);
   margin: 2.5rem auto;
@@ -19,6 +12,7 @@
   .top-wrapper-events {
     @include grid-cols(auto 30%, 5rem);
   }
+
   .top-wrapper,
   .top-wrapper-events {
     place-items: baseline;
@@ -27,10 +21,11 @@
   .topic-title {
     text-transform: uppercase;
     font-weight: 650;
+  }
 
-    .see-all {
-      text-transform: none;
-    }
+  span.see-all {
+    margin: 0 0 0 -20px;
+    place-self: end;
   }
 
   .articles,
@@ -58,12 +53,22 @@
   #topic {
     padding-top: 1rem;
 
-    .topic-title {
-      margin: 0 0 0 2rem;
+    .top-wrapper {
+      padding: 0 1.8rem;
     }
 
     .top-wrapper-events {
       grid-template-columns: auto 16%;
+    }
+
+    .topic-title {
+      margin: 0 0 0 2rem;
+      text-transform: uppercase;
+      font-weight: 650;
+    }
+    span.see-all {
+      margin: 0 0 0 -20px;
+      place-self: end;
     }
 
     .articles {
@@ -74,6 +79,15 @@
 
 @media (min-width: $max-ml) {
   #topic {
+    .top-wrapper,
+    .top-wrapper-events {
+      padding: 0;
+
+      span.see-all {
+        place-self: center;
+        margin: 0;
+      }
+    }
     .articles {
       overflow: hidden;
       white-space: wrap;
@@ -82,7 +96,7 @@
       scroll-snap-type: unset;
 
       @include grid-cols(repeat(4, 1fr), 1rem);
-      align-items: baseline;
+      align-items: flex-start;
     }
   }
 }

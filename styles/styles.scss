@@ -1,19 +1,12 @@
-/* Libraries */
-@import "./plugins/icofont.min.css"; /* icofont icon font */
-@import "./plugins/fontawesome-all.min.css"; /* fontawesome icon font */
-
-/* Bootstrap partials */
-// @import "../node_modules/bootstrap/scss/functions";
-// @import "../node_modules/bootstrap/scss/variables";
-// @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/modal";
-// @import "../node_modules/bootstrap/scss/nav";
-
 /* Internal */
 @import "./0-base/index";
 @import "./1-mixins/mixins";
 @import "./2-components/components";
 @import "./3-pages/pages.scss";
+
+/* Libraries */
+@import "./plugins/icofont.min.css"; /* icofont icon font */
+@import "./plugins/fontawesome-all.min.css"; /* fontawesome icon font */
 
 /*====================================
     02 -  Styles
@@ -21,20 +14,20 @@
 /* General Styles
 ================================*/
 main {
-  margin-top: 3.5vh;
+	margin-top: 3.5vh;
 }
 
 @media (min-width: $max-l) {
-  main {
-    margin-top: 6vh;
-  }
+	main {
+		margin-top: 6vh;
+	}
 }
 
 .seperator {
-  border: none;
-  padding: 5rem;
+	border: none;
+	padding: 5rem;
 }
 
 .logo {
-  max-width: 110px;
+	max-width: 110px;
 }

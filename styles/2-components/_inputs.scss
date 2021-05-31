@@ -90,6 +90,10 @@ textarea {
 fieldset {
   border: none;
 }
+legend {
+  margin: 1rem auto 1rem 0;
+  font-family: $paragraph;
+}
 
 /* SEARCH BAR in NAVIGATION*/
 nav .search-bar input[type="search"] {

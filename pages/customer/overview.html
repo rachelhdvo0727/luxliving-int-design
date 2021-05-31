@@ -1,583 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="../../styles/styles.css" />
-    <!-- Custom fonts -->
-    <link rel="stylesheet" href="../../styles/plugins/icofont.css" />
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Custom styles -->
+		<link rel="stylesheet" href="../../styles/styles.css" />
+		<!-- Custom fonts -->
+		<link rel="stylesheet" href="../../styles/plugins/icofont.css" />
 
-    <title>LuxLiving</title>
+		<title>LuxLiving</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <header id="header">
-      <nav id="navigation" class="customer-nav">
-        <div class="navigation-logo">
-          <a class="logo" href="../../index.html"> LuxLiving </a>
-        </div>
-        <div class="search-bar">
-          <input
-            type="search"
-            name="search-bar"
-            id="search-bar"
-            placeholder="search ..."
-          />
-          <img class="search-icon" src="../../assets/search.svg" />
-        </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<nav id="navigation" class="customer-nav">
+				<div class="navigation-logo">
+					<a class="logo" href="../../index.html"> LuxLiving </a>
+				</div>
+				<div class="search-bar">
+					<input
+						type="search"
+						name="search-bar"
+						id="search-bar"
+						placeholder="search ..."
+					/>
+					<img class="search-icon" src="../../assets/search.svg" />
+				</div>
 
-        <div id="menu-toggle">
-          <input id="dropcheck" type="checkbox" />
-          <label
-            for="dropcheck"
-            class="link link-flat desktop-links categories-btn"
-            >Categories</label
-          >
-          <a class="link link-flat desktop-links" href="./help.html">Help</a>
-          <div id="account-dropdown">
-            <input id="profile-click" type="checkbox" />
-            <label
-              for="profile-click"
-              class="link link-flat desktop-links profile"
-              >Christina
-              <img
-                src="../../images/christina-profile-icon.png"
-                alt="christina-customer-reader"
-            /></label>
+				<div id="menu-toggle">
+					<input id="dropcheck" type="checkbox" />
+					<label
+						for="dropcheck"
+						class="link link-flat desktop-links categories-btn"
+						>Categories</label
+					>
+					<a class="link link-flat desktop-links" href="#">Help</a>
+					<div id="account-dropdown">
+						<input id="profile-click" type="checkbox" />
+						<label
+							for="profile-click"
+							class="link link-flat desktop-links profile"
+							>Christina
+							<img
+								src="../../images/christina-profile-icon.png"
+								alt="christina-customer-reader"
+						/></label>
 
-            <ul class="acc-dropdown-list">
-              <li>
-                <a class="link link-navi" target="_self" href="#">Overview</a>
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self"
-                  >Saved articles</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="./favorites.html">Favorites</a>
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self">History</a>
-              </li>
-              <li>
-                <a class="link link-navi" href="./account-settings.html"
-                  >Account settings</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="../sign-in.html">Sign out</a>
-              </li>
-            </ul>
-          </div>
+						<ul class="acc-dropdown-list">
+							<li>
+								<a class="link link-navi" target="_self" href="#">Overview</a>
+							</li>
+							<li>
+								<a class="link link-navi" href="#" target="_self"
+									>Saved articles</a
+								>
+							</li>
+							<li>
+								<a class="link link-navi" href="./favorites.html">Favorites</a>
+							</li>
+							<li>
+								<a class="link link-navi" href="#" target="_self">History</a>
+							</li>
+							<li>
+								<a class="link link-navi" href="./account-settings.html"
+									>Account settings</a
+								>
+							</li>
+							<li>
+								<a class="link link-navi" href="../sign-in.html">Sign out</a>
+							</li>
+						</ul>
+					</div>
 
-          <input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
-          <span></span>
-          <span></span>
-          <span></span>
+					<input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
+					<span></span>
+					<span></span>
+					<span></span>
 
-          <div class="dropdown">
-            <ul class="category-list">
-              <li class="category">
-                <div class="profile">
-                  <img
-                    class="img-responsive"
-                    src="../../images/christina-profile-icon.png"
-                    alt="christina-customer-reader"
-                  />
-                  Christina Brandt
-                </div>
-                <ul class="subcat">
-                  <li>
-                    <a class="link link-navi" target="_self" href="#"
-                      >Overview</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Saved articles</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Favorites</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >History</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="./account-settings.html"
-                      >Account settings</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Residence
-                <ul class="subcat">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Apartment</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">House</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Summer house</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Country house</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Barn</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Castle</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Rooms
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Livingroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Bathroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Bedroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Corridor</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Office</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Kid's room</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Outdoor
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Balcony</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Terrasse</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Design & Architecture
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Architecture</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Design</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Culture</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Design Awards</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Magazine
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#">Printed magazines</a>
-                  </li>
-                  <li>
-                    <a
-                      class="link link-navi"
-                      href="./pages/public-subscriptions.html"
-                      >Subscriptions</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                <a class="link help link-navi" href="../sign-in.html"
-                  >Sign out</a
-                >
-              </li>
-              <li class="category">
-                <a class="link help link-navi" href="./pages/help.html">Help</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main id="customer-overview">
-      <h1 class="">Overview</h1>
+					<div class="dropdown">
+						<ul class="category-list">
+							<li class="category">
+								<a class="profile" href="#cus-dropdown">
+									<img
+										class="img-responsive"
+										src="../../images/christina-profile-icon.png"
+										alt="christina-customer-reader"
+									/>
+									Christina Brandt
+								</a>
+								<ul id="cus-dropdown" class="subcat">
+									<li>
+										<a class="link link-navi" target="_self" href="#"
+											>Overview</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Saved articles</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Favorites</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>History</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="./account-settings.html"
+											>Account settings</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="category">
+								Residence
+								<ul id="residence" class="subcat">
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Apartment</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self">House</a>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Summer house</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Country house</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self">Barn</a>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self">Castle</a>
+									</li>
+								</ul>
+							</li>
+							<li class="category">
+								Rooms
+								<ul id="rooms" class="subcat">
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Livingroom</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Bathroom</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Bedroom</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Corridor</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self">Office</a>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Kid's room</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="category">
+								Outdoor
+								<ul id="outdoor" class="subcat hide">
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Balcony</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Terrasse</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="category">
+								Design & Architecture
+								<ul id="design" class="subcat hide">
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Architecture</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self">Design</a>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Culture</a
+										>
+									</li>
+									<li>
+										<a class="link link-navi" href="#" target="_self"
+											>Design Awards</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="category">
+								Magazine
+								<ul id="magazine" class="subcat hide">
+									<li>
+										<a class="link link-navi" href="#">Printed magazines</a>
+									</li>
+									<li>
+										<a
+											class="link link-navi"
+											href="./pages/public-subscriptions.html"
+											>Subscriptions</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="category">
+								<a class="link help link-navi sign-out" href="../sign-in.html"
+									>Sign out</a
+								>
+							</li>
+							<li class="category">
+								<a class="link help link-navi" href="./pages/help.html">Help</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main id="customer-overview">
+			<h1 class="">Overview</h1>
 
-      <!-- 4 topic section start -->
-      <section id="topic" class="content-container">
-        <div class="top-wrapper">
-          <h2 class="topic-title display-2">Recently read</h2>
-          <span class="see-all"
-            ><a href="#" target="_self">See all</a>
-            <i class="icofont-arrow-right-before"></i
-          ></span>
-        </div>
+			<!-- 4 topic section start -->
+			<section id="topic" class="content-container">
+				<div class="top-wrapper">
+					<h2 class="topic-title display-2">Recently read</h2>
+					<span class="see-all"
+						><a href="#" target="_self">See all</a>
+						<i class="icofont-arrow-right-before"></i
+					></span>
+				</div>
 
-        <div class="articles">
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-pixabay-271743.jpg"
-              />
-              <a
-                class="display-4 card-title"
-                style="font-family: 'Poppins'; font-weight: 600"
-                href="./article.html"
-              >
-                7 Nightstands To Perfect Your Bedroom Decor
-              </a>
-              <p>
-                Bedroom is where you whine down and relax, let's see how you can
-                do that with just decoration.
-              </p>
-              <span>08.05.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-maria-orlova-4969924-winter.jpg"
-              />
-              <h4 class="card-title">Winter trends</h4>
-              <p>Explore the new trends the coming winter after the pandemic</p>
-              <span>16.01.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive border-bottom cfa-blue__border"
-                src="../../images/pexels-maksim-goncharenok-4352247.jpg"
-              />
-              <h4 class="card-title">What is minimalism?</h4>
-              <p>
-                In this article, John Suh - a minimalist will help us understand
-                the meaning behind this buzz word.
-              </p>
-              <span>09.05.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive border-bottom cfa-orange__border"
-                src="../../images/pexels-mister-mister-2442904.jpg"
-              />
-              <h4 class="card-title">Cozy fall designs</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <span>20.04.2021</span>
-            </div>
-          </article>
-        </div>
-      </section>
+				<div class="articles">
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-pixabay-271743.jpg"
+								alt="Photo by Pexels.com"
+							/>
+							<a
+								class="display-4 card-title"
+								style="font-family: 'Poppins'; font-weight: 600"
+								href="./article.html"
+							>
+								7 Nightstands To Perfect Your Bedroom Decor
+							</a>
+							<p>
+								When decorating a bedroom gets hard, these nighstand ideas will
+								perfect your bedroom decor in an easy breezy fashion!
+							</p>
+							<span class="date">08.05.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-maria-orlova-4969924-winter.jpg"
+								alt="Photo by Maria Orlova from Pexels"
+							/>
+							<h4 class="card-title">Winter trends</h4>
+							<p>Explore the new trends the coming winter after the pandemic</p>
+							<span class="date">16.01.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive border-bottom cfa-blue__border"
+								src="../../images/pexels-maksim-goncharenok-4352247.jpg"
+								alt="Photo by Maksim Goncharenok from Pexels"
+							/>
+							<h4 class="card-title">What is minimalism?</h4>
+							<p>
+								In this article, John Suh - a minimalist will help us understand
+								the meaning behind this buzz word.
+							</p>
+							<span class="date">09.05.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive border-bottom cfa-orange__border"
+								src="../../images/pexels-mister-mister-2442904.jpg"
+								alt="Photo by Mister Mister from Pexels"
+							/>
+							<h4 class="card-title">Cozy fall designs</h4>
+							<p>
+								It's not fall yet, but here are some ideas to make your home
+								more cozy.
+							</p>
+							<span class="date">20.04.2021</span>
+						</div>
+					</article>
+				</div>
+			</section>
 
-      <section id="topic" class="content-container">
-        <div class="top-wrapper">
-          <h2 class="topic-title display-2">For later</h2>
-          <span class="see-all"
-            ><a href="#" target="_self">See all</a>
-            <i class="icofont-arrow-right-before"></i
-          ></span>
-        </div>
-        <div class="articles">
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-kien-tran-5814952.jpg"
-              />
-              <h4 class="card-title">Tips for a cozy home</h4>
-              <p>Here are some pointers for you to have a cozy home.</p>
-              <span>06.05.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img class="img-responsive" src="../../images/yoyo-sexy.png" />
-              <h4 class="card-title">10 questions with Vera Lundgaard</h4>
-              <p>Designer Vera Lundgaard's story and her tips on decorating.</p>
-              <span>10.05.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-meruyert-gonullu-6243727-exhibition.jpg"
-              />
-              <h4 class="card-title">Rugs and other things</h4>
-              <p>Design patterns on your home materials.</p>
-              <span>16.01.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-charlotte-may-5824491.jpg"
-              />
-              <h4 class="card-title">Home design</h4>
-              <p>How would you design your home from scratch?</p>
-              <span>16.04.2021</span>
-            </div>
-          </article>
-        </div>
-      </section>
+			<section id="topic" class="content-container">
+				<div class="top-wrapper">
+					<h2 class="topic-title display-2">For later</h2>
+					<span class="see-all"
+						><a href="#" target="_self">See all</a>
+						<i class="icofont-arrow-right-before"></i
+					></span>
+				</div>
+				<div class="articles">
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-kien-tran-5814952.jpg"
+								alt="Photo by Kien Tran from Pexels"
+							/>
+							<h4 class="card-title">Tips for a cozy home</h4>
+							<p>Here are some pointers for you to have a cozy home.</p>
+							<span class="date">06.05.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img class="img-responsive" src="../../images/yoyo-sexy.png" />
+							<h4 class="card-title">10 questions with Vera Lundgaard</h4>
+							<p>Designer Vera Lundgaard's story and her tips on decorating.</p>
+							<span class="date">10.05.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-meruyert-gonullu-6243727-exhibition.jpg"
+								alt="Photo by Meruyert Gonullu from Pexels"
+							/>
+							<h4 class="card-title">Rugs and other things</h4>
+							<p>Design patterns on your home materials.</p>
+							<span class="date">16.01.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-charlotte-may-5824491.jpg"
+								alt="Photo by Charlotte May from Pexels"
+							/>
+							<h4 class="card-title">Home design</h4>
+							<p>How would you design your home from scratch?</p>
+							<span class="date">16.04.2021</span>
+						</div>
+					</article>
+				</div>
+			</section>
 
-      <section id="topic" class="content-container">
-        <div class="top-wrapper">
-          <h2 class="topic-title display-2">Favorites</h2>
-          <span class="see-all"
-            ><a href="./favorites.html">See all</a>
-            <i class="icofont-arrow-right-before"></i
-          ></span>
-        </div>
-        <div class="articles">
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-maria-orlova-4969924-winter.jpg"
-              />
-              <h4 class="card-title">Winter trends</h4>
-              <p>Explore the new trends the coming winter after the pandemic</p>
-              <span>16.01.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-meruyert-gonullu-6243727-exhibition.jpg"
-              />
-              <h4 class="card-title">Rugs and other things</h4>
-              <p>Design patterns on your home materials.</p>
-              <span>16.01.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-charlotte-may-5824491.jpg"
-              />
-              <h4 class="card-title">Home design</h4>
-              <p>How would you design your home from scratch?</p>
-              <span>16.04.2021</span>
-            </div>
-          </article>
-          <article class="card-article">
-            <div class="article-content">
-              <img
-                class="img-responsive border-bottom cfa-orange__border"
-                src="../../images/pexels-mister-mister-2442904.jpg"
-              />
-              <h4 class="card-title">Cozy fall designs</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <span>20.04.2021</span>
-            </div>
-          </article>
-        </div>
-      </section>
+			<section id="topic" class="content-container">
+				<div class="top-wrapper">
+					<h2 class="topic-title display-2">Favorites</h2>
+					<span class="see-all"
+						><a href="./favorites.html">See all</a>
+						<i class="icofont-arrow-right-before"></i
+					></span>
+				</div>
+				<div class="articles">
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-maria-orlova-4969924-winter.jpg"
+								alt="Photo by Maria Orlova from Pexels"
+							/>
+							<h4 class="card-title">Winter trends</h4>
+							<p>Explore the new trends the coming winter after the pandemic</p>
+							<span class="date">16.01.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-meruyert-gonullu-6243727-exhibition.jpg"
+								alt="Photo by Meruyert Gonullu from Pexels"
+							/>
+							<h4 class="card-title">Rugs and other things</h4>
+							<p>Design patterns on your home materials.</p>
+							<span class="date">16.01.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-charlotte-may-5824491.jpg"
+								alt="Photo by Charlotte May from Pexels"
+							/>
+							<h4 class="card-title">Home design</h4>
+							<p>How would you design your home from scratch?</p>
+							<span class="date">16.04.2021</span>
+						</div>
+					</article>
+					<article class="card-article">
+						<div class="article-content">
+							<img
+								class="img-responsive border-bottom cfa-orange__border"
+								src="../../images/pexels-mister-mister-2442904.jpg"
+								alt="Photo by Mister Mister from Pexels"
+							/>
+							<h4 class="card-title">Cozy fall designs</h4>
+							<p>
+								It's not fall yet, but here are some ideas to make your home
+								more cozy.
+							</p>
+							<span class="date">20.04.2021</span>
+						</div>
+					</article>
+				</div>
+			</section>
 
-      <section id="topic" class="content-container">
-        <div class="top-wrapper-events">
-          <h2 class="topic-title display-2">Events</h2>
-          <span class="see-all"
-            ><a href="./event.html">See all</a>
-            <i class="icofont-arrow-right-before"></i
-          ></span>
-        </div>
-        <div class="events">
-          <div class="card-event">
-            <div class="event-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-karolina-grabowska-exhibition-4203098.jpg"
-              />
-              <span class="event-stt future">Upcoming</span>
-              <a
-                class="display-4 card-title"
-                href="./event.html"
-                style="font-family: 'Poppins'; font-weight: 600"
-                >Minimalism</a
-              >
-              <p>
-                What is minimalism all about? If you have this question, you can
-                probably find your answers at this exhibition.
-              </p>
-              <span>10.06.2021</span>
-            </div>
-          </div>
-          <div class="card-event">
-            <div class="event-content">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-mali-maeder-112474-exhibition.jpg"
-              />
-              <span class="event-stt future">Upcoming</span>
-              <h4 class="card-title">Nordic furniture</h4>
-              <p>An exhibition about scandinavian furnitures</p>
-              <span>28.06.2021</span>
-            </div>
-          </div>
-          <div class="card-event">
-            <div class="event-content past-event">
-              <img
-                class="img-responsive"
-                src="../../images/pexels-victoria-borodinova-3315291.jpg"
-              />
-              <span class="event-stt past">Past</span>
-              <h4 class="card-title">Bathroom exhibition</h4>
-              <p>
-                An exhibition with many big interior design companies joining
-              </p>
-              <span>28.04.2021</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer id="footy">
-      <div class="footy-leftcol contact-info">
-        <div class="footy-containers">
-          <h6>Address</h6>
-          <address>
-            LuxLiving A/S<br />
-            Saltværksvej 8, 1. th<br />
-            2000 Copenhagen<br />
-            Denmark<br />
-          </address>
-        </div>
+			<section id="topic" class="content-container">
+				<div class="top-wrapper-events">
+					<h2 class="topic-title display-2">Events</h2>
+					<span class="see-all"
+						><a href="./event.html">See all</a>
+						<i class="icofont-arrow-right-before"></i
+					></span>
+				</div>
+				<div class="events">
+					<div class="card-event">
+						<div class="event-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-karolina-grabowska-exhibition-4203098.jpg"
+								alt="Photo by Karolina Grabowska from Pexels"
+							/>
+							<span class="event-stt future">Upcoming</span>
+							<a
+								class="display-4 card-title"
+								href="./event.html"
+								style="font-family: 'Poppins'; font-weight: 600"
+								>Minimalism</a
+							>
+							<p>
+								What is minimalism all about? If you have this question, you can
+								probably find your answers at this exhibition.
+							</p>
+							<span class="date">10.06.2021</span>
+						</div>
+					</div>
+					<div class="card-event">
+						<div class="event-content">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-mali-maeder-112474-exhibition.jpg"
+								alt="Photo by Mali Maeder from Pexels"
+							/>
+							<span class="event-stt future">Upcoming</span>
+							<h4 class="card-title">Nordic furniture</h4>
+							<p>An exhibition about scandinavian furnitures</p>
+							<span class="date">28.06.2021</span>
+						</div>
+					</div>
+					<div class="card-event">
+						<div class="event-content past-event">
+							<img
+								class="img-responsive"
+								src="../../images/pexels-victoria-borodinova-3315291.jpg"
+								alt="Photo by Victoria Borodinova from Pexels"
+							/>
+							<span class="event-stt past">Past</span>
+							<h4 class="card-title">Bathroom exhibition</h4>
+							<p>
+								An exhibition with many big interior design companies joining
+							</p>
+							<span class="date">28.04.2021</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footy">
+			<div class="footy-leftcol contact-info">
+				<div class="footy-containers">
+					<h6>Address</h6>
+					<address>
+						LuxLiving A/S<br />
+						Saltværksvej 8, 1. th<br />
+						2000 Copenhagen<br />
+						Denmark<br />
+					</address>
+				</div>
 
-        <div class="footy-containers">
-          <h6>Contact</h6>
-          <ul>
-            <li><a href="tel:+4512678927">+45 12 67 89 27</a></li>
-            <li class="">
-              <a href="mailto: hello@luxliving.com">hello@luxliving.com</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+				<div class="footy-containers">
+					<h6>Contact</h6>
+					<ul>
+						<li><a href="tel:+4512678927">+45 12 67 89 27</a></li>
+						<li class="">
+							<a href="mailto: hello@luxliving.com">hello@luxliving.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-      <div class="footy-rightcol help-info">
-        <div class="footy-containers">
-          <h6>Customer service</h6>
-          <ul>
-            <li>
-              <a href="../help.html">Help</a>
-            </li>
-            <li>
-              <a href="../help.html">FAQ</a>
-            </li>
-            <li>
-              <a href="../customer/subscriptions.html">Subscriptions</a>
-            </li>
-          </ul>
-        </div>
+			<div class="footy-rightcol help-info">
+				<div class="footy-containers">
+					<h6>Customer service</h6>
+					<ul>
+						<li>
+							<a href="../help.html">Help</a>
+						</li>
+						<li>
+							<a href="../help.html">FAQ</a>
+						</li>
+						<li>
+							<a href="../customer/subscriptions.html">Subscriptions</a>
+						</li>
+					</ul>
+				</div>
 
-        <div class="footy-containers">
-          <h6>Social Media</h6>
-          <ul>
-            <li class="some facebook">
-              <i class="icofont-facebook"></i
-              ><a href="#" target="_self">Facebook</a>
-            </li>
-            <li class="some insta">
-              <i class="icofont-instagram"></i
-              ><a href="#" target="_self">Instagram</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+				<div class="footy-containers">
+					<h6>Social Media</h6>
+					<ul>
+						<li class="some facebook">
+							<i class="icofont-facebook"></i
+							><a href="#" target="_self">Facebook</a>
+						</li>
+						<li class="some insta">
+							<i class="icofont-instagram"></i
+							><a href="#" target="_self">Instagram</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-      <div class="footy-containers newsletter">
-        <h6>Newsletter</h6>
-        <p>Leave your email here to subscribe to our newsletters.</p>
-        <form
-          role="form"
-          action="#"
-          method="post"
-          target="_self"
-          id="newsletter-form"
-        >
-          <div class="input-container">
-            <input
-              type="email"
-              class="input"
-              name="email"
-              placeholder="Email address"
-            />
-            <label for="email" class="input-label">Email address</label>
-          </div>
-          <button type="submit" class="btn btn-secondary" id="subscribe">
-            Subscribe
-          </button>
-        </form>
-      </div>
+			<div class="footy-containers newsletter">
+				<h6>Newsletter</h6>
+				<p>Leave your email here to subscribe to our newsletters.</p>
+				<form
+					role="form"
+					action="#"
+					method="post"
+					target="_self"
+					id="newsletter-form"
+				>
+					<div class="input-container">
+						<input
+							type="email"
+							class="input"
+							name="email"
+							placeholder="Email address"
+						/>
+						<label for="email" class="input-label">Email address</label>
+					</div>
+					<button type="submit" class="btn btn-secondary" id="subscribe">
+						Subscribe
+					</button>
+				</form>
+			</div>
 
-      <!-- copyright start -->
-      <div class="footy-end copyright">
-        <p class="copyright-text">&copy; LuxLiving A/S 2021</p>
-      </div>
-      <!-- copyright end -->
-    </footer>
-  </body>
+			<!-- copyright start -->
+			<div class="footy-end copyright">
+				<p class="copyright-text">&copy; LuxLiving A/S 2021</p>
+			</div>
+			<!-- copyright end -->
+		</footer>
+	</body>
 </html>

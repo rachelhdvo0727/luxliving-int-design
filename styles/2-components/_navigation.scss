@@ -1,267 +1,287 @@
 nav {
-  width: 100%;
-  // height: 40px;
-  display: grid;
-  grid-template-columns: auto auto 50px;
-  gap: 1rew;
-  position: relative;
-  background-color: $primary;
+	width: 100%;
+	// height: 40px;
+	display: grid;
+	grid-template-columns: auto auto 50px;
+	gap: 1rew;
+	position: relative;
+	background-color: $primary;
 }
 // https://codepen.io/erikterwan/pen/EVzeRP
 #menu-toggle {
-  display: block;
-  position: relative;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
+	display: block;
+	position: relative;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 #menu-toggle input {
-  display: block;
-  width: 56px;
-  height: 50px;
-  position: absolute;
-  right: 0;
-  background-color: $tertiary;
-  border-radius: unset;
-  cursor: pointer;
-  z-index: 1; /* and place it over the hamburger */
-  -webkit-touch-callout: none;
-  box-shadow: unset;
+	display: block;
+	width: 56px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	background-color: $tertiary;
+	border-radius: unset;
+	cursor: pointer;
+	z-index: 1; /* and place it over the hamburger */
+	-webkit-touch-callout: none;
+	box-shadow: unset;
 }
 
 #menu-toggle span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin-bottom: 5px;
-  position: relative;
-  top: 15.5px;
-  right: -8px;
-  background: $white;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 6px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+	display: block;
+	width: 30px;
+	height: 3px;
+	margin-bottom: 5px;
+	position: relative;
+	top: 15.5px;
+	right: -8px;
+	background: $white;
+	border-radius: 3px;
+	z-index: 1;
+	transform-origin: 4px 6px;
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+		background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menu-toggle span:first-child {
-  transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
 }
 
 #menu-toggle span:nth-last-child(2) {
-  // transform-origin: 0% 100%;
-  transform-origin: 5px -2px;
+	// transform-origin: 0% 100%;
+	transform-origin: 5px -2px;
 }
 
 #menu-toggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: $white;
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: $white;
 }
 
 /* Hide the middle span */
 #menu-toggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /* The last span should go the other direction */
 #menu-toggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+	transform: rotate(-45deg) translate(0, -1px);
 }
 
 .dropdown,
 .acc-dropdown-list {
-  position: absolute;
-  margin: 0px 0 0 -50px;
-  width: 100.22vw;
-  height: 100vh;
-  // left: -351px;
-  right: 0;
-  padding: 2rem;
-  color: $white;
-  line-height: 50px;
+	position: absolute;
+	margin: 0px 0 0 -50px;
+	width: 100.22vw;
+	height: 100vh;
+	// left: -351px;
+	right: 0;
+	padding: 2rem;
+	color: $white;
+	line-height: 50px;
 
-  background: $primary;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+	background: $primary;
+	-webkit-font-smoothing: antialiased;
+	/* to stop flickering of text in safari */
 
-  // transform: translate(-111%, -180%);
-  transform-origin: 0% 0%;
-  transform: translate(0%, -120%);
+	// transform: translate(-111%, -180%);
+	transform-origin: 0% 0%;
+	transform: translate(0%, -120%);
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
-  li.category {
-    transition: color 0.3s ease;
+	li.category {
+		transition: color 0.3s ease;
 
-    &:hover {
-      color: $tertiary;
-    }
-  }
+		&:hover {
+			color: $tertiary;
+		}
+	}
 
-  .category,
-  .help {
-    font-weight: 550;
-    cursor: pointer;
-  }
+	.category,
+	.help {
+		font-weight: 550;
+		cursor: pointer;
+	}
 
-  .category:hover .subcat {
-    display: block;
-  }
+	.subcat {
+		text-indent: 1rem;
+		display: none;
+	}
 
-  .subcat {
-    text-indent: 1rem;
-    display: none;
-  }
+	.category:hover .subcat {
+		display: block;
+	}
+
+	// #cus-dropdown:target,
+	// #residence:target,
+	// #rooms:target,
+	// #outdoor:target,
+	// #design:target,
+	// #magazine:target {
+	// 	display: block;
+	// }
 }
 
 .desktop-links:hover {
-  background-color: $tertiary;
+	background-color: $tertiary;
 }
 
 /* Slide menu dropdown from the top */
 #menu-toggle input:checked ~ .dropdown,
 label.categories-btn:first-child:checked ~ .dropdown {
-  top: 6.5vh;
-  transform: none;
+	// top: 4.5vh;
+	top: 3rem;
+	transform: none;
 }
 
 /* Categories button */
 input#dropcheck,
 input#profile-click,
 .desktop-links .profile {
-  display: none !important;
-  width: unset;
-  height: unset;
-  background: transparent;
+	display: none !important;
+	width: unset;
+	height: unset;
+	background: transparent;
 }
 label.categories-btn {
-  margin: 0;
-  transform: none;
-  cursor: pointer;
+	margin: 0;
+	transform: none;
+	cursor: pointer;
 }
 
 .dropdown:target {
-  height: 50px;
+	height: 50px;
 }
 
 .navigation-logo {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  user-select: none;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	user-select: none;
 }
 
 .navigation-logo a {
-  text-decoration: none;
-  font-weight: 700;
-  color: $white;
-  margin: auto 0.8rem auto;
-  letter-spacing: 1px;
-  font-size: 18px;
+	text-decoration: none;
+	font-weight: 700;
+	color: $white;
+	margin: auto 0.8rem auto;
+	letter-spacing: 1px;
+	font-size: 18px;
 
-  &:hover {
-    text-decoration: none;
-  }
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 .desktop-links {
-  display: none;
+	display: none;
 }
 
 // Customer signed in
 .category-list .profile {
-  @include grid-cols(auto 150px, 1rem);
-  justify-content: flex-start;
-  align-items: center;
-  margin: 1.5rem 0;
+	@include grid-cols(auto 150px, 1rem);
+	justify-content: flex-start;
+	align-items: center;
+	margin: 1.5rem 0;
 
-  img {
-    width: 50px;
-  }
+	img {
+		width: 50px;
+	}
 }
 
 @media (min-width: $max-s) {
-  nav {
-    grid-template-columns: auto auto 300px;
-  }
+	nav {
+		grid-template-columns: auto auto 300px;
+	}
 
-  // Customer signed in
-  nav.customer-nav {
-    grid-template-columns: auto auto 370px;
-  }
+	// Customer signed in
+	nav.customer-nav {
+		grid-template-columns: auto auto 370px;
+	}
 
-  #menu-toggle {
-    @include flex(row wrap);
-    // justify-content: space-evenly;
-    justify-content: space-between;
-  }
+	#menu-toggle {
+		@include flex(row wrap);
+		justify-content: space-evenly;
+		// justify-content: space-between;
+	}
 
-  .desktop-links {
-    display: block;
-  }
+	.desktop-links {
+		display: block;
+	}
 
-  #menu-toggle span,
-  #menu-toggle input,
-  .category-list .category:first-child {
-    display: none;
-  }
+	#menu-toggle span,
+	#menu-toggle input,
+	.category-list .category:first-child {
+		display: none;
+	}
 
-  input#dropcheck,
-  input#profile-click,
-  .desktop-links .profile {
-    display: block !important;
-  }
+	input#dropcheck,
+	input#profile-click,
+	.desktop-links .profile {
+		display: block !important;
+	}
 
-  // Desktop dropdown
-  #account-dropdown .profile {
-    @include grid-cols(auto 50px, 0rem);
-    margin: 0;
-    transform: none;
+	.sign-out {
+		display: none;
+	}
+	// Desktop dropdown
+	#account-dropdown .profile {
+		@include grid-cols(auto 50px, 0rem);
+		margin: 0;
+		transform: none;
 
-    img {
-      width: 30px;
-      place-self: center end;
-    }
+		img {
+			width: 30px;
+			place-self: center end;
+		}
 
-    &:hover {
-      cursor: pointer;
-    }
-  }
+		&:hover {
+			cursor: pointer;
+		}
+	}
 
-  // Clicking account button
-  #profile-click:checked ~ ul.acc-dropdown-list {
-    transform: none;
-    display: block;
-    width: 200px;
-    padding: 0.5rem 2rem 1rem;
-  }
+	// Clicking account button
+	#profile-click:checked ~ ul.acc-dropdown-list {
+		transform: none;
+		display: block;
+		width: 200px;
+		padding: 0.5rem 2rem 1rem;
+	}
 
-  .acc-dropdown-list {
-    display: none;
-  }
+	.acc-dropdown-list {
+		display: none;
+	}
 
-  .dropdown,
-  .acc-dropdown-list {
-    height: -moz-fit-content;
-    height: fit-content;
-    width: max-content;
-    transition: unset;
+	.dropdown,
+	.acc-dropdown-list {
+		height: -moz-fit-content;
+		height: fit-content;
+		// width: max-content;
+		padding: 3rem;
+		transition: unset;
 
-    ul.category-list {
-      @include grid-cols(repeat(5, 1fr), 1rem);
+		ul.category-list {
+			@include grid-cols(repeat(5, 1fr), 1rem);
 
-      li.category:last-child {
-        display: none;
-      }
+			li.category:last-child {
+				display: none;
+			}
 
-      ul.subcat {
-        display: block;
-      }
-    }
-  }
+			ul.subcat {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (min-width: $max-m) {
+	#menu-toggle .dropdown {
+		width: max-content;
+	}
 }
