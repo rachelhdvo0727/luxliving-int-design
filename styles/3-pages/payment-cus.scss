@@ -69,6 +69,7 @@ a.back-btn {
 
 .step-content {
 	display: none;
+	padding: 0 0.5rem;
 }
 
 .payment-steps
@@ -130,7 +131,9 @@ fieldset#confirm {
 }
 
 .cred-aid {
-	margin-left: 1.3rem;
+	text-indent: 2rem;
+	display: flex;
+	flex-wrap: wrap;
 	a {
 		text-decoration: underline;
 		font-weight: 550;
@@ -203,6 +206,10 @@ fieldset#confirm {
 
 		fieldset#step-controls {
 			padding: 0 2rem 0rem 1rem;
+		}
+
+		.cred-aid {
+			text-indent: 1rem;
 		}
 	}
 }

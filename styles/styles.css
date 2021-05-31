@@ -195,12 +195,12 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(3rem - 32px);
+    font-size: calc(3rem - 15px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2rem - 16px);
+    font-size: calc(2rem - 10px);
   }
 
   h3,
@@ -907,7 +907,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -931,11 +931,11 @@ footer#footy .footy-leftcol {
 }
 .card-article:hover {
   cursor: pointer;
-  -ms-transform: scale(1.2);
+  -ms-transform: scale(1.12);
   /* IE 9 */
-  -webkit-transform: scale(1.2);
+  -webkit-transform: scale(1.12);
   /* Safari 3-8 */
-  transform: scale(1.2);
+  transform: scale(1.12);
 }
 .card-article:hover h2 {
   color: #254c50;
@@ -1303,12 +1303,12 @@ blockquote {
 @media (max-width: 767.98px) {
   h1,
 .display-1 {
-    font-size: calc(3rem - 32px);
+    font-size: calc(3rem - 15px);
   }
 
   h2,
 .display-2 {
-    font-size: calc(2rem - 16px);
+    font-size: calc(2rem - 10px);
   }
 
   h3,
@@ -2015,7 +2015,7 @@ footer#footy .footy-leftcol {
 .card-article .article-content {
   width: 250px;
   height: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -2039,11 +2039,11 @@ footer#footy .footy-leftcol {
 }
 .card-article:hover {
   cursor: pointer;
-  -ms-transform: scale(1.2);
+  -ms-transform: scale(1.12);
   /* IE 9 */
-  -webkit-transform: scale(1.2);
+  -webkit-transform: scale(1.12);
   /* Safari 3-8 */
-  transform: scale(1.2);
+  transform: scale(1.12);
 }
 .card-article:hover h2 {
   color: #254c50;
@@ -2634,6 +2634,7 @@ a.back-btn:hover {
 
 .step-content {
   display: none;
+  padding: 0 0.5rem;
 }
 
 .payment-steps [type=radio]:nth-of-type(1):checked ~ .steps .step:nth-of-type(1) .step-label,
@@ -2679,7 +2680,9 @@ fieldset#confirm {
 }
 
 .cred-aid {
-  margin-left: 1.3rem;
+  text-indent: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .cred-aid a {
   text-decoration: underline;
@@ -2756,6 +2759,9 @@ fieldset#confirm {
   #payment-form fieldset#step-controls {
     padding: 0 2rem 0rem 1rem;
   }
+  #payment-form .cred-aid {
+    text-indent: 1rem;
+  }
 }
 @media (min-width: 991.98px) {
   .steps {
@@ -2789,11 +2795,12 @@ ul.breadcrumb li a:hover {
 main#article,
 main#customer-event {
   margin-top: 8vh;
+  position: relative;
 }
 
 article#article-content {
-  margin-top: 2rem;
-  padding: 1rem;
+  margin: 2rem auto 5rem auto;
+  padding: 0 2.8rem;
   display: flex;
   flex-flow: column wrap;
 }
@@ -2817,7 +2824,7 @@ article#article-content .some-icons-container {
 article#article-content .some-icons-container img {
   margin-right: 0.5rem;
   width: 20px;
-  height: 15px;
+  height: 18px;
 }
 article#article-content .some-icons-container svg:hover {
   fill: #ff7474;
@@ -2832,6 +2839,19 @@ article#article-content section#author-published {
 article#article-content img {
   cursor: pointer;
   align-self: center;
+}
+
+#photo-enlarge .modal {
+  margin: 4rem auto;
+  background-color: transparent;
+}
+#photo-enlarge .modal .close {
+  color: #828282;
+  top: 3px;
+}
+
+.zoomed-photo {
+  width: 100%;
 }
 
 section#comment-interact {
@@ -2920,6 +2940,41 @@ fieldset.typing-field .input-container {
   fill: #f8c971;
 }
 
+.back-to-top-wrapper {
+  position: absolute;
+  top: 300vh;
+  right: 0.5rem;
+  bottom: -5em;
+  width: 3em;
+}
+
+.back-to-top-link {
+  position: fixed;
+  pointer-events: all;
+  top: calc(100vh - 4rem);
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f5b53f;
+  transition: transform 80ms ease-in;
+}
+.back-to-top-link img {
+  margin-bottom: 6px;
+}
+.back-to-top-link:hover, .back-to-top-link:focus {
+  transform: scale(1.1);
+}
+.back-to-top-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #f9cf82;
+}
+
 @media (min-width: 767.98px) {
   main#article {
     padding: 0 1rem;
@@ -2933,6 +2988,8 @@ fieldset.typing-field .input-container {
   article#article-content .some-icons-container {
     margin-top: 0;
     place-self: baseline end;
+    position: relative;
+    right: -20px;
   }
   article#article-content .img-responsive {
     height: 800px;
@@ -2967,6 +3024,10 @@ fieldset.typing-field .input-container {
 @media (min-width: 1024px) {
   fieldset.typing-field .input-container {
     max-width: 350px;
+  }
+
+  .back-to-top-wrapper {
+    right: -8rem;
   }
 }
 @media (min-width: 1280px) {
@@ -3026,12 +3087,6 @@ main#customer-overview h1 {
 .drafts-container .card-article .article-content {
   white-space: pre-wrap;
 }
-.drafts-container .card-article:hover {
-  transform: none;
-}
-.drafts-container .card-article:hover .card-title:hover {
-  color: #254c50;
-}
 
 .draft-hover {
   width: 250px;
@@ -3054,14 +3109,18 @@ main#customer-overview h1 {
   opacity: 0;
   transition: opacity 0.35s ease;
 }
-.draft-hover:hover {
+
+.card-article:hover .card-title:hover {
+  color: #254c50;
+}
+.card-article:hover .draft-hover {
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid #323232;
 }
-.draft-hover:hover .cta-btns {
+.card-article:hover .draft-hover .cta-btns {
   opacity: 1;
 }
-.draft-hover:hover img {
+.card-article:hover .draft-hover img {
   z-index: -1;
 }
 
@@ -3162,6 +3221,8 @@ main#customer-overview h1 {
   background-color: #fff;
   border-radius: 5px;
   margin: 0 0 2rem 0;
+  overflow: scroll;
+  padding: 1rem;
 }
 #publishing-form .publish-btn {
   align-self: flex-end;
@@ -3224,6 +3285,7 @@ main#customer-overview h1 {
 .overlay:target {
   visibility: visible;
   opacity: 1;
+  overflow-y: hidden;
 }
 
 .modal {
@@ -3308,7 +3370,7 @@ main#customer-overview h1 {
     margin-top: 5.5vh;
   }
   main#customer-event .breadcrumb {
-    margin-left: 7.5rem;
+    margin-left: 14.5rem;
   }
 }
 @media (min-width: 1280px) {
@@ -3363,6 +3425,12 @@ a.fav-link {
 }
 a.fav-link .fav-heart {
   margin: auto;
+}
+a.fav-link:hover {
+  background-color: #828282;
+}
+a.fav-link:hover .fav-heart .b {
+  fill: #9c9c9c;
 }
 
 @media (min-width: 767.98px) {
@@ -3891,6 +3959,12 @@ main {
 
 .logo {
   max-width: 110px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

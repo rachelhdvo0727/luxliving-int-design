@@ -1,522 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="../../styles/styles.css" />
-    <!-- Custom fonts -->
-    <link rel="stylesheet" href="../../styles/plugins/icofont.css" />
 
-    <title>LuxLiving</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap"
+		rel="stylesheet" />
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="../../styles/styles.css" />
+	<!-- Custom fonts -->
+	<link rel="stylesheet" href="../../styles/plugins/icofont.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body id="acc-settings-body">
-    <header id="header">
-      <nav id="navigation" class="customer-nav">
-        <div class="navigation-logo">
-          <a class="logo" href="../../index.html"> LuxLiving </a>
-        </div>
-        <div class="search-bar">
-          <input
-            type="search"
-            name="search-bar"
-            id="search-bar"
-            placeholder="search ..."
-          />
-          <img class="search-icon" src="../../assets/search.svg" />
-        </div>
+	<title>LuxLiving</title>
 
-        <div id="menu-toggle">
-          <input id="dropcheck" type="checkbox" />
-          <label
-            for="dropcheck"
-            class="link link-flat desktop-links categories-btn"
-            >Categories</label
-          >
-          <a class="link link-flat desktop-links" href="../help.html">Help</a>
-          <div id="account-dropdown">
-            <input id="profile-click" type="checkbox" />
-            <label
-              for="profile-click"
-              class="link link-flat desktop-links profile"
-              >Christina<img
-                src="../../images/christina-profile-icon.png"
-                alt="christina-customer-reader"
-            /></label>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-            <ul class="acc-dropdown-list">
-              <li>
-                <a class="link link-navi" target="_self" href="./overview.html"
-                  >Overview</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self"
-                  >Saved articles</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self">Favorites</a>
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self">History</a>
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self"
-                  >Account settings</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="../admin/sign-in.html"
-                  >Sign out</a
-                >
-              </li>
-            </ul>
-          </div>
+<body id="acc-settings-body">
+	<header id="header">
+		<nav id="navigation" class="customer-nav">
+			<div class="navigation-logo">
+				<a class="logo" href="../../index.html"> LuxLiving </a>
+			</div>
+			<div class="search-bar">
+				<input type="search" name="search-bar" id="search-bar" placeholder="search ..." />
+				<img class="search-icon" src="../../assets/search.svg" />
+			</div>
 
-          <input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
-          <span></span>
-          <span></span>
-          <span></span>
+			<div id="menu-toggle">
+				<input id="dropcheck" type="checkbox" />
+				<label for="dropcheck" class="link link-flat desktop-links categories-btn">Categories</label>
+				<a class="link link-flat desktop-links" href="../help.html">Help</a>
+				<div id="account-dropdown">
+					<input id="profile-click" type="checkbox" />
+					<label for="profile-click" class="link link-flat desktop-links profile">Christina<img
+							src="../../images/christina-profile-icon.png" alt="christina-customer-reader" /></label>
 
-          <div class="dropdown">
-            <ul class="category-list">
-              <li class="category">
-                <div class="profile">
-                  <img
-                    class="img-responsive"
-                    src="../../images/christina-profile-icon.png"
-                    alt="christina-customer-reader"
-                  />
-                  Christina Brandt
-                </div>
-                <ul class="subcat">
-                  <li>
-                    <a
-                      class="link link-navi"
-                      target="_self"
-                      href="./overview.html"
-                      >Overview</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Saved articles</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Favorites</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >History</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Account settings</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Residence
-                <ul class="subcat">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Apartment</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">House</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Summer house</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Country house</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Barn</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Castle</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Rooms
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Livingroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Bathroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Bedroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Corridor</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Office</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Kid's room</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Outdoor
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Balcony</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Terrasse</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Design & Architecture
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Architecture</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Design</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Culture</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Design Awards</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Magazine
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#">Printed magazines</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="./subscriptions.html"
-                      >Subscriptions</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                <a class="link help link-navi" href="../admin/sign-in.html"
-                  >Sign out</a
-                >
-              </li>
-              <li class="category">
-                <a class="link help link-navi" href="../help.html">Help</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main id="customer-accsettings">
-      <h1>Account Settings</h1>
-      <section id="acc-settings">
-        <input type="radio" name="tabs" id="tab-1" class="tab" checked />
-        <input type="radio" name="tabs" id="tab-2" class="tab" />
-        <input type="radio" name="tabs" id="tab-3" class="tab" />
-        <input type="radio" name="tabs" id="tab-4" class="tab" />
-        <input type="radio" name="tabs" id="tab-5" class="tab" />
+					<ul class="acc-dropdown-list">
+						<li>
+							<a class="link link-navi" target="_self" href="./overview.html">Overview</a>
+						</li>
+						<li>
+							<a class="link link-navi" href="#" target="_self">Saved articles</a>
+						</li>
+						<li>
+							<a class="link link-navi" href="./favorites.html">Favorites</a>
+						</li>
+						<li>
+							<a class="link link-navi" href="#">Saved events</a>
+						</li>
+						<li>
+							<a class="link link-navi" href="#" target="_self">History</a>
+						</li>
+						<li>
+							<a class="link link-navi" href="./account-settings.html">Account settings</a>
+						</li>
+						<li>
+							<a class="link link-navi" href="../admin/sign-in.html">Sign out</a>
+						</li>
+					</ul>
+				</div>
 
-        <ul class="settings-tabs">
-          <li class="setting-tab">
-            <label for="tab-1" class="setting-label display-6"
-              >My Account</label
-            >
-          </li>
-          <li class="setting-tab">
-            <label for="tab-2" class="setting-label display-6"
-              >Subscription</label
-            >
-          </li>
-          <li class="setting-tab">
-            <label for="tab-3" class="setting-label display-6"
-              >Notification Settings</label
-            >
-          </li>
-          <li class="setting-tab">
-            <label for="tab-4" class="setting-label display-6">Privacy</label>
-          </li>
-          <li class="setting-tab">
-            <label for="tab-5" class="setting-label display-6"
-              >Terms & conditions</label
-            >
-          </li>
-        </ul>
-        <div class="settingtab-content account-tab">
-          <h2>ACCOUNT</h2>
-          <div class="profile-container">
-            <div class="personal-info">
-              <div class="edit-profile-img">
-                <img
-                  src="../../images/christina-profile-icon.png"
-                  alt="profile image"
-                />
-                <img
-                  src="../../assets/camera-icon.svg"
-                  alt="edit profile picture"
-                />
-              </div>
-              <div class="profile-col">
-                <label for="name">
-                  Name
-                  <input type="text" name="name" value="Christina Brandt" />
-                </label>
-                <label for="name">
-                  Age
-                  <input type="number" name="age" value="26" />
-                </label>
-              </div>
-              <div class="profile-col">
-                <label for="name">
-                  Email
-                  <input
-                    type="email"
-                    name="email"
-                    value="christina.br23@mail.com"
-                  />
-                </label>
-                <label for="al_email">
-                  Alternative Email
-                  <input type="email" name="al_email" value="N/A" />
-                </label>
-              </div>
-              <div class="profile-col">
-                <label for="name">
-                  Location
-                  <input
-                    type="text"
-                    name="location"
-                    value="Aarhus S, Danmark"
-                  />
-                </label>
-              </div>
-            </div>
-            <div class="linked-acc">
-              <h4>Linked accounts</h4>
-              <div class="btns-wrapper">
-                <button class="btn link-FB">
-                  <img
-                    src="../../assets/facebook-f_logo-blue-logo.wine.svg"
-                    alt=""
-                    class="logo"
-                  />
-                  &emsp; Facebook
-                </button>
-                <button class="btn link-insta">
-                  <img
-                    src="../../assets/instagram-logo.wine.svg"
-                    alt=""
-                    class="logo"
-                  />
-                  &emsp;Instagram
-                </button>
-                <button class="btn link-pinter">
-                  <img
-                    src="../../assets/pinterest-icon-logo.wine.svg"
-                    alt=""
-                    class="logo"
-                  />
-                  &emsp; Pinterest
-                </button>
-                <button class="btn link-gg">
-                  <img
-                    src="../../assets/google-logo.wine.svg"
-                    alt=""
-                    class="google-logo"
-                  />
-                  &emsp; Google
-                </button>
-              </div>
-            </div>
-            <div class="deactivation">
-              <h4>Deactivation</h4>
-              <div class="content-wrapper">
-                <p>
-                  With deactivation, your account will be inactive but you can
-                  still sign in
-                </p>
-                <button class="btn btn-secondary">Deactivate</button>
-              </div>
-            </div>
-            <div class="delete-acc">
-              <h4>Delete account</h4>
-              <div class="content-wrapper">
-                <p>By deleting your account, you will lose all of your data</p>
-                <button class="btn btn-secondary delete-btn">
-                  Delete my account
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="settingtab-content sub-tab">
-          <h2 class="">SUBSCRIPTION</h2>
-          <div class="current-sub">
-            <h4>Basic</h4>
-            <ul>
-              <li>3 issues a year sent to your home</li>
-              <li>Free access to online issues on our app</li>
-              <li>No commitments. You can unsubscribe anytime</li>
-            </ul>
+				<input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
+				<span></span>
+				<span></span>
+				<span></span>
 
-            <div class="price-action">
-              <p>100,- DKK/ month</p>
-              <div class="sub-btns">
-                <a class="btn btn-secondary" href="">Set on pause</a>
-                <a class="btn btn-primary" href="./subscriptions.html"
-                  >Change subscription</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="settingtab-content noti-tab">
-          <h2 class="">NOTIFICATION SETTINGS</h2>
-          <div><p>To be provided soon</p></div>
-        </div>
-        <div class="settingtab-content privacy-tab">
-          <h2 class="">PRIVACY</h2>
-          <div><p>To be provided soon</p></div>
-        </div>
-        <div class="settingtab-content terms-tab">
-          <h2 class="">TERMS & CONDITIONS</h2>
-          <div><p>To be provided soon</p></div>
-        </div>
-      </section>
-    </main>
-    <footer id="footy">
-      <div class="footy-leftcol contact-info">
-        <div class="footy-containers">
-          <h6>Address</h6>
-          <address>
-            LuxLiving A/S<br />
-            Saltværksvej 8, 1. th<br />
-            2000 Copenhagen<br />
-            Denmark<br />
-          </address>
-        </div>
+				<div class="dropdown">
+					<ul class="category-list">
+						<li class="category">
+							<div class="profile">
+								<img class="img-responsive" src="../../images/christina-profile-icon.png"
+									alt="christina-customer-reader" />
+								Christina Brandt
+							</div>
+							<ul class="subcat">
+								<li>
+									<a class="link link-navi" target="_self" href="./overview.html">Overview</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Saved articles</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="./favorites.html">Favorites</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Saved events</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">History</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="./account-settings.html">Account settings</a>
+								</li>
+							</ul>
+						</li>
+						<li class="category">
+							Residence
+							<ul class="subcat">
+								<li>
+									<a class="link link-navi" href="#" target="_self">Apartment</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">House</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Summer house</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Country house</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Barn</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Castle</a>
+								</li>
+							</ul>
+						</li>
+						<li class="category">
+							Rooms
+							<ul class="subcat hide">
+								<li>
+									<a class="link link-navi" href="#" target="_self">Livingroom</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Bathroom</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Bedroom</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Corridor</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Office</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Kid's room</a>
+								</li>
+							</ul>
+						</li>
+						<li class="category">
+							Outdoor
+							<ul class="subcat hide">
+								<li>
+									<a class="link link-navi" href="#" target="_self">Balcony</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Terrasse</a>
+								</li>
+							</ul>
+						</li>
+						<li class="category">
+							Design & Architecture
+							<ul class="subcat hide">
+								<li>
+									<a class="link link-navi" href="#" target="_self">Architecture</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Design</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Culture</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="#" target="_self">Design Awards</a>
+								</li>
+							</ul>
+						</li>
+						<li class="category">
+							Magazine
+							<ul class="subcat hide">
+								<li>
+									<a class="link link-navi" href="#">Printed magazines</a>
+								</li>
+								<li>
+									<a class="link link-navi" href="./subscriptions.html">Subscriptions</a>
+								</li>
+							</ul>
+						</li>
+						<li class="category">
+							<a class="link help link-navi" href="../admin/sign-in.html">Sign out</a>
+						</li>
+						<li class="category">
+							<a class="link help link-navi" href="../help.html">Help</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main id="customer-accsettings">
+		<h1>Account Settings</h1>
+		<section id="acc-settings">
+			<input type="radio" name="tabs" id="tab-1" class="tab" checked />
+			<input type="radio" name="tabs" id="tab-2" class="tab" />
+			<input type="radio" name="tabs" id="tab-3" class="tab" />
+			<input type="radio" name="tabs" id="tab-4" class="tab" />
+			<input type="radio" name="tabs" id="tab-5" class="tab" />
 
-        <div class="footy-containers">
-          <h6>Contact</h6>
-          <ul>
-            <li><a href="tel:+4512678927">+45 12 67 89 27</a></li>
-            <li class="">
-              <a href="mailto: hello@luxliving.com">hello@luxliving.com</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+			<ul class="settings-tabs">
+				<li class="setting-tab">
+					<label for="tab-1" class="setting-label display-6">My Account</label>
+				</li>
+				<li class="setting-tab">
+					<label for="tab-2" class="setting-label display-6">Subscription</label>
+				</li>
+				<li class="setting-tab">
+					<label for="tab-3" class="setting-label display-6">Notification Settings</label>
+				</li>
+				<li class="setting-tab">
+					<label for="tab-4" class="setting-label display-6">Privacy</label>
+				</li>
+				<li class="setting-tab">
+					<label for="tab-5" class="setting-label display-6">Terms & conditions</label>
+				</li>
+			</ul>
+			<div class="settingtab-content account-tab">
+				<h2>ACCOUNT</h2>
+				<div class="profile-container">
+					<div class="personal-info">
+						<div class="edit-profile-img">
+							<img src="../../images/christina-profile-icon.png" alt="profile image" />
+							<img src="../../assets/camera-icon.svg" alt="edit profile picture" />
+						</div>
+						<div class="profile-col">
+							<label for="name">
+								Name
+								<input type="text" name="name" value="Christina Brandt" />
+							</label>
+							<label for="name">
+								Age
+								<input type="number" name="age" value="26" />
+							</label>
+						</div>
+						<div class="profile-col">
+							<label for="name">
+								Email
+								<input type="email" name="email" value="christina.br23@mail.com" />
+							</label>
+							<label for="al_email">
+								Alternative Email
+								<input type="email" name="al_email" value="N/A" />
+							</label>
+						</div>
+						<div class="profile-col">
+							<label for="name">
+								Location
+								<input type="text" name="location" value="Aarhus S, Danmark" />
+							</label>
+						</div>
+					</div>
+					<div class="linked-acc">
+						<h4>Linked accounts</h4>
+						<div class="btns-wrapper">
+							<button class="btn link-FB">
+								<img src="../../assets/facebook-f_logo-blue-logo.wine.svg" alt="" class="logo" />
+								&emsp; Facebook
+							</button>
+							<button class="btn link-insta">
+								<img src="../../assets/instagram-logo.wine.svg" alt="" class="logo" />
+								&emsp;Instagram
+							</button>
+							<button class="btn link-pinter">
+								<img src="../../assets/pinterest-icon-logo.wine.svg" alt="" class="logo" />
+								&emsp; Pinterest
+							</button>
+							<button class="btn link-gg">
+								<img src="../../assets/google-logo.wine.svg" alt="" class="google-logo" />
+								&emsp; Google
+							</button>
+						</div>
+					</div>
+					<div class="deactivation">
+						<h4>Deactivation</h4>
+						<div class="content-wrapper">
+							<p>
+								With deactivation, your account will be inactive but you can
+								still sign in
+							</p>
+							<button class="btn btn-secondary">Deactivate</button>
+						</div>
+					</div>
+					<div class="delete-acc">
+						<h4>Delete account</h4>
+						<div class="content-wrapper">
+							<p>By deleting your account, you will lose all of your data</p>
+							<button class="btn btn-secondary delete-btn">
+								Delete my account
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="settingtab-content sub-tab">
+				<h2 class="">SUBSCRIPTION</h2>
+				<div class="current-sub">
+					<h4>Basic</h4>
+					<ul>
+						<li>3 issues a year sent to your home</li>
+						<li>Free access to online issues on our app</li>
+						<li>No commitments. You can unsubscribe anytime</li>
+					</ul>
 
-      <div class="footy-rightcol help-info">
-        <div class="footy-containers">
-          <h6>Customer service</h6>
-          <ul>
-            <li>
-              <a href="../help.html">Help</a>
-            </li>
-            <li>
-              <a href="../help.html">FAQ</a>
-            </li>
-            <li>
-              <a href="./subscriptions.html">Subscriptions</a>
-            </li>
-          </ul>
-        </div>
+					<div class="price-action">
+						<p>100,- DKK/ month</p>
+						<div class="sub-btns">
+							<a class="btn btn-secondary" href="">Set on pause</a>
+							<a class="btn btn-primary" href="./subscriptions.html">Change subscription</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="settingtab-content noti-tab">
+				<h2 class="">NOTIFICATION SETTINGS</h2>
+				<div>
+					<p>To be provided soon</p>
+				</div>
+			</div>
+			<div class="settingtab-content privacy-tab">
+				<h2 class="">PRIVACY</h2>
+				<div>
+					<p>To be provided soon</p>
+				</div>
+			</div>
+			<div class="settingtab-content terms-tab">
+				<h2 class="">TERMS & CONDITIONS</h2>
+				<div>
+					<p>To be provided soon</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="footy">
+		<div class="footy-leftcol contact-info">
+			<div class="footy-containers">
+				<h6>Address</h6>
+				<address>
+					LuxLiving A/S<br />
+					Saltværksvej 8, 1. th<br />
+					2000 Copenhagen<br />
+					Denmark<br />
+				</address>
+			</div>
 
-        <div class="footy-containers">
-          <h6>Social Media</h6>
-          <ul>
-            <li class="some facebook">
-              <i class="icofont-facebook"></i
-              ><a href="#" target="_self">Facebook</a>
-            </li>
-            <li class="some insta">
-              <i class="icofont-instagram"></i
-              ><a href="#" target="_self">Instagram</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+			<div class="footy-containers">
+				<h6>Contact</h6>
+				<ul>
+					<li><a href="tel:+4512678927">+45 12 67 89 27</a></li>
+					<li class="">
+						<a href="mailto: hello@luxliving.com">hello@luxliving.com</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-      <div class="footy-containers newsletter">
-        <h6>Newsletter</h6>
-        <p>Leave your email here to subscribe to our newsletters.</p>
-        <form
-          role="form"
-          action="#"
-          method="post"
-          target="_self"
-          id="newsletter-form"
-        >
-          <div class="input-container">
-            <input
-              type="email"
-              class="input"
-              name="email"
-              placeholder="Email address"
-            />
-            <label for="email" class="input-label">Email address</label>
-          </div>
-          <button type="submit" class="btn btn-secondary" id="subscribe">
-            Subscribe
-          </button>
-        </form>
-      </div>
+		<div class="footy-rightcol help-info">
+			<div class="footy-containers">
+				<h6>Customer service</h6>
+				<ul>
+					<li>
+						<a href="../help.html">Help</a>
+					</li>
+					<li>
+						<a href="../help.html">FAQ</a>
+					</li>
+					<li>
+						<a href="./subscriptions.html">Subscriptions</a>
+					</li>
+				</ul>
+			</div>
 
-      <!-- copyright start -->
-      <div class="footy-end copyright">
-        <p class="copyright-text">&copy; LuxLiving A/S 2021</p>
-      </div>
-      <!-- copyright end -->
-    </footer>
-  </body>
+			<div class="footy-containers">
+				<h6>Social Media</h6>
+				<ul>
+					<li class="some facebook">
+						<i class="icofont-facebook"></i><a href="#" target="_self">Facebook</a>
+					</li>
+					<li class="some insta">
+						<i class="icofont-instagram"></i><a href="#" target="_self">Instagram</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footy-containers newsletter">
+			<h6>Newsletter</h6>
+			<p>Leave your email here to subscribe to our newsletters.</p>
+			<form role="form" action="#" method="post" target="_self" id="newsletter-form">
+				<div class="input-container">
+					<input type="email" class="input" name="email" placeholder="Email address" />
+					<label for="email" class="input-label">Email address</label>
+				</div>
+				<button type="submit" class="btn btn-secondary" id="subscribe">
+					Subscribe
+				</button>
+			</form>
+		</div>
+
+		<!-- copyright start -->
+		<div class="footy-end copyright">
+			<p class="copyright-text">&copy; LuxLiving A/S 2021</p>
+		</div>
+		<!-- copyright end -->
+	</footer>
+</body>
+
 </html>

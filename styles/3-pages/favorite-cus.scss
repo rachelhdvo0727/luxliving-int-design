@@ -1,86 +1,92 @@
 main#customer-fav {
-  @include flex(column wrap);
-  h1 {
-    margin: 5rem auto auto 2rem;
-  }
+	@include flex(column wrap);
+	h1 {
+		margin: 5rem auto auto 2rem;
+	}
 }
 
 section#all-fav {
-  margin: 2.5rem auto;
-  // padding: 0 2rem 0 2rem;
+	margin: 2.5rem auto;
+	// padding: 0 2rem 0 2rem;
 
-  #settings {
-    input {
-      position: relative;
-      right: -47px;
-      // top: 0px;
-    }
-    label[for="sort"] {
-      top: 9px;
-    }
-  }
+	#settings {
+		input {
+			position: relative;
+			right: -47px;
+			// top: 0px;
+		}
+		label[for="sort"] {
+			top: 9px;
+		}
+	}
 }
 
 #all-fav-container {
-  @include flex(column wrap);
+	@include flex(column wrap);
 
-  .card-article {
-    margin: 1.5rem 0;
-    padding: 0;
-  }
+	.card-article {
+		margin: 1.5rem 0;
+		padding: 0;
+	}
 }
 
 .image-fav {
-  white-space: normal;
-  display: flex;
+	white-space: normal;
+	display: flex;
 }
 a.fav-link {
-  position: relative;
-  right: 39px;
-  top: 6px;
+	position: relative;
+	right: 39px;
+	top: 6px;
 
-  border-radius: 50%;
-  background-color: $white;
-  width: 30px;
-  height: 30px;
-  @include flex(column wrap);
-  padding: 2px 1px 0 1px;
+	border-radius: 50%;
+	background-color: $white;
+	width: 30px;
+	height: 30px;
+	@include flex(column wrap);
+	padding: 2px 1px 0 1px;
 
-  .fav-heart {
-    margin: auto;
-  }
+	.fav-heart {
+		margin: auto;
+	}
+	&:hover {
+		background-color: $medium-gray;
+		.fav-heart .b {
+			fill: $light-gray;
+		}
+	}
 }
 
 @media (min-width: $max-s) {
-  main#customer-fav {
-    h1 {
-      margin: 3.5rem auto auto 3.8rem;
-    }
-  }
+	main#customer-fav {
+		h1 {
+			margin: 3.5rem auto auto 3.8rem;
+		}
+	}
 
-  section#all-fav {
-    padding-top: 1rem;
-    margin: 2.5rem 4rem;
-  }
+	section#all-fav {
+		padding-top: 1rem;
+		margin: 2.5rem 4rem;
+	}
 
-  #all-fav-container {
-    @include grid-cols(repeat(2, 1fr), 3.5rem);
-    place-items: flex-start;
-    // @include flex(row wrap);
-    // justify-content: space-between;
-  }
+	#all-fav-container {
+		@include grid-cols(repeat(2, 1fr), 3.5rem);
+		place-items: flex-start;
+		// @include flex(row wrap);
+		// justify-content: space-between;
+	}
 }
 
 @media (min-width: $max-m) {
-  #all-fav-container {
-    @include grid-cols(repeat(3, 1fr), 3.5rem);
-  }
+	#all-fav-container {
+		@include grid-cols(repeat(3, 1fr), 3.5rem);
+	}
 }
 
 @media (min-width: $max-ml) {
-  #all-fav-container {
-    @include grid-cols(repeat(4, 1fr), 3.5rem);
-    place-items: first baseline;
-    // padding: 0 3rem;
-  }
+	#all-fav-container {
+		@include grid-cols(repeat(4, 1fr), 3.5rem);
+		place-items: first baseline;
+		// padding: 0 3rem;
+	}
 }

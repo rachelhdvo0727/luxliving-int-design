@@ -1,54 +1,54 @@
 .card-article {
-  padding: 2rem 2rem 1rem 0;
-  // margin: 2rem auto;
+	padding: 2rem 2rem 1rem 0;
+	// margin: 2rem auto;
 
-  .article-content {
-    width: 250px;
-    height: 100%;
-    transition: all 0.3s ease-in-out;
+	.article-content {
+		width: 250px;
+		height: 100%;
+		transition: all 0.4s ease-in-out;
 
-    @include flex(column wrap);
-    justify-content: space-evenly;
-    white-space: pre-wrap;
-  }
-  .card-title {
-    margin-top: 1rem;
-    font-weight: 600;
-    color: $black;
-    white-space: initial;
-  }
+		@include flex(column wrap);
+		justify-content: space-evenly;
+		white-space: pre-wrap;
+	}
+	.card-title {
+		margin-top: 1rem;
+		font-weight: 600;
+		color: $black;
+		white-space: initial;
+	}
 
-  .img-responsive {
-    display: block;
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
-  }
+	.img-responsive {
+		display: block;
+		width: 250px;
+		height: 150px;
+		object-fit: cover;
+	}
 
-  p {
-    white-space: initial;
-    color: $black;
-  }
+	p {
+		white-space: initial;
+		color: $black;
+	}
 
-  &:hover {
-    cursor: pointer;
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
+	&:hover {
+		cursor: pointer;
+		-ms-transform: scale(1.12); /* IE 9 */
+		-webkit-transform: scale(1.12); /* Safari 3-8 */
+		transform: scale(1.12);
 
-    h2 {
-      color: $tertiary;
-    }
-  }
+		h2 {
+			color: $tertiary;
+		}
+	}
 
-  .date {
-    font-style: italic;
-    font-weight: 300;
-  }
+	.date {
+		font-style: italic;
+		font-weight: 300;
+	}
 }
 
 @media (min-width: $max-s) {
-  .card-article {
-    padding: 2rem;
-  }
+	.card-article {
+		padding: 2rem;
+	}
 }

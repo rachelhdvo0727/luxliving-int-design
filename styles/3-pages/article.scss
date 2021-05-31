@@ -26,11 +26,15 @@ ul.breadcrumb li a:hover {
 main#article,
 main#customer-event {
 	margin-top: 8vh;
+	// required to make sure the `absolute` positioning of
+	// the anchor wrapper is indeed `relative` to this element vs. the body
+	position: relative;
+	// margin: 2rem auto;
 }
 
 article#article-content {
-	margin-top: 2rem;
-	padding: 1rem;
+	margin: 2rem auto 5rem auto;
+	padding: 0 2.8rem;
 	@include flex(column wrap);
 
 	h3.opening-text {
@@ -76,6 +80,18 @@ article#article-content {
 		cursor: pointer;
 		align-self: center;
 	}
+}
+#photo-enlarge .modal {
+	margin: 4rem auto;
+	background-color: transparent;
+
+	.close {
+		color: $medium-gray;
+		top: 3px;
+	}
+}
+.zoomed-photo {
+	width: 100%;
 }
 
 section#comment-interact {
@@ -164,6 +180,59 @@ fieldset.typing-field {
 	}
 }
 
+.back-to-top-wrapper {
+	// uncomment to visualize "track"
+	// outline: 1px solid red;
+	position: absolute;
+	top: $scroll-length;
+	right: 0.5rem;
+	bottom: -5em;
+	width: 3em;
+}
+
+.back-to-top-link {
+	// `fixed` is fallback
+	position: fixed;
+	// preferred positioning, requires prefixing for most support, and not supported on Safari
+	// @link https://caniuse.com/#search=position%3A%20sticky
+	// position: sticky;
+	// reinstate clicks
+	pointer-events: all;
+	// achieves desired positioning within the viewport
+	// relative to the top of the viewport once `sticky` takes over, or always if `fixed` fallback is used
+	top: calc(100vh - 4rem);
+
+	// basic styling
+	display: inline-block;
+	text-decoration: none;
+	font-size: 2rem;
+	// line-height: 3rem;
+	text-align: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	padding: 0.25rem;
+	box-shadow: $md-shadow;
+
+	// "pretty" styles, including states
+	background-color: $secondary;
+	transition: transform 80ms ease-in;
+
+	img {
+		margin-bottom: 6px;
+	}
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 3px scale-color($secondary, $lightness: 35%);
+	}
+}
+
 @media (min-width: $max-s) {
 	main#article {
 		padding: 0 1rem;
@@ -213,6 +282,10 @@ fieldset.typing-field {
 	fieldset.typing-field .input-container {
 		// width: max-content;
 		max-width: 350px;
+	}
+
+	.back-to-top-wrapper {
+		right: -8rem;
 	}
 }
 @media (min-width: $max-ml) {

@@ -25,241 +25,180 @@
 <!-- body start -->
 
 <body>
-    <header id="header">
-      <nav id="navigation" class="customer-nav">
-        <div class="navigation-logo">
-          <a class="logo" href="../../index.html"> LuxLiving </a>
+  <header id="header">
+    <nav id="navigation" class="customer-nav">
+      <div class="navigation-logo">
+        <a class="logo" href="../../index.html"> LuxLiving </a>
+      </div>
+      <div class="search-bar">
+        <input type="search" name="search-bar" id="search-bar" placeholder="search ..." />
+        <img class="search-icon" src="../../assets/search.svg" />
+      </div>
+
+      <div id="menu-toggle">
+        <input id="dropcheck" type="checkbox" />
+        <label for="dropcheck" class="link link-flat desktop-links categories-btn">Categories</label>
+        <a class="link link-flat desktop-links" href="../help.html">Help</a>
+        <div id="account-dropdown">
+          <input id="profile-click" type="checkbox" />
+          <label for="profile-click" class="link link-flat desktop-links profile">Christina
+            <img src="../../images/christina-profile-icon.png" alt="christina-customer-reader" /></label>
+
+          <ul class="acc-dropdown-list">
+            <li>
+              <a class="link link-navi" target="_self" href="./overview.html">Overview</a>
+            </li>
+            <li>
+              <a class="link link-navi" href="#" target="_self">Saved articles</a>
+            </li>
+            <li>
+              <a class="link link-navi" href="./favorites.html">Favorites</a>
+            </li>
+            <li>
+              <a class="link link-navi" href="#" target="_self">Saved events</a>
+            </li>
+            <li>
+              <a class="link link-navi" href="#" target="_self">History</a>
+            </li>
+            <li>
+              <a class="link link-navi" href="./account-settings.html">Account settings</a>
+            </li>
+            <li>
+              <a class="link link-navi" href="../sign-in.html">Sign out</a>
+            </li>
+          </ul>
         </div>
-        <div class="search-bar">
-          <input
-            type="search"
-            name="search-bar"
-            id="search-bar"
-            placeholder="search ..."
-          />
-          <img class="search-icon" src="../../assets/search.svg" />
+
+        <input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <div class="dropdown">
+          <ul class="category-list">
+            <li class="category">
+              <div class="profile">
+                <img class="img-responsive" src="../../images/christina-profile-icon.png"
+                  alt="christina-customer-reader" />
+                Christina Brandt
+              </div>
+              <ul class="subcat">
+                <li>
+                  <a class="link link-navi" target="_self" href="./overview.html">Overview</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Saved articles</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Favorites</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Saved events</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">History</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="./account-settings.html">Account settings</a>
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              Residence
+              <ul class="subcat">
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Apartment</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">House</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Summer house</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Country house</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Barn</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Castle</a>
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              Rooms
+              <ul class="subcat hide">
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Livingroom</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Bathroom</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Bedroom</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Corridor</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Office</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Kid's room</a>
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              Outdoor
+              <ul class="subcat hide">
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Balcony</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Terrasse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              Design & Architecture
+              <ul class="subcat hide">
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Architecture</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Design</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Culture</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="#" target="_self">Design Awards</a>
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              Magazine
+              <ul class="subcat hide">
+                <li>
+                  <a class="link link-navi" href="#">Printed magazines</a>
+                </li>
+                <li>
+                  <a class="link link-navi" href="./subscriptions.html">Subscriptions</a>
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              <a class="link help link-navi" href="../sign-in.html">Sign out</a>
+            </li>
+            <li class="category">
+              <a class="link help link-navi" href="../help.html">Help</a>
+            </li>
+          </ul>
         </div>
-
-        <div id="menu-toggle">
-          <input id="dropcheck" type="checkbox" />
-          <label
-            for="dropcheck"
-            class="link link-flat desktop-links categories-btn"
-            >Categories</label
-          >
-          <a class="link link-flat desktop-links" href="../help.html">Help</a>
-          <div id="account-dropdown">
-            <input id="profile-click" type="checkbox" />
-            <label
-              for="profile-click"
-              class="link link-flat desktop-links profile"
-              >Christina
-              <img
-                src="../../images/christina-profile-icon.png"
-                alt="christina-customer-reader"
-            /></label>
-
-            <ul class="acc-dropdown-list">
-              <li>
-                <a class="link link-navi" target="_self" href="./overview.html"
-                  >Overview</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self"
-                  >Saved articles</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self">Favorites</a>
-              </li>
-              <li>
-                <a class="link link-navi" href="#" target="_self">History</a>
-              </li>
-              <li>
-                <a class="link link-navi" href="./account-settings.html"
-                  >Account settings</a
-                >
-              </li>
-              <li>
-                <a class="link link-navi" href="../sign-in.html">Sign out</a>
-              </li>
-            </ul>
-          </div>
-
-          <input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <div class="dropdown">
-            <ul class="category-list">
-              <li class="category">
-                <div class="profile">
-                  <img
-                    class="img-responsive"
-                    src="../../images/christina-profile-icon.png"
-                    alt="christina-customer-reader"
-                  />
-                  Christina Brandt
-                </div>
-                <ul class="subcat">
-                  <li>
-                    <a
-                      class="link link-navi"
-                      target="_self"
-                      href="./overview.html"
-                      >Overview</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Saved articles</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Favorites</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >History</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="./account-settings.html"
-                      >Account settings</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Residence
-                <ul class="subcat">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Apartment</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">House</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Summer house</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Country house</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Barn</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Castle</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Rooms
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Livingroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Bathroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Bedroom</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Corridor</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Office</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Kid's room</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Outdoor
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Balcony</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Terrasse</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Design & Architecture
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Architecture</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self">Design</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Culture</a
-                    >
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="#" target="_self"
-                      >Design Awards</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                Magazine
-                <ul class="subcat hide">
-                  <li>
-                    <a class="link link-navi" href="#">Printed magazines</a>
-                  </li>
-                  <li>
-                    <a class="link link-navi" href="./subscriptions.html"
-                      >Subscriptions</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="category">
-                <a class="link help link-navi" href="../sign-in.html"
-                  >Sign out</a
-                >
-              </li>
-              <li class="category">
-                <a class="link help link-navi" href="../help.html">Help</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
   <!-- main start -->
   <main id="article">
     <ul class="breadcrumb">
@@ -297,7 +236,9 @@
         we’re showing you 8 nightstand ideas for your bedroom decor that will
         make your job easier!
       </p>
-      <img src="../../images/pexels-article-maria-orlova-4940710.jpg" alt="Photo by Maria Orlova from Pexels" class="img-responsive" />
+      <a href="#photo-enlarge" style="place-self: center;"><img
+          src="../../images/pexels-article-maria-orlova-4940710.jpg" alt="Photo by Maria Orlova from Pexels"
+          class="img-responsive" /></a>
       <p>
         Sometimes all you need is marble. When it comes to the perfect colors
         for your bedroom, we recommend neutrals, and what’s best to provide
@@ -305,7 +246,8 @@
         just right, and if you pair it with gold accents, you’ve got yourself
         an elegant bedroom you won’t want to leave.
       </p>
-      <img src="../../images/pexels-article-pixabay-279805.jpg" alt="Photo by pixabay from Pexels" class="img-responsive" />
+      <img src="../../images/pexels-article-pixabay-279805.jpg" alt="Photo by pixabay from Pexels"
+        class="img-responsive" />
       <p>
         If you’re looking for a versatile piece, a wooden nighstand is the
         right option. You can pair it with light or dark colors and it will
@@ -320,7 +262,8 @@
         dimension in your space, and that’s an important thing to keep in
         mind when decorating.
       </p>
-      <img src="../../images/pexels-charlotte-may-5824491.jpg" alt="Photo by Charlotte May from Pexels" class="img-responsive" />
+      <img src="../../images/pexels-charlotte-may-5824491.jpg" alt="Photo by Charlotte May from Pexels"
+        class="img-responsive" />
       <p>
         This incredible nightstand is called Kahn and it’s exactly what you
         need in your bedroom right now. Kahn nightstand brings a strong
@@ -329,7 +272,8 @@
         customization options, you can make this piece fit your decor
         without giving up on the luxury.
       </p>
-      <img src="../../images/pexels-dmitry-zvolskiy-2082087.jpg" alt="Photo by Dmitry Zvolskiy from Pexels" class="img-responsive" />
+      <img src="../../images/pexels-dmitry-zvolskiy-2082087.jpg" alt="Photo by Dmitry Zvolskiy from Pexels"
+        class="img-responsive" />
       </div>
 
       <p>
@@ -338,7 +282,8 @@
         patterns. Some gold accents in lighting pieces will look amazing, no
         matter which color you choose.
       </p>
-      <img src="../../images/pexels-dominika-roseclay-905198.jpg" alt="Photo by Dominika Roseclay from Pexels" class="img-responsive" />
+      <img src="../../images/pexels-dominika-roseclay-905198.jpg" alt="Photo by Dominika Roseclay from Pexels"
+        class="img-responsive" />
 
       <p>
         Lastly, if you have a large headboard, why not add a floating shelf to
@@ -347,7 +292,10 @@
         provide some personality and creativity.
       </p>
     </article>
-
+    <div class="back-to-top-wrapper">
+      <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"><img
+          src="../../assets/icon-awesome-angle-up.svg"></a>
+    </div>
     <section id="comment-interact">
       <div class="comment-container">
         <h4>Comments</h4>
@@ -365,13 +313,12 @@
         <form>
           <fieldset class="typing-field">
             <div class="profile-head">
-              <img src="../../images/christina-profile-icon.png"
-                alt="" class="profile-img">
-                <p>You</p>
+              <img src="../../images/christina-profile-icon.png" alt="" class="profile-img">
+              <p>You</p>
             </div>
             <div class="input-container">
-              <textarea type="text" class="input typing" name="comment" cols="20"
-                rows="3" placeholder="Write your comments here"></textarea>
+              <textarea type="text" class="input typing" name="comment" cols="20" rows="3"
+                placeholder="Write your comments here"></textarea>
             </div>
           </fieldset>
           <button class="btn btn-secondary" type="submit">Send</button>
@@ -380,36 +327,44 @@
       <div class="rating">
         <h4>Rate this article</h4>
         <div class="stars-container">
-         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
             <path id="Icon_material-star" data-name="Icon material-star"
               d="M18,25.905,27.27,31.5,24.81,20.955,33,13.86l-10.785-.915L18,3l-4.215,9.945L3,13.86l8.19,7.1L8.73,31.5Z"
               transform="translate(-3 -3)" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
             <path id="Icon_material-star" data-name="Icon material-star"
               d="M18,25.905,27.27,31.5,24.81,20.955,33,13.86l-10.785-.915L18,3l-4.215,9.945L3,13.86l8.19,7.1L8.73,31.5Z"
               transform="translate(-3 -3)" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
             <path id="Icon_material-star" data-name="Icon material-star"
               d="M18,25.905,27.27,31.5,24.81,20.955,33,13.86l-10.785-.915L18,3l-4.215,9.945L3,13.86l8.19,7.1L8.73,31.5Z"
               transform="translate(-3 -3)" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
             <path id="Icon_material-star" data-name="Icon material-star"
               d="M18,25.905,27.27,31.5,24.81,20.955,33,13.86l-10.785-.915L18,3l-4.215,9.945L3,13.86l8.19,7.1L8.73,31.5Z"
               transform="translate(-3 -3)" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 28.5">
             <path id="Icon_material-star" data-name="Icon material-star"
               d="M18,25.905,27.27,31.5,24.81,20.955,33,13.86l-10.785-.915L18,3l-4.215,9.945L3,13.86l8.19,7.1L8.73,31.5Z"
               transform="translate(-3 -3)" />
-        </svg>
+          </svg>
         </div>
         <small>Drag your cursor from the left</small>
       </div>
     </section>
-
+    <div id="photo-enlarge" class="overlay">
+      <div class="modal">
+        <a class="close" href="#">&times;</a>
+        <div class="modal-content">
+          <img src="../../images/pexels-article-maria-orlova-4940710.jpg" alt="Photo by Maria Orlova from Pexels"
+            class="zoomed-photo" />
+        </div>
+      </div>
+    </div>
   </main>
   <footer id="footy">
     <div class="footy-leftcol contact-info">

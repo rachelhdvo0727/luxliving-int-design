@@ -82,3 +82,6 @@ $line-height-blockquote: 1.5;
 $line-height-code: 1.6;
 
 $acc-tab-width: calc(260px + 60px);
+// How far of a scroll travel within <main> prior to the
+// link appearing
+$scroll-length: 300vh;

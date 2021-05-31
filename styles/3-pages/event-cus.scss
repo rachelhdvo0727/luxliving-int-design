@@ -38,6 +38,7 @@
 .overlay:target {
 	visibility: visible;
 	opacity: 1;
+	overflow-y: hidden;
 }
 
 .modal {

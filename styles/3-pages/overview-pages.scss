@@ -1,211 +1,215 @@
 // CUSTOMER
 main#customer-overview {
-  h1 {
-    margin: 5rem auto auto 2rem;
-    text-transform: uppercase;
-  }
+	h1 {
+		margin: 5rem auto auto 2rem;
+		text-transform: uppercase;
+	}
 }
 
 .future {
-  color: $secondary;
+	color: $secondary;
 }
 
 .past {
-  color: $medium-gray;
+	color: $medium-gray;
 }
 
 .past-event {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 
 // ADMIN
 .template-img {
-  filter: grayscale(1);
+	filter: grayscale(1);
 }
 
 #mid-section {
-  @include grid-cols(repeat(2, 1fr), 1rem);
+	@include grid-cols(repeat(2, 1fr), 1rem);
 }
 
 .insights-content,
 .activities-content {
-  @include flex(column wrap);
+	@include flex(column wrap);
 
-  li a {
-    text-decoration: underline;
-    line-height: 2;
-    font-size: 1rem;
-  }
+	li a {
+		text-decoration: underline;
+		line-height: 2;
+		font-size: 1rem;
+	}
 }
 
 .drafts-container {
-  .card-article {
-    .article-content {
-      white-space: pre-wrap;
-    }
-    &:hover {
-      transform: none;
-      .card-title:hover {
-        color: $tertiary;
-      }
-    }
-  }
+	.card-article {
+		.article-content {
+			white-space: pre-wrap;
+		}
+	}
 }
 
 .draft-hover {
-  width: 250px;
-  height: 150px;
-  border: 2px dashed $light-gray;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  img {
-    margin: auto;
-    width: 35px;
-  }
-  .cta-btns {
-    align-self: center;
+	width: 250px;
+	height: 150px;
+	border: 2px dashed $light-gray;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	img {
+		margin: auto;
+		width: 35px;
+	}
+	.cta-btns {
+		align-self: center;
 
-    @include flex(column wrap);
-    padding-top: 1rem;
+		@include flex(column wrap);
+		padding-top: 1rem;
 
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.35s ease;
-  }
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid $black;
+		position: absolute;
+		opacity: 0;
+		transition: opacity 0.35s ease;
+	}
+}
 
-    .cta-btns {
-      opacity: 1;
-    }
-    img {
-      z-index: -1;
-    }
-  }
+.card-article:hover {
+	// transform: none;
+	.card-title:hover {
+		color: $tertiary;
+	}
+
+	.draft-hover {
+		background-color: rgba(0, 0, 0, 0.7);
+		border: 2px solid $black;
+
+		.cta-btns {
+			opacity: 1;
+		}
+		img {
+			z-index: -1;
+		}
+	}
 }
 
 .file-stt {
-  font-style: italic;
-  font-weight: 400;
-  margin: 1rem 0;
+	font-style: italic;
+	font-weight: 400;
+	margin: 1rem 0;
 }
 
 .activities-content {
-  .activity {
-    @include grid-cols(auto auto, 2rem);
-    place-items: center;
-    place-content: first baseline;
-    margin: auto 0 1rem 0;
-    p {
-      padding: 0;
-      span.user-name {
-        color: $tertiary;
-        font-weight: 600;
-      }
-    }
-  }
+	.activity {
+		@include grid-cols(auto auto, 2rem);
+		place-items: center;
+		place-content: first baseline;
+		margin: auto 0 1rem 0;
+		p {
+			padding: 0;
+			span.user-name {
+				color: $tertiary;
+				font-weight: 600;
+			}
+		}
+	}
 }
 
 // NEW DRAFTS
 .new-draft-modal {
-  margin: 1rem auto;
-  padding: 1.5rem 2rem;
-  background: $white;
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  width: 70%;
-  z-index: 11;
-  @include flex(column wrap);
+	margin: 1rem auto;
+	padding: 1.5rem 2rem;
+	background: $white;
+	border-radius: 10px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	width: 70%;
+	z-index: 11;
+	@include flex(column wrap);
 
-  a.continue-btn {
-    min-width: 76px;
-    align-self: end;
-  }
+	a.continue-btn {
+		min-width: 76px;
+		align-self: end;
+	}
 }
 
 .new-draft-modal h2 {
-  margin: 1rem 0 0 2rem;
-  color: $black;
+	margin: 1rem 0 0 2rem;
+	color: $black;
 }
 .new-draft-modal .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  transition: all 200ms;
-  font-size: 30px;
-  text-decoration: none;
-  color: #333;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	transition: all 200ms;
+	font-size: 30px;
+	text-decoration: none;
+	color: #333;
 }
 .new-draft-modal .close:hover {
-  color: $tertiary;
+	color: $tertiary;
 }
 .new-draft-modal .modal-content {
-  max-height: 30%;
-  overflow: auto;
-  padding: 1rem 0 0 0;
-  @include flex(column wrap);
+	max-height: 30%;
+	overflow: auto;
+	padding: 1rem 0 0 0;
+	@include flex(column wrap);
 
-  h4 {
-    padding-left: 2rem;
-  }
-  .all-templates {
-    @include flex(row wrap);
-    justify-content: space-between;
+	h4 {
+		padding-left: 2rem;
+	}
+	.all-templates {
+		@include flex(row wrap);
+		justify-content: space-between;
 
-    .card-article:hover {
-      transform: none;
-    }
+		.card-article:hover {
+			transform: none;
+		}
 
-    .card-title:hover {
-      color: $tertiary;
-    }
-  }
+		.card-title:hover {
+			color: $tertiary;
+		}
+	}
 }
 
 // PUBLISHING MODAL
 #publishing-form {
-  padding: 0 3rem;
-  @include flex(column wrap);
+	padding: 0 3rem;
+	@include flex(column wrap);
 
-  fieldset:nth-child(1) {
-    width: 200px;
-  }
-  legend {
-    color: $tertiary;
-    font-weight: 550;
-  }
-  .overview-content {
-    height: 250px;
-    background-color: #fff;
-    border-radius: 5px;
-    margin: 0 0 2rem 0;
-  }
+	fieldset:nth-child(1) {
+		width: 200px;
+	}
+	legend {
+		color: $tertiary;
+		font-weight: 550;
+	}
+	.overview-content {
+		height: 250px;
+		background-color: #fff;
+		border-radius: 5px;
+		margin: 0 0 2rem 0;
+		overflow: scroll;
+		padding: 1rem;
+	}
 
-  .publish-btn {
-    align-self: flex-end;
-  }
-  input.fake-dropdown:disabled {
-    background-color: #fff;
-  }
-  .input-container {
-    margin-left: 0;
-  }
+	.publish-btn {
+		align-self: flex-end;
+	}
+	input.fake-dropdown:disabled {
+		background-color: #fff;
+	}
+	.input-container {
+		margin-left: 0;
+	}
 
-  .arrow {
-    color: $black;
-    position: absolute;
-    left: 244px;
-    margin-top: -3rem;
-  }
+	.arrow {
+		color: $black;
+		position: absolute;
+		left: 244px;
+		margin-top: -3rem;
+	}
 }
 
 @media (min-width: $max-s) {
-  main#customer-overview {
-    h1 {
-      margin: 7rem auto 5rem 3.8rem;
-    }
-  }
+	main#customer-overview {
+		h1 {
+			margin: 7rem auto 5rem 3.8rem;
+		}
+	}
 }
