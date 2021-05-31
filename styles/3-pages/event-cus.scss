@@ -1,134 +1,135 @@
 #event-article {
-  padding: 1rem;
-  @include flex(column wrap);
+	padding: 1rem;
+	@include flex(column wrap);
 
-  .event-top-wrapper {
-    align-self: center;
-    @include grid-rows(auto auto, 1rem);
-    margin-bottom: 1rem;
-    width: -moz-available;
-    width: fit-content;
+	.event-top-wrapper {
+		align-self: center;
+		@include grid-rows(auto auto, 1rem);
+		margin-bottom: 1rem;
+		width: -moz-available;
+		width: fit-content;
 
-    .img-responsive {
-      display: block;
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-  }
+		.img-responsive {
+			display: block;
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+		}
+	}
 
-  a.join {
-    place-self: start right;
-  }
+	a.join {
+		place-self: start right;
+	}
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 999;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 999;
 }
 
 .overlay:target {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .modal {
-  margin: 150px 1.5rem auto;
-  padding: 20px;
-  background: $white;
-  border-radius: 10px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  // width: 30%;
-  .modal-CTA {
-    @include grid-cols(50% 50%, 1rem);
-    place-content: center;
-    place-items: center;
+	margin: 150px 1.5rem auto;
+	padding: 20px;
+	background: $white;
+	border-radius: 10px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	// width: 30%;
+	.modal-CTA {
+		@include grid-cols(50% 50%, 1rem);
+		place-content: center;
+		place-items: center;
 
-    a.btn {
-      min-width: 76px;
-    }
-  }
+		a.btn {
+			min-width: 76px;
+		}
+	}
 }
 
 .modal h2 {
-  margin-top: 1rem;
-  color: $black;
+	margin-top: 1rem;
+	color: $black;
 }
 .modal .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  transition: all 200ms;
-  font-size: 30px;
-  text-decoration: none;
-  color: #333;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	transition: all 200ms;
+	font-size: 30px;
+	text-decoration: none;
+	color: #333;
 }
 .modal .close:hover {
-  color: $tertiary;
+	color: $tertiary;
 }
 .modal .modal-content {
-  max-height: 30%;
-  overflow: auto;
-  padding: 1rem 0 0 0;
+	max-height: 30%;
+	overflow: auto;
+	padding: 1rem 0 0 0;
 }
 
 @media (min-width: $max-s) {
-  main#customer-event {
-    .breadcrumb {
-      margin-left: 3rem;
-    }
-  }
-  #event-article {
-    padding: 3rem 4rem 0 4rem;
-    max-width: 850px;
-    margin: auto;
-  }
+	main#customer-event {
+		.breadcrumb {
+			margin-left: 3rem;
+		}
+	}
+	#event-article {
+		padding: 3rem 4rem 0 4rem;
+		max-width: 850px;
+		margin: auto;
+	}
 
-  .event-logistic {
-    @include grid-cols(auto auto, 1rem);
+	.event-logistic {
+		@include grid-cols(auto auto, 1rem);
 
-    a.join {
-      place-self: end;
-    }
-  }
-  .modal {
-    margin: 150px auto;
-    padding: 20px 3rem;
-    width: 60%;
-    max-width: 480px;
+		a.join {
+			place-self: end;
+		}
+	}
+	.modal {
+		margin: 150px auto;
+		padding: 20px 3rem;
+		width: 60%;
+		max-width: 480px;
 
-    .modal-CTA {
-      a.btn:first-child {
-        place-self: start;
-      }
-      a.btn:last-child {
-        place-self: end;
-      }
-    }
-  }
+		.modal-CTA {
+			a.btn:first-child {
+				place-self: start;
+			}
+			a.btn:last-child {
+				place-self: end;
+			}
+		}
+	}
 }
 
 @media (min-width: $max-m) {
-  main#customer-event {
-    margin-top: 5.5vh;
+	main#customer-event {
+		margin-top: 5.5vh;
 
-    .breadcrumb {
-      margin-left: 7.5rem;
-    }
-  }
+		.breadcrumb {
+			// margin-left: 7.5rem;
+			margin-left: 14.5rem;
+		}
+	}
 }
 
 @media (min-width: $max-ml) {
-  main#customer-event {
-    margin-top: 10vh;
-  }
+	main#customer-event {
+		margin-top: 10vh;
+	}
 }

@@ -1,232 +1,234 @@
 // Breadcrumb
 ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
+	padding: 10px 16px;
+	list-style: none;
 }
 
 ul.breadcrumb li {
-  display: inline;
+	display: inline;
 }
 
 ul.breadcrumb li + li:before {
-  padding: 8px;
-  color: $tertiary;
-  content: "/\00a0";
+	padding: 8px;
+	color: $tertiary;
+	content: "/\00a0";
 }
 
 ul.breadcrumb li a {
-  color: $tertiary;
-  text-decoration: none;
+	color: $tertiary;
+	text-decoration: none;
 }
 
 ul.breadcrumb li a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 main#article,
 main#customer-event {
-  margin-top: 8vh;
+	margin-top: 8vh;
 }
 
 article#article-content {
-  margin-top: 2rem;
-  padding: 1rem;
-  @include flex(column wrap);
+	margin-top: 2rem;
+	padding: 1rem;
+	@include flex(column wrap);
 
-  h3.opening-text {
-    margin: 2rem auto;
-  }
+	h3.opening-text {
+		margin: 2rem auto;
+	}
 
-  section#article-top {
-    @include flex(row wrap);
-  }
+	section#article-top {
+		@include flex(row wrap);
+	}
 
-  .img-responsive {
-    display: block;
-    //   width: 340px;
-    //   height: 250px;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+	.img-responsive {
+		display: block;
+		//   width: 340px;
+		//   height: 250px;
+		padding: 1rem;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 
-  .some-icons-container {
-    margin-top: 1.5rem;
+	.some-icons-container {
+		margin-top: 1.5rem;
 
-    img {
-      margin-right: 0.5rem;
-      width: 20px;
-      height: 15px;
-    }
+		img {
+			margin-right: 0.5rem;
+			width: 20px;
+			height: 18px;
+		}
 
-    svg:hover {
-      fill: #ff7474;
-    }
-  }
+		svg:hover {
+			fill: #ff7474;
+		}
+	}
 
-  section#author-published {
-    @include flex(column wrap);
-    margin: 1rem 0;
-    font-style: italic;
+	section#author-published {
+		@include flex(column wrap);
+		margin: 1rem 0;
+		font-style: italic;
 
-    line-height: $line-height-a;
-  }
-  img {
-    cursor: pointer;
-    align-self: center;
-  }
+		line-height: $line-height-a;
+	}
+	img {
+		cursor: pointer;
+		align-self: center;
+	}
 }
 
 section#comment-interact {
-  padding: 0 1rem;
-  @include flex(row wrap);
-  justify-content: space-between;
+	padding: 0 1rem;
+	@include flex(row wrap);
+	justify-content: space-between;
 
-  .comment-container {
-    background-color: $white;
-    padding: 1rem;
-    width: -moz-available;
+	.comment-container {
+		background-color: $white;
+		padding: 1rem;
+		width: -moz-available;
 
-    button.btn {
-      min-width: 64px !important;
-    }
-  }
+		button.btn {
+			min-width: 64px !important;
+		}
+	}
 
-  .rating {
-    margin-top: 2rem;
-    small {
-      color: $light-gray;
-    }
-  }
+	.rating {
+		margin-top: 2rem;
+		small {
+			color: $light-gray;
+		}
+	}
 }
 
 .profile-img {
-  border-radius: 50%;
-  box-shadow: $lg-shadow;
-  width: 50px;
-  height: 50px;
+	border-radius: 50%;
+	box-shadow: $lg-shadow;
+	width: 50px;
+	height: 50px;
 }
 
 .profile-name {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: $tertiary;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: $tertiary;
 }
 
 .time-sent {
-  font-size: 0.75rem;
-  font-family: $paragraph;
-  font-weight: 500;
-  color: $secondary;
-  line-height: 1.3rem;
+	font-size: 0.75rem;
+	font-family: $paragraph;
+	font-weight: 500;
+	color: $secondary;
+	line-height: 1.3rem;
 }
 
 .comment {
-  @include grid-cols(60px auto, 0rem);
-  padding: 2rem 0;
+	@include grid-cols(60px auto, 0rem);
+	padding: 2rem 0;
 }
 
 fieldset.typing-field {
-  @include grid-cols(60px 100px, 0rem);
+	@include grid-cols(60px 100px, 0rem);
 
-  .profile-head {
-    @include flex(column wrap);
-    align-items: center;
-  }
-  .profile {
-    width: 40px;
-    height: 40px;
-  }
-  .input-container {
-    width: 57vw;
-  }
+	.profile-head {
+		@include flex(column wrap);
+		align-items: center;
+	}
+	.profile {
+		width: 40px;
+		height: 40px;
+	}
+	.input-container {
+		width: 57vw;
+	}
 }
 
 .chat-field {
-  box-shadow: $sm-shadow;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 1rem;
+	box-shadow: $sm-shadow;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 1rem;
 }
 
 .stars-container {
-  padding: 1rem 0;
+	padding: 1rem 0;
 
-  svg {
-    height: 25px;
-    width: 25px;
-    margin-right: 0.3rem;
+	svg {
+		height: 25px;
+		width: 25px;
+		margin-right: 0.3rem;
 
-    &:hover {
-      fill: #f8c971;
-    }
-  }
+		&:hover {
+			fill: #f8c971;
+		}
+	}
 }
 
 @media (min-width: $max-s) {
-  main#article {
-    padding: 0 1rem;
-  }
+	main#article {
+		padding: 0 1rem;
+	}
 
-  article#article-content {
-    section#article-top {
-      @include grid-cols(80% auto, 0.8rem);
-    }
-    .some-icons-container {
-      margin-top: 0;
-      place-self: baseline end;
-    }
-    .img-responsive {
-      height: 800px;
-      width: 500px;
-    }
-  }
+	article#article-content {
+		section#article-top {
+			@include grid-cols(80% auto, 0.8rem);
+		}
+		.some-icons-container {
+			margin-top: 0;
+			place-self: baseline end;
+			position: relative;
+			right: -20px;
+		}
+		.img-responsive {
+			height: 800px;
+			width: 500px;
+		}
+	}
 
-  .comment-container > form {
-    @include grid-cols(auto 87px, 1rem);
-  }
+	.comment-container > form {
+		@include grid-cols(auto 87px, 1rem);
+	}
 
-  fieldset.typing-field {
-    .input-container {
-      width: 64vw;
-      //   width: max-content;
-    }
-  }
+	fieldset.typing-field {
+		.input-container {
+			width: 64vw;
+			//   width: max-content;
+		}
+	}
 }
 
 @media (min-width: $max-m) {
-  main#article {
-    margin: 6.5vh 4rem;
-  }
-  section#comment-interact {
-    @include grid-cols(68% 30%, 2rem);
-  }
-  .comment-container > form {
-    padding: 0 2rem;
-  }
+	main#article {
+		margin: 6.5vh 4rem;
+	}
+	section#comment-interact {
+		@include grid-cols(68% 30%, 2rem);
+	}
+	.comment-container > form {
+		padding: 0 2rem;
+	}
 }
 
 @media (min-width: 1024px) {
-  fieldset.typing-field .input-container {
-    // width: max-content;
-    max-width: 350px;
-  }
+	fieldset.typing-field .input-container {
+		// width: max-content;
+		max-width: 350px;
+	}
 }
 @media (min-width: $max-ml) {
-  fieldset.typing-field {
-    .input-container {
-      width: 64vw;
-    }
-  }
+	fieldset.typing-field {
+		.input-container {
+			width: 64vw;
+		}
+	}
 }
 @media (min-width: $max-l) {
-  main#article {
-    max-width: 1000px;
-    margin: 10vh auto auto auto;
-  }
-  fieldset.typing-field .input-container {
-    max-width: 350px;
-    // max-width: 646px;
-  }
+	main#article {
+		max-width: 1000px;
+		margin: 10vh auto auto auto;
+	}
+	fieldset.typing-field .input-container {
+		max-width: 350px;
+		// max-width: 646px;
+	}
 }
