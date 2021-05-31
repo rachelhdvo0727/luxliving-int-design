@@ -1,15 +1,15 @@
 .card-article {
 	padding: 2rem 2rem 1rem 0;
 	// margin: 2rem auto;
+	transition: transform 0.2s ease-in-out;
 
 	.article-content {
-		width: 250px;
-		height: 100%;
-		transition: all 0.4s ease-in-out;
-
 		@include flex(column wrap);
 		justify-content: space-evenly;
 		white-space: pre-wrap;
+		width: 250px;
+		height: 100%;
+		// transition: all 0.4s ease-in-out;
 	}
 	.card-title {
 		margin-top: 1rem;

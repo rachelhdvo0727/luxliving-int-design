@@ -1,73 +1,73 @@
 .card-event {
-  padding: 2rem 2rem 1rem 0;
-  // margin: 2rem auto;
+	padding: 2rem 2rem 1rem 0;
+	// margin: 2rem auto;
 
-  .event-content {
-    @include flex(column wrap);
-    justify-content: space-evenly;
-    white-space: pre-line;
+	.event-content {
+		@include flex(column wrap);
+		justify-content: space-evenly;
+		white-space: pre-line;
 
-    width: 200px;
-    height: 100%;
-    transition: transform 0.2s ease-in-out;
+		width: 200px;
+		height: 100%;
+		transition: transform 0.2s ease-in-out;
 
-    .card-title {
-      margin-top: 1rem;
-      font-weight: 600;
-      color: $black;
-    }
+		.card-title {
+			margin-top: 1rem;
+			font-weight: 600;
+			color: $black;
+		}
 
-    .img-responsive {
-      display: block;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-    }
+		.img-responsive {
+			display: block;
+			width: 180px;
+			height: 180px;
+			object-fit: cover;
+		}
 
-    p {
-      white-space: initial;
-      color: $black;
-    }
+		p {
+			white-space: initial;
+			color: $black;
+		}
 
-    &:hover {
-      cursor: pointer;
-      -ms-transform: scale(1.1); /* IE 9 */
-      -webkit-transform: scale(1.1); /* Safari 3-8 */
-      transform: scale(1.1);
+		&:hover {
+			cursor: pointer;
+			-ms-transform: scale(1.1); /* IE 9 */
+			-webkit-transform: scale(1.1); /* Safari 3-8 */
+			transform: scale(1.1);
 
-      h2,
-      h4,
-      a.card-title {
-        color: $tertiary;
-      }
-    }
+			h2,
+			h4,
+			a.card-title {
+				color: $tertiary;
+			}
+		}
 
-    .date {
-      font-style: italic;
-      font-weight: 300;
-    }
+		.date {
+			font-style: italic;
+			font-weight: 300;
+		}
 
-    .event-stt,
-    .event-added-stt {
-      text-align: right;
-      padding-right: 1.5rem;
-      //   position: relative;
-      //   right: -106px;
-      //   top: -23px;
-    }
-    .event-stt {
-      font-weight: 550;
-    }
-    .event-added-stt {
-      text-align: end;
-      font-style: italic;
-      font-weight: 400;
-    }
-  }
+		.event-stt,
+		.event-added-stt {
+			text-align: right;
+			padding-right: 1.5rem;
+			//   position: relative;
+			//   right: -106px;
+			//   top: -23px;
+		}
+		.event-stt {
+			font-weight: 550;
+		}
+		.event-added-stt {
+			text-align: end;
+			font-style: italic;
+			font-weight: 400;
+		}
+	}
 }
 
 @media (min-width: $max-s) {
-  .card-event {
-    padding: 2rem;
-  }
+	.card-event {
+		padding: 2rem;
+	}
 }

@@ -267,7 +267,7 @@ label.categories-btn {
 		transition: unset;
 
 		ul.category-list {
-			@include grid-cols(repeat(5, 1fr), 1rem);
+			@include grid-cols(repeat(4, 1fr), 1rem);
 
 			li.category:last-child {
 				display: none;
