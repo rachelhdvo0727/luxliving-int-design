@@ -9,186 +9,189 @@
 /* --- HELP PAGE --- */
 
 #contact h5 {
-  margin-left: 3rem;
+	margin-left: 3rem;
 }
 
 .help-tabs-section {
-  // display: flex ;
-  justify-content: center;
+	// display: flex ;
+	justify-content: center;
 }
 .help-tabs {
-  padding-bottom: 16px;
+	padding-bottom: 16px;
 
-  [type="radio"] {
-    /* hiding the inputs */
-    display: none;
-  }
+	[type="radio"] {
+		/* hiding the inputs */
+		display: none;
+	}
 }
 
 .tabs {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
 }
 
 .tab > label.tab-label {
-  display: block;
-  //   margin-bottom: -1px;
-  margin: 0px 2vw 0 0;
-  padding: 12px 15px;
-  border-radius: 5px 5px 0 0;
-  background: $white;
-  color: $black;
-  font-family: $headings;
-  height: 50px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s;
+	display: block;
+	//   margin-bottom: -1px;
+	margin: 0px 2vw 0 0;
+	padding: 12px 15px;
+	border-radius: 5px 5px 0 0;
+	background: $white;
+	color: $black;
+	font-family: $headings;
+	height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.3s;
+	user-select: none;
 }
 
 .tab-content {
-  display: none;
+	display: none;
+	padding: 1rem 2rem;
+	max-width: 800px; // stay at 800px
 }
 
 .tab:hover .tab-label {
-  border-top: 5px solid $tertiary;
-  border-left: 1px solid $tertiary;
-  border-right: 1px solid $tertiary;
-  color: $tertiary;
+	border-top: 5px solid $tertiary;
+	border-left: 1px solid $tertiary;
+	border-right: 1px solid $tertiary;
+	color: $tertiary;
 }
 
 .help-tabs
-  [type="radio"]:nth-of-type(1):checked
-  ~ ul.tabs
-  .tab:nth-of-type(1)
-  .tab-label,
+	[type="radio"]:nth-of-type(1):checked
+	~ ul.tabs
+	.tab:nth-of-type(1)
+	.tab-label,
 .help-tabs
-  [type="radio"]:nth-of-type(2):checked
-  ~ ul.tabs
-  .tab:nth-of-type(2)
-  .tab-label,
+	[type="radio"]:nth-of-type(2):checked
+	~ ul.tabs
+	.tab:nth-of-type(2)
+	.tab-label,
 .help-tabs
-  [type="radio"]:nth-of-type(3):checked
-  ~ ul.tabs
-  .tab:nth-of-type(3)
-  .tab-label {
-  border: 1px solid $tertiary;
-  border-top: 5px $tertiary solid;
-  border-bottom-color: transparent;
-  background: #fff;
-  color: $tertiary;
-  font-weight: 700;
+	[type="radio"]:nth-of-type(3):checked
+	~ ul.tabs
+	.tab:nth-of-type(3)
+	.tab-label {
+	border: 1px solid $tertiary;
+	border-top: 5px $tertiary solid;
+	border-bottom-color: transparent;
+	background: #fff;
+	color: $tertiary;
+	font-weight: 700;
 }
 
 .help-tabs [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
 .help-tabs [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
 .help-tabs [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
-  display: block;
+	display: block;
 }
 
 .faq-box {
-  margin: 2rem auto;
-  border-radius: 10px;
-  box-shadow: $lg-shadow;
-  background-color: $white;
-  height: fit-content;
+	margin: 2rem auto;
+	border-radius: 10px;
+	box-shadow: $lg-shadow;
+	background-color: $white;
+	height: fit-content;
 
-  li::marker {
-    margin-left: 2rem;
-  }
+	li::marker {
+		margin-left: 2rem;
+	}
 
-  details {
-    padding: 1.5rem 0;
+	details {
+		padding: 1.5rem 0;
 
-    &[open] > .answer {
-      background-color: #fff;
-      padding: 2rem;
-    }
+		&[open] > .answer {
+			background-color: #fff;
+			padding: 2rem;
+		}
 
-    summary.ques {
-      font-weight: 600;
-      color: $tertiary;
-      list-style: none;
-      cursor: pointer;
-      padding: 0 2rem 1rem 2rem;
+		summary.ques {
+			font-weight: 600;
+			color: $tertiary;
+			list-style: none;
+			cursor: pointer;
+			padding: 0 2rem 1rem 2rem;
 
-      .ques-number {
-        font-family: $headings;
-        font-size: 20px;
-        font-weight: 700;
-        margin-right: 1rem;
-      }
-    }
-  }
+			.ques-number {
+				font-family: $headings;
+				font-size: 20px;
+				font-weight: 700;
+				margin-right: 1rem;
+			}
+		}
+	}
 }
 
 #contact-form {
-  @include flex(row wrap);
-  justify-content: center;
-  padding: 2.5rem 2rem;
+	@include flex(row wrap);
+	justify-content: center;
+	padding: 2.5rem 2rem;
 }
 
 .invisible {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 .hide {
-  display: none;
+	display: none;
 }
 
 @media (min-width: $max-s) {
-  #contact {
-    margin: auto 5rem;
-  }
-  .help-contact-section {
-    h5,
-    .topic-title {
-      margin-left: 2.8rem;
-    }
-  }
-  .col-left {
-    flex-grow: 1;
-    flex-basis: 200px;
-  }
+	#contact {
+		margin: auto 5rem;
+	}
+	.help-contact-section {
+		h5,
+		.topic-title {
+			margin-left: 2.8rem;
+		}
+	}
+	.col-left {
+		flex-grow: 1;
+		flex-basis: 200px;
+	}
 
-  .col-right {
-    flex-grow: 2;
-    flex-basis: 300px;
-  }
+	.col-right {
+		flex-grow: 2;
+		flex-basis: 300px;
+	}
 
-  .faq-box {
-    margin: 2rem 6rem;
+	.faq-box {
+		margin: 2rem 6rem;
 
-    details[open] > .answer {
-      padding: 2rem 4rem;
-    }
-  }
+		details[open] > .answer {
+			padding: 2rem 4rem;
+		}
+	}
 
-  #contact-form {
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
+	#contact-form {
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
 }
 
 @media (min-width: $max-m) {
-  .tab-label {
-    padding: 1rem 2rem;
-  }
+	.tab-label {
+		padding: 1rem 2rem;
+	}
 
-  .faq-box {
-    margin: 2rem 16rem;
-  }
+	.faq-box {
+		margin: 2rem 16rem;
+	}
 
-  .help-tabs {
-    min-width: 800px;
-  }
+	.help-tabs {
+		min-width: 800px;
+	}
 }
 
 @media (min-width: $max-l) {
-  #contact-form {
-    margin: auto 13rem;
-  }
+	#contact-form {
+		margin: auto 13rem;
+	}
 }

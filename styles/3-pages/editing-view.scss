@@ -13,6 +13,12 @@
 		left: 62px;
 	}
 }
+.draft-cta {
+	position: absolute;
+	right: 6rem;
+	margin-top: -3rem;
+	@include grid-cols(auto auto, 2rem);
+}
 
 article#new-article-content {
 	padding: 3rem 4rem;

@@ -2161,10 +2161,13 @@ footer#footy .footy-leftcol {
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s;
+  user-select: none;
 }
 
 .tab-content {
   display: none;
+  padding: 1rem 2rem;
+  max-width: 800px;
 }
 
 .tab:hover .tab-label {
@@ -3817,6 +3820,15 @@ ul.settings-tabs li::marker {
   position: absolute;
   top: 15vh;
   left: 62px;
+}
+
+.draft-cta {
+  position: absolute;
+  right: 6rem;
+  margin-top: -3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
 }
 
 article#new-article-content {
