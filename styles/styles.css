@@ -1759,7 +1759,7 @@ fieldset#confirm {
   }
 }
 ul.breadcrumb {
-  padding: 10px 16px;
+  padding: 10px 41px 40px;
   list-style: none;
 }
 
@@ -2360,7 +2360,7 @@ main#customer-overview h1 {
     margin-top: 5.5vh;
   }
   main#customer-event .breadcrumb {
-    margin-left: 14.5rem;
+    margin-left: 20rem;
   }
 }
 @media (min-width: 1280px) {
