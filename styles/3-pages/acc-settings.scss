@@ -1,440 +1,445 @@
 body#acc-settings-body {
-  background-color: $white;
+	background-color: $white;
 }
 
 main#customer-accsettings {
-  h1 {
-    margin: 5rem auto auto 1.5rem;
-  }
+	h1 {
+		margin: 5rem auto auto 1.5rem;
+	}
 }
 
 section#acc-settings {
-  margin: 5rem auto;
+	margin: 5rem auto;
 
-  [type="radio"] {
-    display: none;
-  }
+	[type="radio"] {
+		display: none;
+	}
 }
 
 ul.settings-tabs {
-  li::marker {
-    display: none;
-  }
+	li::marker {
+		display: none;
+	}
 }
 
 .setting-tab > label.setting-label {
-  display: block;
-  font-family: $paragraph;
-  background: #fff;
-  box-shadow: $sm-shadow;
-  border-radius: 5px 5px 0 0;
+	display: block;
+	font-family: $paragraph;
+	background: #fff;
+	box-shadow: $sm-shadow;
+	border-radius: 5px 5px 0 0;
 
-  padding: 12px 25px;
-  margin: 0 1rem;
-  color: $black;
-  letter-spacing: 1px;
-  cursor: pointer;
-  user-select: none;
-  transition: all 0.3s;
+	padding: 12px 25px;
+	margin: 0 1rem;
+	color: $black;
+	letter-spacing: 1px;
+	cursor: pointer;
+	user-select: none;
+	transition: all 0.3s;
 }
 
 .settingtab-content {
-  display: none;
+	display: none;
 
-  margin: auto 1rem;
-  padding: 2rem;
-  border-radius: 0 0 10px 10px;
-  background-color: #fff;
-  box-shadow: $sm-shadow;
+	margin: auto 1rem;
+	padding: 2rem;
+	border-radius: 0 0 10px 10px;
+	background-color: #fff;
+	box-shadow: $sm-shadow;
 
-  position: relative;
-  top: -30px;
-  min-height: 30vh;
-  // transition: width 0.3s;
+	position: relative;
+	top: -30px;
+	min-height: 30vh;
+	// transition: width 0.3s;
 
-  h2 {
-    font-size: 1.5rem;
-  }
+	h2 {
+		font-size: 1.5rem;
+	}
 }
 
 .setting-tab:hover .tab-label {
-  color: $white;
-  background-color: $tertiary;
+	color: $white;
+	background-color: $tertiary;
 }
 
 #acc-settings
-  [type="radio"]:nth-of-type(1):checked
-  ~ ul.settings-tabs
-  .setting-tab:nth-of-type(1)
-  .setting-label,
+	[type="radio"]:nth-of-type(1):checked
+	~ ul.settings-tabs
+	.setting-tab:nth-of-type(1)
+	.setting-label,
 #acc-settings
-  [type="radio"]:nth-of-type(2):checked
-  ~ ul.settings-tabs
-  .setting-tab:nth-of-type(2)
-  .setting-label,
+	[type="radio"]:nth-of-type(2):checked
+	~ ul.settings-tabs
+	.setting-tab:nth-of-type(2)
+	.setting-label,
 #acc-settings
-  [type="radio"]:nth-of-type(3):checked
-  ~ ul.settings-tabs
-  .setting-tab:nth-of-type(3)
-  .setting-label,
+	[type="radio"]:nth-of-type(3):checked
+	~ ul.settings-tabs
+	.setting-tab:nth-of-type(3)
+	.setting-label,
 #acc-settings
-  [type="radio"]:nth-of-type(4):checked
-  ~ ul.settings-tabs
-  .setting-tab:nth-of-type(4)
-  .setting-label,
+	[type="radio"]:nth-of-type(4):checked
+	~ ul.settings-tabs
+	.setting-tab:nth-of-type(4)
+	.setting-label,
 #acc-settings
-  [type="radio"]:nth-of-type(5):checked
-  ~ .settings-tabs
-  .setting-tab:nth-of-type(5)
-  .setting-label {
-  color: $white;
-  background-color: $tertiary;
+	[type="radio"]:nth-of-type(5):checked
+	~ .settings-tabs
+	.setting-tab:nth-of-type(5)
+	.setting-label {
+	color: $white;
+	background-color: $tertiary;
 }
 
 #acc-settings
-  [type="radio"]:nth-of-type(1):checked
-  ~ .settingtab-content:nth-of-type(1),
+	[type="radio"]:nth-of-type(1):checked
+	~ .settingtab-content:nth-of-type(1),
 #acc-settings
-  [type="radio"]:nth-of-type(2):checked
-  ~ .settingtab-content:nth-of-type(2),
+	[type="radio"]:nth-of-type(2):checked
+	~ .settingtab-content:nth-of-type(2),
 #acc-settings
-  [type="radio"]:nth-of-type(3):checked
-  ~ .settingtab-content:nth-of-type(3),
+	[type="radio"]:nth-of-type(3):checked
+	~ .settingtab-content:nth-of-type(3),
 #acc-settings
-  [type="radio"]:nth-of-type(4):checked
-  ~ .settingtab-content:nth-of-type(4),
+	[type="radio"]:nth-of-type(4):checked
+	~ .settingtab-content:nth-of-type(4),
 #acc-settings
-  [type="radio"]:nth-of-type(5):checked
-  ~ .settingtab-content:nth-of-type(5) {
-  display: block;
+	[type="radio"]:nth-of-type(5):checked
+	~ .settingtab-content:nth-of-type(5) {
+	display: block;
 }
 
 .profile-container {
-  div {
-    padding: 1rem 0 0 0;
-  }
-  .personal-info {
-    @include flex(row wrap);
-    justify-content: space-between;
-    margin-top: 2rem;
+	div {
+		padding: 1rem 0 0 0;
+	}
+	.personal-info {
+		@include flex(row wrap);
+		justify-content: space-between;
+		margin-top: 2rem;
 
-    div {
-      margin-bottom: 1rem;
-    }
+		div {
+			margin-bottom: 1rem;
+		}
 
-    .edit-profile-img {
-      margin: -1.5rem 0 2rem 0;
-      img:first-child {
-        width: 80px;
-      }
+		.edit-profile-img {
+			margin: -1.5rem 0 2rem 0;
+			img:first-child {
+				width: 80px;
+			}
 
-      img:last-child {
-        position: relative;
-        left: -25px;
-        width: 24px;
-      }
-    }
+			img:last-child {
+				position: relative;
+				left: -25px;
+				width: 24px;
+			}
+		}
 
-    .profile-col {
-      @include grid-rows(repeat(2, auto), 0.8rem);
-      justify-content: space-between;
-      label {
-        color: $black;
-        font-weight: 600;
-      }
-      input {
-        box-shadow: none;
-        color: $medium-gray;
-        padding: 0;
-      }
-      input[type="number"] {
-        width: min-content;
-      }
-    }
-  }
+		.profile-col {
+			@include grid-rows(repeat(2, auto), 0.8rem);
+			justify-content: space-between;
+			label {
+				color: $black;
+				font-weight: 600;
+				.edit-icon {
+					position: absolute;
+					margin: -3rem 0 0 9rem;
+				}
+			}
 
-  .linked-acc {
-    @include flex(column wrap);
+			input {
+				box-shadow: none;
+				color: $medium-gray;
+				padding: 0;
+			}
+			input[type="number"] {
+				width: min-content;
+			}
+		}
+	}
 
-    .btns-wrapper {
-      padding-top: 1rem;
-      @include flex(row wrap);
+	.linked-acc {
+		@include flex(column wrap);
 
-      button {
-        margin-right: 1rem;
-        color: $black;
-        background-color: rgb(252, 252, 252);
+		.btns-wrapper {
+			padding-top: 1rem;
+			@include flex(row wrap);
 
-        img {
-          width: 25px;
-          height: 100%;
-        }
-        // img.google-logo {
-        //   width: 100%;
-        //   height: 26px;
-        // }
-      }
-    }
-  }
+			button {
+				margin-right: 1rem;
+				color: $black;
+				background-color: rgb(252, 252, 252);
 
-  .content-wrapper {
-    padding-top: 1rem;
-    @include flex(row wrap);
-    justify-content: space-between;
+				img {
+					width: 25px;
+					height: 100%;
+				}
+				// img.google-logo {
+				//   width: 100%;
+				//   height: 26px;
+				// }
+			}
+		}
+	}
 
-    .delete-btn {
-      width: 24%;
-    }
-  }
+	.content-wrapper {
+		padding-top: 1rem;
+		@include flex(row wrap);
+		justify-content: space-between;
+
+		.delete-btn {
+			width: 24%;
+		}
+	}
 }
 
 .current-sub {
-  background-color: #fff;
+	background-color: #fff;
 
-  padding: 2rem 0;
-  margin: 1rem auto;
+	padding: 2rem 0;
+	margin: 1rem auto;
 
-  @include grid-rows(20% auto auto, 1rem);
+	@include grid-rows(20% auto auto, 1rem);
 
-  ul li {
-    list-style: disc;
-    line-height: $line-height-p;
-    margin: 0 0 0 1rem;
-    color: $black;
+	ul li {
+		list-style: disc;
+		line-height: $line-height-p;
+		margin: 0 0 0 1rem;
+		color: $black;
 
-    &::marker {
-      content: "✓ \2003";
-    }
-  }
+		&::marker {
+			content: "✓ \2003";
+		}
+	}
 
-  .price-action {
-    place-self: end;
+	.price-action {
+		place-self: end;
 
-    p {
-      color: $tertiary;
-      font-weight: 550;
-    }
-    .sub-btns {
-      @include grid-rows(repeat(2, auto), 1rem);
+		p {
+			color: $tertiary;
+			font-weight: 550;
+		}
+		.sub-btns {
+			@include grid-rows(repeat(2, auto), 1rem);
 
-      a.btn {
-        width: -moz-fit-content;
-        width: -webkit-fit-content;
-        width: fit-content;
-      }
-    }
-  }
+			a.btn {
+				width: -moz-fit-content;
+				width: -webkit-fit-content;
+				width: fit-content;
+			}
+		}
+	}
 }
 
 .noti-tab,
 .privacy-tab,
 .terms-tab {
-  div {
-    display: flex;
-    p {
-      margin: 5rem auto;
-    }
-  }
+	div {
+		display: flex;
+		p {
+			margin: 5rem auto;
+		}
+	}
 }
 
 @media (min-width: $max-s) {
-  main#customer-accsettings {
-    h1 {
-      margin-left: 2.5rem;
-    }
-  }
+	main#customer-accsettings {
+		h1 {
+			margin-left: 2.5rem;
+		}
+	}
 }
 
 @media (min-width: $max-m) {
-  main#customer-accsettings {
-    gap: 2rem;
-    // place-items: center;
-    h1 {
-      margin: 4rem auto auto 3rem;
-    }
-  }
+	main#customer-accsettings {
+		gap: 2rem;
+		// place-items: center;
+		h1 {
+			margin: 4rem auto auto 3rem;
+		}
+	}
 
-  section#acc-settings {
-    margin: 5rem 3rem;
-    @include grid-cols(20% auto, 3.8rem);
-  }
+	section#acc-settings {
+		margin: 5rem 3rem;
+		@include grid-cols(20% auto, 3.8rem);
+	}
 
-  .setting-tab > label.setting-label {
-    // width: 260px;
-    width: 14rem;
-    height: 50px;
-    border-radius: 5px;
-    margin: 1rem 0;
-  }
+	.setting-tab > label.setting-label {
+		// width: 260px;
+		width: 14rem;
+		height: 50px;
+		border-radius: 5px;
+		margin: 1rem 0;
+	}
 
-  #acc-settings
-    [type="radio"]:nth-of-type(1):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(1)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(2):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(2)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(3):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(3)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(4):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(4)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(5):checked
-    ~ .settings-tabs
-    .setting-tab:nth-of-type(5)
-    .setting-label {
-    width: 250px;
-  }
+	#acc-settings
+		[type="radio"]:nth-of-type(1):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(1)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(2):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(2)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(3):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(3)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(4):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(4)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(5):checked
+		~ .settings-tabs
+		.setting-tab:nth-of-type(5)
+		.setting-label {
+		width: 250px;
+	}
 
-  .settingtab-content {
-    padding: 2rem 3rem;
-    border-radius: 10px;
-    margin: -1rem 1rem;
-    position: unset;
-  }
+	.settingtab-content {
+		padding: 2rem 3rem;
+		border-radius: 10px;
+		margin: -1rem 1rem;
+		position: unset;
+	}
 
-  .profile-container {
-    div {
-      padding: 1rem 0 0 0;
-    }
-    .personal-info {
-      @include grid-cols(repeat(4, 1fr), 0.5rem);
-      margin-top: 3rem;
+	.profile-container {
+		div {
+			padding: 1rem 0 0 0;
+		}
+		.personal-info {
+			@include grid-cols(repeat(4, 1fr), 0.5rem);
+			margin-top: 3rem;
 
-      .edit-profile-img {
-        margin: -1.5rem 0 0 0rem;
+			.edit-profile-img {
+				margin: -1.5rem 0 0 0rem;
 
-        img:last-child {
-          left: -22px;
-        }
-      }
+				img:last-child {
+					left: -22px;
+				}
+			}
 
-      .profile-col {
-        @include grid-rows(repeat(2, 1fr), 1rem);
-        justify-content: space-between;
-        label {
-          color: $black;
-          font-weight: 600;
-        }
-        input {
-          box-shadow: none;
-          color: $medium-gray;
-          padding: 0;
-        }
-        input[type="number"] {
-          width: min-content;
-        }
-      }
-    }
+			.profile-col {
+				@include grid-rows(repeat(2, 1fr), 1rem);
+				justify-content: space-between;
+				label {
+					color: $black;
+					font-weight: 600;
+				}
+				input {
+					box-shadow: none;
+					color: $medium-gray;
+					padding: 0;
+				}
+				input[type="number"] {
+					width: min-content;
+				}
+			}
+		}
 
-    .linked-acc {
-      @include flex(column wrap);
+		.linked-acc {
+			@include flex(column wrap);
 
-      .btns-wrapper {
-        display: inline-flex;
+			.btns-wrapper {
+				display: inline-flex;
 
-        button {
-          margin-right: 1rem;
-          color: $black;
-          background-color: rgb(252, 252, 252);
+				button {
+					margin-right: 1rem;
+					color: $black;
+					background-color: rgb(252, 252, 252);
 
-          img {
-            width: 25px;
-            height: 100%;
-          }
-          // img.google-logo {
-          //   width: 100%;
-          //   height: 26px;
-          // }
-        }
-      }
-    }
+					img {
+						width: 25px;
+						height: 100%;
+					}
+					// img.google-logo {
+					//   width: 100%;
+					//   height: 26px;
+					// }
+				}
+			}
+		}
 
-    .content-wrapper {
-      @include grid-cols(auto 23%, 1rem);
-      padding-top: 1rem;
+		.content-wrapper {
+			@include grid-cols(auto 23%, 1rem);
+			padding-top: 1rem;
 
-      .delete-btn {
-        width: 70%;
-      }
-    }
-  }
-  .current-sub {
-    background-color: #fff;
+			.delete-btn {
+				width: 70%;
+			}
+		}
+	}
+	.current-sub {
+		background-color: #fff;
 
-    padding: 2rem;
-    margin: 1rem auto;
+		padding: 2rem;
+		margin: 1rem auto;
 
-    @include grid-rows(20% auto auto, 1rem);
+		@include grid-rows(20% auto auto, 1rem);
 
-    .price-action {
-      place-self: end;
+		.price-action {
+			place-self: end;
 
-      p {
-        color: $tertiary;
-        font-weight: 550;
-        text-align: end;
-        padding-right: 5px;
-      }
-      .sub-btns {
-        @include grid-cols(repeat(2, 1fr), 1rem);
+			p {
+				color: $tertiary;
+				font-weight: 550;
+				text-align: end;
+				padding-right: 5px;
+			}
+			.sub-btns {
+				@include grid-cols(repeat(2, 1fr), 1rem);
 
-        a.btn {
-          width: -moz-fit-content;
-          width: -webkit-fit-content;
-          width: fit-content;
-        }
-      }
-    }
-  }
+				a.btn {
+					width: -moz-fit-content;
+					width: -webkit-fit-content;
+					width: fit-content;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: $max-ml) {
-  main#customer-accsettings {
-    h1 {
-      margin-left: 3.8rem;
-    }
-  }
-  section#acc-settings {
-    margin: 5rem auto;
-    gap: 3rem;
-    max-width: 1200px;
-  }
+	main#customer-accsettings {
+		h1 {
+			margin-left: 3.8rem;
+		}
+	}
+	section#acc-settings {
+		margin: 5rem auto;
+		gap: 3rem;
+		max-width: 1200px;
+	}
 
-  #acc-settings
-    [type="radio"]:nth-of-type(1):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(1)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(2):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(2)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(3):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(3)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(4):checked
-    ~ ul.settings-tabs
-    .setting-tab:nth-of-type(4)
-    .setting-label,
-  #acc-settings
-    [type="radio"]:nth-of-type(5):checked
-    ~ .settings-tabs
-    .setting-tab:nth-of-type(5)
-    .setting-label {
-    width: 280px;
-  }
+	#acc-settings
+		[type="radio"]:nth-of-type(1):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(1)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(2):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(2)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(3):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(3)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(4):checked
+		~ ul.settings-tabs
+		.setting-tab:nth-of-type(4)
+		.setting-label,
+	#acc-settings
+		[type="radio"]:nth-of-type(5):checked
+		~ .settings-tabs
+		.setting-tab:nth-of-type(5)
+		.setting-label {
+		width: 280px;
+	}
 }

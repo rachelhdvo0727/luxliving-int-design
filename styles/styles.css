@@ -3569,6 +3569,10 @@ ul.settings-tabs li::marker {
   color: #323232;
   font-weight: 600;
 }
+.profile-container .personal-info .profile-col label .edit-icon {
+  position: absolute;
+  margin: -3rem 0 0 9rem;
+}
 .profile-container .personal-info .profile-col input {
   box-shadow: none;
   color: #828282;
