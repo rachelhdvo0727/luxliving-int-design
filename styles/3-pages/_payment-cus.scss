@@ -144,6 +144,9 @@ fieldset#confirm {
 @media (min-width: $max-s) {
 	#payment-form fieldset#step-controls {
 		margin: 1rem -1rem 0 0rem;
+		// button:last-child {
+		// 	margin-left: 2rem;
+		// }
 	}
 	.steps {
 		@include flex(row wrap);
