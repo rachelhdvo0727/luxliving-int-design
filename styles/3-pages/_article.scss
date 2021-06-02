@@ -39,20 +39,25 @@ article#article-content {
 	@include flex(column wrap);
 
 	h3.opening-text {
-		margin: 2rem auto;
+		margin: 2rem 0;
 	}
-
+	.section1 {
+		@include flex(row wrap);
+		justify-content: center;
+	}
 	section#article-top {
 		@include flex(row wrap);
 	}
 
 	.img-responsive {
 		display: block;
-		//   width: 340px;
-		//   height: 250px;
-		padding: 1rem;
+		// width: 440px;
+		// height: 350px;
 		width: 100%;
-		height: 100%;
+		height: 250px;
+		padding: 1rem;
+		// width: 50%;
+		// height: 100%;
 		object-fit: cover;
 	}
 
@@ -69,7 +74,6 @@ article#article-content {
 			fill: #ff7474;
 		}
 	}
-
 	section#author-published {
 		@include flex(column wrap);
 		margin: 1rem 0;
@@ -243,6 +247,14 @@ fieldset.typing-field {
 		section#article-top {
 			@include grid-cols(80% auto, 0.8rem);
 		}
+		.section1,
+		.section2,
+		.section3 {
+			@include grid-cols(auto 50%, 1rem);
+			place-items: center;
+		}
+		.section2 {
+		}
 		.some-icons-container {
 			margin-top: 0;
 			place-self: baseline end;
@@ -250,8 +262,8 @@ fieldset.typing-field {
 			right: -20px;
 		}
 		.img-responsive {
-			height: 800px;
-			width: 500px;
+			height: 300px;
+			// width: 500px;
 		}
 	}
 

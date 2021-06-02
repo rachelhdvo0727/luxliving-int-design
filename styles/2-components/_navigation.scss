@@ -234,6 +234,7 @@ label.categories-btn {
 	#account-dropdown .profile {
 		@include grid-cols(auto 50px, 0rem);
 		margin: 0;
+		text-transform: capitalize;
 		transform: none;
 
 		img {
@@ -269,7 +270,7 @@ label.categories-btn {
 		ul.category-list {
 			@include grid-cols(repeat(4, 1fr), 1rem);
 
-			li.category:last-child {
+			li.hide-on-desktop {
 				display: none;
 			}
 

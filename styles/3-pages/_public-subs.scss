@@ -82,10 +82,10 @@ section.all-subscriptions {
 	margin-top: 6rem;
 	.top-wrapper {
 		@include grid-cols(auto auto, 1rem);
-		// grid-template-columns: auto auto !important;
-		// gap: 1rem;
 		justify-content: space-between;
 		place-items: inherit;
+
+		@include flex(column wrap);
 	}
 }
 
@@ -151,10 +151,9 @@ section.all-subscriptions {
 		cursor: pointer;
 		color: $white;
 		position: relative;
-		top: -42px;
-		right: 17px;
-		// top: 9px;
-		// right: 65px;
+		// top: -42px;
+		top: 9px;
+		right: 64px;
 		@include grid-cols(auto auto, 0.5rem);
 	}
 }
@@ -169,7 +168,7 @@ input#sort:checked ~ .sort-list {
 @media (min-width: 413.98px) {
 	#settings {
 		label[for="sort"] {
-			top: 9px;
+			right: 18px;
 		}
 		.btn {
 			position: relative;

@@ -330,6 +330,9 @@ a {
   color: #faf5ef;
   transition: color 0.3s ease;
 }
+.link-navi {
+  text-transform: capitalize;
+}
 .link-navi:hover, .link-navi:active {
   color: #254c50;
 }
@@ -362,7 +365,6 @@ a {
 }
 .back:hover, .back:active {
   color: #254c50;
-  font-weight: bolder;
 }
 
 input,
@@ -722,6 +724,7 @@ input#profile-click,
     grid-template-columns: auto 50px;
     gap: 0rem;
     margin: 0;
+    text-transform: capitalize;
     transform: none;
   }
   #account-dropdown .profile img {
@@ -756,8 +759,8 @@ input#profile-click,
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
-  .dropdown ul.category-list li.category:last-child,
-.acc-dropdown-list ul.category-list li.category:last-child {
+  .dropdown ul.category-list li.hide-on-desktop,
+.acc-dropdown-list ul.category-list li.hide-on-desktop {
     display: none;
   }
   .dropdown ul.category-list ul.subcat,
@@ -1439,6 +1442,8 @@ section.all-subscriptions {
   gap: 1rem;
   justify-content: space-between;
   place-items: inherit;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .other-subs {
@@ -1496,8 +1501,8 @@ section.all-subscriptions {
   cursor: pointer;
   color: #faf5ef;
   position: relative;
-  top: -42px;
-  right: 17px;
+  top: 9px;
+  right: 64px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 0.5rem;
@@ -1511,7 +1516,7 @@ input#sort:checked ~ .sort-list {
 
 @media (min-width: 413.98px) {
   #settings label[for=sort] {
-    top: 9px;
+    right: 18px;
   }
   #settings .btn {
     position: relative;
@@ -1562,7 +1567,7 @@ input#sort:checked ~ .sort-list {
   }
 }
 #customer-payment .banner {
-  background: url("../../images/free-stock-search-payment.jpg") no-repeat center center;
+  background: url("../images/free-stock-search-payment.jpg") no-repeat center center;
   background-size: cover;
 }
 #customer-payment .banner h1 {
@@ -1795,7 +1800,12 @@ article#article-content {
   flex-flow: column wrap;
 }
 article#article-content h3.opening-text {
-  margin: 2rem auto;
+  margin: 2rem 0;
+}
+article#article-content .section1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 article#article-content section#article-top {
   display: flex;
@@ -1803,9 +1813,9 @@ article#article-content section#article-top {
 }
 article#article-content .img-responsive {
   display: block;
-  padding: 1rem;
   width: 100%;
-  height: 100%;
+  height: 250px;
+  padding: 1rem;
   object-fit: cover;
 }
 article#article-content .some-icons-container {
@@ -1975,6 +1985,14 @@ fieldset.typing-field .input-container {
     grid-template-columns: 80% auto;
     gap: 0.8rem;
   }
+  article#article-content .section1,
+article#article-content .section2,
+article#article-content .section3 {
+    display: grid;
+    grid-template-columns: auto 50%;
+    gap: 1rem;
+    place-items: center;
+  }
   article#article-content .some-icons-container {
     margin-top: 0;
     place-self: baseline end;
@@ -1982,8 +2000,7 @@ fieldset.typing-field .input-container {
     right: -20px;
   }
   article#article-content .img-responsive {
-    height: 800px;
-    width: 500px;
+    height: 300px;
   }
 
   .comment-container > form {
@@ -2137,7 +2154,7 @@ main#customer-overview h1 {
 }
 
 .new-draft-modal {
-  margin: 1rem auto;
+  margin: 2.3rem auto;
   padding: 1.5rem 2rem;
   background: #faf5ef;
   border-radius: 10px;

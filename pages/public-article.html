@@ -13,9 +13,9 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap"
     rel="stylesheet" />
   <!-- Custom styles -->
-  <link rel="stylesheet" href="../../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/styles.css" />
   <!-- Custom fonts -->
-  <link rel="stylesheet" href="../../styles/plugins/icofont.css" />
+  <link rel="stylesheet" href="../styles/plugins/icofont.css" />
 
   <title>LuxLiving</title>
 
@@ -26,48 +26,20 @@
 
 <body>
   <header id="header">
-    <nav id="navigation" class="customer-nav">
+    <nav id="navigation" class="">
       <div class="navigation-logo">
-        <a class="logo" href="../../index.html"> LuxLiving </a>
+        <a class="logo" href="../index.html"> LuxLiving </a>
       </div>
       <div class="search-bar">
         <input type="search" name="search-bar" id="search-bar" placeholder="search ..." />
-        <img class="search-icon" src="../../assets/search.svg" />
+        <img class="search-icon" src="../assets/search.svg" />
       </div>
 
       <div id="menu-toggle">
-        <input id="dropcheck" type="checkbox" />
+        <input id="dropcheck" class="" type="checkbox" />
         <label for="dropcheck" class="link link-flat desktop-links categories-btn">Categories</label>
-        <a class="link link-flat desktop-links" href="../help.html">Help</a>
-        <div id="account-dropdown">
-          <input id="profile-click" type="checkbox" />
-          <label for="profile-click" class="link link-flat desktop-links profile">Christina
-            <img src="../../images/christina-profile-icon.png" alt="christina-customer-reader" /></label>
-
-          <ul class="acc-dropdown-list">
-            <li>
-              <a class="link link-navi" target="_self" href="overview.html">My Overview</a>
-            </li>
-            <li>
-              <a class="link link-navi" href="#" target="_self">Saved Articles</a>
-            </li>
-            <li>
-              <a class="link link-navi" href="./favorites.html">Favorites</a>
-            </li>
-            <li>
-              <a class="link link-navi" href="#" target="_self">Saved Events</a>
-            </li>
-            <li>
-              <a class="link link-navi" href="#" target="_self">History</a>
-            </li>
-            <li>
-              <a class="link link-navi" href="./account-settings.html">Account Settings</a>
-            </li>
-            <li>
-              <a class="link link-navi" href="../sign-in.html">Sign Out</a>
-            </li>
-          </ul>
-        </div>
+        <a class="link link-flat desktop-links" href="help.html">Help</a>
+        <a class="link link-flat desktop-links" href="#" target="_self">Sign in</a>
 
         <input type="checkbox" id="burgermenu" class="btn-tertiary bars" />
         <span></span>
@@ -76,33 +48,6 @@
 
         <div class="dropdown">
           <ul class="category-list">
-            <li class="category">
-              <div class="profile">
-                <img class="img-responsive" src="../../images/christina-profile-icon.png"
-                  alt="christina-customer-reader" />
-                Christina Brandt
-              </div>
-              <ul class="subcat">
-                <li>
-                  <a class="link link-navi" target="_self" href="overview.html">My Overview</a>
-                </li>
-                <li>
-                  <a class="link link-navi" href="#" target="_self">Saved Articles</a>
-                </li>
-                <li>
-                  <a class="link link-navi" href="#" target="_self">Favorites</a>
-                </li>
-                <li>
-                  <a class="link link-navi" href="#" target="_self">Saved Events</a>
-                </li>
-                <li>
-                  <a class="link link-navi" href="#" target="_self">History</a>
-                </li>
-                <li>
-                  <a class="link link-navi" href="./account-settings.html">Account Settings</a>
-                </li>
-              </ul>
-            </li>
             <li class="category">
               Residence
               <ul class="subcat">
@@ -142,7 +87,7 @@
                   <a class="link link-navi" href="#" target="_self">Corridor</a>
                 </li>
                 <li>
-                  <a class="link link-navi" href="#" target="_self">Office</a>
+                  <a class="link link-navi" href="#" target="_self">Office/</a>
                 </li>
                 <li>
                   <a class="link link-navi" href="#" target="_self">Kid's room</a>
@@ -184,12 +129,15 @@
                   <a class="link link-navi" href="#">Printed magazines</a>
                 </li>
                 <li>
-                  <a class="link link-navi" href="./subscriptions.html">Subscriptions</a>
+                  <a class="link link-navi" href="public-subscriptions.html">Subscriptions</a>
                 </li>
               </ul>
             </li>
-            <li class="category hide-on-desktop">
-              <a class="link help link-navi" href="../help.html">Help</a>
+            <li class="category">
+              <a class="link help link-navi" href="help.html">Help</a>
+            </li>
+            <li class="category">
+              <a class="link help link-navi" href="sign-in.html">Sign in</a>
             </li>
           </ul>
         </div>
@@ -199,8 +147,8 @@
   <!-- Main starts -->
   <main id="article">
     <ul class="breadcrumb">
-      <li><a href="overview.html">My Overview</a></li>
-      <li><a href="#">Recently Read</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Lastest Articles</a></li>
       <li>7 Nightstands To Perfect Your Bedroom Decor</li>
     </ul>
     <article id="article-content">
@@ -208,11 +156,11 @@
         <h1>7 Nightstands To Perfect Your Bedroom Decor</h1>
         <div class="some-icons-container">
           <a href="#comment-interact" class="icon comment-icon">
-            <img src="../../assets/icon-awesome-comment.svg" alt="">
+            <img src="../assets/icon-awesome-comment.svg" alt="">
           </a>
-          <img src="../../assets/icon-awesome-heart.svg" alt="" class="icon fav-icon">
-          <img src="../../assets/icon-feather-bookmark.svg" alt="" class="icon save-icon">
-          <img src="../../assets/icon-awesome-share-alt.svg" alt="" class="icon share-icon">
+          <img src="../assets/icon-material-favorite-border.svg" alt="" class="icon fav-icon">
+          <img src="../assets/icon-feather-bookmark.svg" alt="" class="icon save-icon">
+          <img src="../assets/icon-awesome-share-alt.svg" alt="" class="icon share-icon">
         </div>
       </section>
 
@@ -234,7 +182,7 @@
           we’re showing you 8 nightstand ideas for your bedroom decor that will
           make your job easier!
         </p>
-        <a href="#photo-enlarge"><img src="../../images/pexels-article-maria-orlova-4940710.jpg"
+        <a href="#photo-enlarge"><img src="../images/pexels-article-maria-orlova-4940710.jpg"
             alt="Photo by Maria Orlova from Pexels" class="img-responsive" /></a>
       </div>
 
@@ -245,7 +193,7 @@
         just right, and if you pair it with gold accents, you’ve got yourself
         an elegant bedroom you won’t want to leave.
       </p>
-      <img src="../../images/pexels-charlotte-may-5824491.jpg" alt="Photo by Charlotte May from Pexels"
+      <img src="../images/pexels-charlotte-may-5824491.jpg" alt="Photo by Charlotte May from Pexels"
         class="img-responsive" />
       <p>
         If you’re looking for a versatile piece, a wooden nighstand is the
@@ -263,7 +211,7 @@
             mind when decorating.
           </p>
         </div>
-        <img src="../../images/pexels-article-pixabay-279805.jpg" alt="Photo by pixabay from Pexels"
+        <img src="../images/pexels-article-pixabay-279805.jpg" alt="Photo by pixabay from Pexels"
           class="img-responsive" />
 
       </div>
@@ -275,7 +223,7 @@
         customization options, you can make this piece fit your decor
         without giving up on the luxury.
       </p>
-      <img src="../../images/pexels-dmitry-zvolskiy-2082087.jpg" alt="Photo by Dmitry Zvolskiy from Pexels"
+      <img src="../images/pexels-dmitry-zvolskiy-2082087.jpg" alt="Photo by Dmitry Zvolskiy from Pexels"
         class="img-responsive" />
       </div>
 
@@ -286,7 +234,7 @@
         matter which color you choose.
       </p>
       <div class="section3">
-        <img src="../../images/pexels-dominika-roseclay-905198.jpg" alt="Photo by Dominika Roseclay from Pexels"
+        <img src="../images/pexels-dominika-roseclay-905198.jpg" alt="Photo by Dominika Roseclay from Pexels"
           class="img-responsive" />
         <p>
           Lastly, if you have a large headboard, why not add a floating shelf to
@@ -298,14 +246,14 @@
     </article>
     <div class="back-to-top-wrapper">
       <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"><img
-          src="../../assets/icon-awesome-angle-up.svg"></a>
+          src="../assets/icon-awesome-angle-up.svg"></a>
     </div>
     <section id="comment-interact">
       <div class="comment-container">
         <h4>Comments</h4>
         <div class="comment">
           <div class="profile-head">
-            <img src="../../images/freestocks-8a95EVm0ovQ-unsplash.jpg"
+            <img src="../images/freestocks-8a95EVm0ovQ-unsplash.jpg"
               alt="Photo by Freestocks: https://unsplash.com/@freestocks" class="profile-img">
           </div>
           <div class="chat-field">
@@ -317,7 +265,7 @@
         <form>
           <fieldset class="typing-field">
             <div class="profile-head">
-              <img src="../../images/christina-profile-icon.png" alt="" class="profile-img">
+              <img src="../assets/profile.svg" alt="" class="profile-img">
               <p>You</p>
             </div>
             <div class="input-container">
@@ -400,10 +348,10 @@
         <h6>Customer service</h6>
         <ul>
           <li>
-            <a href="../help.html">Help</a>
+            <a href="help.html">Help</a>
           </li>
           <li>
-            <a href="../help.html">FAQ</a>
+            <a href="help.html">FAQ</a>
           </li>
           <li>
             <a href="public-subscriptions.html">Subscriptions</a>

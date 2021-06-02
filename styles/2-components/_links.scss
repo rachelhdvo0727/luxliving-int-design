@@ -1,66 +1,67 @@
 @media print {
-  .link {
-    -webkit-print-color-adjust: exact !important;
-  }
+	.link {
+		-webkit-print-color-adjust: exact !important;
+	}
 }
 
 a {
-  user-select: none;
-  cursor: pointer;
-  text-decoration: none;
+	user-select: none;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .link {
-  color: $white;
-  transition: color 0.3s ease;
+	color: $white;
+	transition: color 0.3s ease;
 
-  // &:visited {
-  //   color: $white;
-  // }
+	// &:visited {
+	//   color: $white;
+	// }
 
-  &-navi {
-    &:hover,
-    &:active {
-      color: $tertiary;
-    }
-  }
+	&-navi {
+		text-transform: capitalize;
+		&:hover,
+		&:active {
+			color: $tertiary;
+		}
+	}
 
-  &-hyper {
-    color: $black;
-  }
+	&-hyper {
+		color: $black;
+	}
 
-  &-flat {
-    padding: 0 1.5vw;
+	&-flat {
+		padding: 0 1.5vw;
 
-    &:link {
-      background-color: transparent;
-    }
-    &:active {
-      background-color: $tertiary;
-    }
-  }
+		&:link {
+			background-color: transparent;
+		}
+		&:active {
+			background-color: $tertiary;
+		}
+	}
 }
 
 .active {
-  background-color: $tertiary;
+	background-color: $tertiary;
 }
 
 .see-all {
-  &::after {
-    content: " →";
-  }
+	&::after {
+		content: " →";
+	}
 }
 
 .back {
-  color: $black;
+	color: $black;
 
-  &::before {
-    content: "←  ";
-  }
+	&::before {
+		content: "←  ";
+	}
 
-  &:hover,
-  &:active {
-    color: $tertiary;
-    font-weight: bolder;
-  }
+	&:hover,
+	&:active {
+		color: $tertiary;
+		// font-weight: bolder;
+	}
 }
